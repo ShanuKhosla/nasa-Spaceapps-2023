@@ -13,7 +13,8 @@ module.exports = {
         "white-100": "#f3f3f3",
       },
       fontFamily: {
-        'overpass': ['Overpass', 'sans-serif']
+        'overpass': ['Overpass', 'sans-serif'],
+        'firaSans' : ['Fira Sans', 'sans-serif']
       },
       screens: {
         xs: "450px",

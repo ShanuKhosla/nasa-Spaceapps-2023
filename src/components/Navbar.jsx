@@ -32,11 +32,11 @@ const Navbar = () => {
       variants={navVariants}
       initial="hidden"
       whileInView="show"
-      className="px-[50px]"
+      className="px-[60px]"
       id="Navbar"
     >
       <img src="/SpaceApps-defaultLogo.png" className="object-contain h-[260px] w-[260px]" />
-      <nav ref={navRef} className="">
+      <nav ref={navRef} className="font-overpass">
         <a href="#About">ABOUT</a>
         <a href="#Events">TIMELINE</a>
         <a href="#Team">CONTACT</a>

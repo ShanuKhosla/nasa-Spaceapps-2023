@@ -23,10 +23,9 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	height: 180px;
-	padding: 2rem;
+	/* padding: 2rem; */
 	color: var(--textColor);
-	min-width: 600px;
+	max-height: 150px;
 
 }
 
@@ -35,10 +34,10 @@ nav a {
 	margin: 0 1.7rem;
 	color: var(--textColor);
 	text-decoration: none;
-	font-weight: bolder;
+	font-weight: 500;
 	position: relative;
-	color: black;
-
+	color: #07173F;
+	font-size: 1.1rem;
 
 }
 
@@ -63,7 +62,7 @@ nav {
 	display: flex;
 	align-items: center;
 	background-color: #eafe07;
-	padding: 0.9rem 1.5rem;
+	padding: 0.75rem 1.5rem;
 	border-radius: 9999px;
 	}
 
