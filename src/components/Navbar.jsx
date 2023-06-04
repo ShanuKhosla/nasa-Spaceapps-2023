@@ -32,7 +32,7 @@ const Navbar = () => {
       variants={navVariants}
       initial="hidden"
       whileInView="show"
-      className="px-[60px]"
+      className="px-[60px] flex flex-row items-center justify-between gap-[18%]"
       id="Navbar"
     >
       <img src="/SpaceApps-defaultLogo.png" className="object-contain h-[260px] w-[260px]" />
@@ -42,6 +42,7 @@ const Navbar = () => {
         <a href="#Team">CONTACT</a>
         <a href="#Blogs">AMBASSADOR</a>
         <a href="#Blogs">VOLUNTEER</a>
+        <a href="#SPONSORS">SPONSORS</a>
         {isTabletView && (
           <button className="nav-btn nav-close-btn " onClick={showNavbar}>
             <FaTimes />
