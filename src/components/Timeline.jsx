@@ -7,8 +7,8 @@ import backgroundImage from '/nasaPlusTheme.svg';
 const EventCard = ({ event }) => (
   <VerticalTimelineElement
     contentStyle={{
-  background: 'rgb(5, 38, 99)',
-  background: 'linear-gradient(315deg, rgba(5, 38, 99, 1) 47%, rgba(0, 66, 166, 1) 100%)',
+      background: 'linear-gradient(315deg, rgba(5, 38, 99, 1) 47%, rgba(0, 66, 166, 1) 100%)',
+
   color: '#fff'
 }}
 

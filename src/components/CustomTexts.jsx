@@ -1,8 +1,10 @@
 import { motion } from 'framer-motion';
 import { textContainer, textVariant2 } from '../utils/motion';
+ import "./styles/CustomTexts.css"
+
 
 export const TypingText = ({ title, textStyles }) => (
-  <motion.p variants={textContainer} className={`text-6xl font-extrabold font-firaSans tracking-wider`}>
+  <motion.p variants={textContainer} className={`header text-6xl font-extrabold font-firaSans tracking-wider`}>
     {Array.from(title).map((letter, index) => (
       <motion.span variants={textVariant2} key={index}>
         {letter === ' ' ? '\u00A0' : letter}
