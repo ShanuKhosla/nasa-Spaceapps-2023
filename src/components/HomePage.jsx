@@ -9,7 +9,7 @@ import Footer from './Footer';
 
 const HomePage = () => {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <div
         style={{
           width: '100%',

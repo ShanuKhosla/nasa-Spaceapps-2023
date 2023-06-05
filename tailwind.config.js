@@ -11,6 +11,8 @@ module.exports = {
         "black-100": "#100d25",
         "black-200": "#090325",
         "white-100": "#f3f3f3",
+        customBlue: 'rgb(5, 38, 99)',
+        customIndigo: 'rgb(0, 66, 166)',
       },
       fontFamily: {
         'overpass': ['Overpass', 'sans-serif'],

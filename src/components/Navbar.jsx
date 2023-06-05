@@ -5,6 +5,11 @@ import { motion } from "framer-motion";
 import { navVariants } from '../utils/motion';
 
 const Navbar = () => {
+  const [animationComplete, setAnimationComplete] = useState(false);
+
+  const handleAnimationComplete = () => {
+    setAnimationComplete(true);
+  };
   const navRef = useRef();
   const [isTabletView, setIsTabletView] = useState(false);
 
@@ -31,18 +36,19 @@ const Navbar = () => {
     <motion.header
       variants={navVariants}
       initial="hidden"
-      whileInView="show"
-      className="px-[60px] flex flex-row items-center justify-between gap-[18%]"
+      animate={animationComplete ? "show" : "hidden"} // Only animate when animationComplete is true
+      onAnimationComplete={handleAnimationComplete} // Update the state when animation is complete
+      className="px-[60px] flex flex-row items-center justify-between gap-[15%]"
       id="Navbar"
     >
       <img src="/SpaceApps-defaultLogo.png" className="object-contain h-[260px] w-[260px]" />
       <nav ref={navRef} className="font-overpass">
-        <a href="#About">ABOUT</a>
-        <a href="#Events">TIMELINE</a>
-        <a href="#Team">CONTACT</a>
-        <a href="#Blogs">AMBASSADOR</a>
-        <a href="#Blogs">VOLUNTEER</a>
-        <a href="#SPONSORS">SPONSORS</a>
+        <a href="/about">ABOUT</a>
+        <a href="#timeline">TIMELINE</a>
+        <a href="/contact">CONTACT</a>
+        <a href="/ambassador">AMBASSADOR</a>
+        <a href="/volunteer">VOLUNTEER</a>
+        <a href="/sponsors">SPONSORS</a>
         {isTabletView && (
           <button className="nav-btn nav-close-btn " onClick={showNavbar}>
             <FaTimes />
