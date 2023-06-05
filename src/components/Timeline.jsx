@@ -3,6 +3,10 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 import 'react-vertical-timeline-component/style.min.css';
 import { events } from "../constants";
 import backgroundImage from '/nasaPlusTheme.svg';
+import { motion } from 'framer-motion';
+import {fadeIn, staggerContainer, textVariant, slideIn} from '../utils/motion';
+import { TypingText } from "./CustomTexts";
+
 
 const EventCard = ({ event }) => (
   <VerticalTimelineElement
@@ -48,24 +52,35 @@ const EventCard = ({ event }) => (
 
 
 const Timeline = () => {
+
+  const [animationComplete, setAnimationComplete] = useState(false);
+
+  const handleAnimationComplete = () => {
+    setAnimationComplete(true);
+  };
   return(
-    <div
-      className="bg-[#07173F] h-full px-8 md:px-[60px] py-8 md:py-70 bg-center bg-no-repeat bg-cover"
+    <motion.div
+      className="bg-[#07173F] h-full px-8 px-[20px] sm:px-[40px] lg:px-[60px] py-8 md:py-70 bg-center bg-no-repeat bg-cover"
       style={{
         backgroundImage: `url(${backgroundImage})`
       }}
     >
-      <h1 className="text-6xl text-[#FFFFFF] font-extrabold font-firaSans tracking-wider mb-2">
+      <motion.h1
+        variants={fadeIn('right', 'tween', 0.2, 0.4)}
+        initial={animationComplete ? "" : "hidden"}
+        whileInView="show"
+        onAnimationComplete={handleAnimationComplete} // Update the state when animation is complete
+        className="text-5xl lg:text-6xl text-[#FFFFFF] font-extrabold font-firaSans tracking-wider mb-2">
         EVENT TIMELINE
-      </h1>
-      <div className="mt-20 flex flex-col">
+      </motion.h1>
+      <motion.div className="mt-20 flex flex-col">
         <VerticalTimeline>
           {events.map((event, index) => (
             <EventCard key={index} event={event} />
           ))}
         </VerticalTimeline>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 }
 

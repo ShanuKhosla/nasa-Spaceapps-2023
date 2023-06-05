@@ -15,7 +15,7 @@ const ParticipationDetails = () => {
 
   return (
     <motion.div
-      className="bg-[#FFFFFF] h-screen px-8 px-[40px] lg:px-[60px] py-8 md:py-70 bg-center bg-no-repeat bg-cover header"
+      className="bg-[#FFFFFF] h-screen px-8 px-[20px] sm:px-[40px] lg:px-[60px] py-8 md:py-70 bg-center bg-no-repeat bg-cover header"
       style={{
         backgroundImage: `url(${backgroundImage})`
       }}
@@ -23,9 +23,8 @@ const ParticipationDetails = () => {
 
       <motion.h1
         variants={fadeIn('right', 'tween', 0.2, 0.4)}
-        initial="hidden"
-        
-        animate={animationComplete ? "show" : "hidden"} // Only animate when animationComplete is true
+        initial={animationComplete ? "" : "hidden"}
+        whileInView="show"
         onAnimationComplete={handleAnimationComplete} // Update the state when animation is complete
         className="text-5xl lg:text-6xl text-[#07173F] font-extrabold font-firaSans tracking-wider mb-2">
         DETAILS OF PARTICIPATION

@@ -38,7 +38,7 @@ const Navbar = () => {
       initial="hidden"
       animate={animationComplete ? "show" : "hidden"} // Only animate when animationComplete is true
       onAnimationComplete={handleAnimationComplete} // Update the state when animation is complete
-      className="px-[40px] lg:px-[60px] flex flex-row items-center justify-between gap-[15%]"
+      className="px-[20px] sm:px-[40px] lg:px-[60px] flex flex-row items-center justify-between gap-[15%]"
       id="Navbar"
     >
       <img src="/SpaceApps-defaultLogo.png" className="object-contain h-[260px] w-[260px]" />

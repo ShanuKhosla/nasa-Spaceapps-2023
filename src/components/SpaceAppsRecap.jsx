@@ -15,7 +15,7 @@ const SpaceAppsRecap = () => {
 
   return (
     <motion.div
-      className="h-full px-8 px-[40px] lg:px-[60px] py-8 md:py-70 bg-[#07173F] bg-left bg-no-repeat bg-cover"
+      className="h-full  px-[20px] sm:px-[40px] lg:px-[60px] py-8 md:py-70 bg-[#07173F] bg-left bg-no-repeat bg-cover"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <motion.h1
