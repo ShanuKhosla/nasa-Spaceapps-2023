@@ -4,7 +4,7 @@ import { textContainer, textVariant2 } from '../utils/motion';
 
 
 export const TypingText = ({ title, textStyles }) => (
-  <motion.p variants={textContainer} className={`header text-6xl font-extrabold font-firaSans tracking-wider`}>
+  <motion.p variants={textContainer} className={`mt-5 max-w-[70%] text-lg lg:text-xl leading-snug font-overpass font-normal tracking-wide text-white`}>
     {Array.from(title).map((letter, index) => (
       <motion.span variants={textVariant2} key={index}>
         {letter === ' ' ? '\u00A0' : letter}
