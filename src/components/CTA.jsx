@@ -17,7 +17,7 @@ const CTA = () => {
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <motion.h1
-        variants={fadeIn('down', 'tween', 0.2, 0.4)}
+        variants={fadeIn('left', 'tween', 0.2, 0.7)}
         initial={animationComplete ? "" : "hidden"}
         whileInView="show"
         onAnimationComplete={handleAnimationComplete} // Update the state when animation is complete
@@ -25,7 +25,7 @@ const CTA = () => {
         Join Our Hackathon Now!
       </motion.h1>
       <motion.button
-        variants={fadeIn('up', 'tween', 0.2, 0.4)}
+        variants={fadeIn('right', 'tween', 0.2, 0.7)}
         initial={animationComplete ? "" : "hidden"}
         whileInView="show"
         onAnimationComplete={handleAnimationComplete} // Update the state when animation is complete
