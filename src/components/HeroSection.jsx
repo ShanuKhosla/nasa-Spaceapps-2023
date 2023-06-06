@@ -18,7 +18,7 @@ const HeroSection = () => {
       initial="hidden"
       animate={animationComplete ? "show" : "hidden"} // Only animate when animationComplete is true
       onAnimationComplete={handleAnimationComplete} // Update the state when animation is complete
-      className="h-full px-[20px] sm:px-[40px] lg:px-[60px] py-[70px] bg-[#0042A6] header"
+      className="h-screen px-[20px] sm:px-[40px] lg:px-[60px] py-[70px] bg-[#0042A6] header"
     >
       <h1 className=" text-4xl  xs:text-5xl lg:text-6xl text-[#FFFFFF] font-extrabold font-firaSans tracking-wider mb-2">NASA INTERNATIONAL SPACEAPPS 2023</h1>
       <motion.p
