@@ -64,6 +64,7 @@ const Timeline = () => {
       style={{
         backgroundImage: `url(${backgroundImage})`
       }}
+      id="timeline"
     >
       <motion.h1
         variants={fadeIn('right', 'tween', 0.2, 0.4)}
