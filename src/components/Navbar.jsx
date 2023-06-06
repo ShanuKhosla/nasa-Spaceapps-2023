@@ -19,7 +19,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsTabletView(window.innerWidth <= 768); // Adjust the breakpoint as per your tablet view
+      setIsTabletView(window.innerWidth <= 1024); // Adjust the breakpoint as per your tablet view
     };
 
     handleResize(); // Call the function initially to set the state based on the initial window width
@@ -41,7 +41,7 @@ const Navbar = () => {
       className="px-[20px] sm:px-[40px] lg:px-[60px] flex flex-row items-center justify-between gap-[15%]"
       id="Navbar"
     >
-      <img src="/SpaceApps-defaultLogo.png" className="object-contain h-[260px] w-[260px]" />
+      <img src="/SpaceApps-defaultLogo.png" className="object-contain h-[200px] w-[200px] sm:h-[260px] sm:w-[260px]" />
       <nav ref={navRef} className="font-overpass">
         <a href="/about">ABOUT</a>
         <a href="#timeline">TIMELINE</a>

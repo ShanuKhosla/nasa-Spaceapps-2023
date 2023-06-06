@@ -27,15 +27,15 @@ const EventCard = ({ event }) => (
     }}
     >
     <div>
-      <h3 className="text-white text-4xl leading-tight font-overpass font-normal tracking-wide">
+      <h3 className="text-white text-3xl md:text-3xl leading-tight font-overpass font-normal tracking-wide">
         {event.title}
       </h3>
-      <p className="text-white mt-5 max-w-full text-2xl leading-snug font-overpass font-normal tracking-wide text-white" style={{margin: 0}}>
+      <p className="text-white mt-5 max-w-full text-2xl md:text-3xl leading-snug font-overpass font-normal tracking-wide text-white" style={{margin: 0}}>
         {event.date}
       </p>
     </div>
 
-    <ul className=" list-disc ml-5 mt-5 space-y-2 mt-5 max-w-full  text-base leading-snug font-overpass font-normal tracking-wide text-white">
+    <ul className=" list-disc ml-5 mt-5 space-y-2 mt-5 max-w-full text-md md:text-xl text-base leading-snug font-overpass font-normal tracking-wide text-white">
       {event.points.map((point, index) => (
         <li
           key={`event-point-${index}`}
@@ -70,7 +70,7 @@ const Timeline = () => {
         initial={animationComplete ? "" : "hidden"}
         whileInView="show"
         onAnimationComplete={handleAnimationComplete} // Update the state when animation is complete
-        className="text-5xl lg:text-6xl text-[#FFFFFF] font-extrabold font-firaSans tracking-wider mb-2">
+        className="text-4xl  md:text-5xl lg:text-6xl text-[#FFFFFF] font-extrabold font-firaSans tracking-wider mb-2">
         EVENT TIMELINE
       </motion.h1>
       <motion.div className="mt-20 flex flex-col">
