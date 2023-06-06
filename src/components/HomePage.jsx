@@ -44,14 +44,12 @@ const HomePage = () => {
           backgroundPosition: 'center',
         }}
       >
-        <Navbar />
         <HeroSection />
       </div>
       <SpaceAppsRecap />
       <ParticipationDetails />
       <Timeline />
       <CTA />
-      <Footer />
 
       {showBackToTop && (
         <motion.img

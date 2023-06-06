@@ -13,7 +13,7 @@ const Volunteer = () => {
   };
   return(
     <motion.div
-      className="h-screen px-[20px] sm:px-[40px] lg:px-[60px] py-[70px] bg-[#0042A6]"
+      className="h-screen px-[20px] sm:px-[40px] lg:px-[60px] py-[70px] bg-[#0042A6] overflow-x-hidden"
       >
       <motion.h1
         variants={fadeIn('right', 'tween', 0.2, 0.6)}
