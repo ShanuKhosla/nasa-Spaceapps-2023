@@ -1,20 +1,20 @@
 import React, { useRef, useEffect, useState } from 'react';
-import { FaBars, FaTimes } from "react-icons/fa";
-import "./styles/Navbar.css";
-import { motion } from "framer-motion";
+import { FaBars, FaTimes } from 'react-icons/fa';
+import './styles/Navbar.css';
+import { motion } from 'framer-motion';
 import { navVariants } from '../utils/motion';
 
 const Navbar = () => {
   const [animationComplete, setAnimationComplete] = useState(false);
-
   const handleAnimationComplete = () => {
     setAnimationComplete(true);
   };
+
   const navRef = useRef();
   const [isTabletView, setIsTabletView] = useState(false);
 
   const showNavbar = () => {
-    navRef.current.classList.toggle("responsive_nav");
+    navRef.current.classList.toggle('responsive_nav');
   };
 
   useEffect(() => {
@@ -24,11 +24,11 @@ const Navbar = () => {
 
     handleResize(); // Call the function initially to set the state based on the initial window width
 
-    window.addEventListener("resize", handleResize); // Add resize event listener
+    window.addEventListener('resize', handleResize); // Add resize event listener
 
     // Clean up the event listener when the component unmounts
     return () => {
-      window.removeEventListener("resize", handleResize);
+      window.removeEventListener('resize', handleResize);
     };
   }, []);
 
@@ -36,12 +36,14 @@ const Navbar = () => {
     <motion.header
       variants={navVariants}
       initial="hidden"
-      animate={animationComplete ? "show" : "hidden"} // Only animate when animationComplete is true
+      animate={animationComplete ? 'show' : 'hidden'} // Only animate when animationComplete is true
       onAnimationComplete={handleAnimationComplete} // Update the state when animation is complete
-      className="px-[20px] sm:px-[40px] lg:px-[60px] bg-[#0042A6] flex flex-row items-center justify-between gap-[15%]"
+      className="px-[20px] sm:px-[40px] lg:px-[60px] bg-[#0042A6] flex flex-row items-center justify-between gap-[15%] overflow-hidden"
       id="Navbar"
     >
-      <a href="/"><img src="/SpaceApps-defaultLogo.png" className="object-contain h-[200px] w-[200px] sm:h-[260px] sm:w-[260px]" /></a>
+      <a href="/">
+        <img src="/SpaceApps-defaultLogo.png" className="object-contain h-[200px] w-[200px] sm:h-[260px] sm:w-[260px]" />
+      </a>
       <nav ref={navRef} className="font-overpass">
         <a href="/about">ABOUT</a>
         <a href="#timeline">TIMELINE</a>
@@ -50,7 +52,7 @@ const Navbar = () => {
         <a href="/volunteer">VOLUNTEER</a>
         <a href="/sponsors">SPONSORS</a>
         {isTabletView && (
-          <button className="nav-btn nav-close-btn " onClick={showNavbar}>
+          <button className="nav-btn nav-close-btn" onClick={showNavbar}>
             <FaTimes />
           </button>
         )}
@@ -60,6 +62,6 @@ const Navbar = () => {
       </button>
     </motion.header>
   );
-}
+};
 
 export default Navbar;

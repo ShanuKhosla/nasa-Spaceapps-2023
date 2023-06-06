@@ -34,7 +34,7 @@ const HomePage = () => {
   };
 
   return (
-    <div className="overflow-x-hidden">
+    <div className="">
       <div
         style={{
           width: '100%',

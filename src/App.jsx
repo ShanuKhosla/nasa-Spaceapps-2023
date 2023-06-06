@@ -13,7 +13,7 @@ import AboutSpaceApps from './components/AboutSpaceApps';
 
 function App() {
   return (
-    <div className="overflow-x-hidden bg-[#0042A6]">
+    <div className="bg-[#0042A6]">
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
