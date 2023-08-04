@@ -29,6 +29,7 @@ const ParticipationDetails = () => {
       >
         DETAILS OF PARTICIPATION
       </motion.h1>
+      
     </motion.div>
   );
 }
