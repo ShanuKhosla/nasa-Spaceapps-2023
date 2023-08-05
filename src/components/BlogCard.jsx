@@ -32,7 +32,7 @@ const BlogCard = ({ image, title, summary, author, date }) => {
               </h2>
               <p className="text-md font-overpass font-light">{summary}</p>
             </div>
-            <div className="flex flex-row align-center justify-between">
+            <div className="flex flex-row align-center justify-between ">
               <div className="">
                 <p className="text-xs font-overpass font-light">{author}</p>
                 <p className="text-xs font-overpass font-light">{date}</p>

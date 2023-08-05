@@ -34,7 +34,7 @@ export const events = [
 
 const blogs = [
   {
-    image: "./lol.jpeg",
+    image: "./blog1.png",
     tags: [{ name: "Technology" }],
     title: "The Importance of Diversity in Space Exploration",
     summary:
@@ -53,7 +53,7 @@ const blogs = [
       ],
     author: "Mitrashi Das",
     date: "Aug 04, 2023",
-  },
+  }, 
 ];
 
 export {blogs}
