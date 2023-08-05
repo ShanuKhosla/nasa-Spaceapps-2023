@@ -24,6 +24,8 @@ const CTA = () => {
         className="text-5xl lg:text-6xl font-extrabold font-firaSans text-white text-center mb-4">
         Join Our Hackathon Now!
       </motion.h1>
+      <a href='https://www.spaceappschallenge.org/2023/locations/athlone/' target='_blank'>
+
       <motion.button
         variants={fadeIn('right', 'tween', 0.2, 0.7)}
         initial={animationComplete ? "" : "hidden"}
@@ -32,6 +34,7 @@ const CTA = () => {
         className="px-6 py-3 bg-white text-[#0042A6] text-lg md:text-xl font-overpass font-semibold rounded-full hover:bg-[#07173F] hover:text-white transition-colors duration-300">
         Register Now
       </motion.button>
+      </a>
     </motion.div>
   );
 }

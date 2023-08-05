@@ -42,7 +42,7 @@ const Navbar = () => {
       id="Navbar"
     >
       <a href="/">
-        <img src="/SpaceApps-defaultLogo.png" className="object-contain h-[200px] w-[200px] sm:h-[260px] sm:w-[260px]" />
+        <img src="/athloneLogo.svg" className="object-contain h-[190px] w-[190px] sm:h-[260px] sm:w-[260px]" />
       </a>
       <nav ref={navRef} className="font-overpass">
         <a href="/about">ABOUT</a>

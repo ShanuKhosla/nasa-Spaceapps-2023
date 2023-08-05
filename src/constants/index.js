@@ -2,31 +2,31 @@ export const events = [
   {
     image : "",
     day: "Day 1",
-    title : "Registration Day",
+    title : "Opening Ceremony",
     points: [
-      "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum"
+      "On Day 1, participants register for the hackathon, attend an opening ceremony, discuss problem statements and NASA Open Data, pitch ideas, form teams, and begin the hack with ice-breaking sessions and networking opportunities."
     ],
-    date: "DD/MM/YYYY",
+    date: "06/10/2023 • 6PM",
       iconBg: "#FFFFFF",
   },
   {
     image : "",
     day: "Day 2",
-    title : "Quiz 1",
+    title : "Hackathon Continues",
     points: [
-      "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum"
+      "Day 2 of the hackathon includes Mentor Hours, a Resume Hacking - Industry Session, lunch break, and a meeting to discuss the upcoming Final Demo Day."
     ],
-    date: "DD/MM/YYYY",
+    date: "07/10/2023 ",
     iconBg: "#FFFFFF",
   },
   {
     image : "",
     day: "Day 3",
-    title : "Event Day",
+    title : "Submission, Presentation & Results",
     points: [
-          "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum"
+          "Day 3 of the hackathon features team acknowledgment, global live sessions, closing ceremony and results announcement, submission of draft presentations, practice presentations and feedback, final presentations, judges' deliberation, and feedback session."
     ],
-    date: "DD/MM/YYYY",
+    date: "08/10/2023",
     iconBg:"#FFFFFF"
   },
 ];
