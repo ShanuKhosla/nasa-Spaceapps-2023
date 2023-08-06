@@ -48,7 +48,7 @@ const Navbar = () => {
         <a href="/about">ABOUT</a>
         <a href="#timeline">TIMELINE</a>
         <a href="/contact">CONTACT</a>
-        <a href="/ambassador">AMBASSADOR</a>
+        <a href="/ambassador">AMBASSADOR</a> 
         <a href="/volunteer">VOLUNTEER</a>
         <a href="/sponsors">SPONSORS</a>
         {isTabletView && (

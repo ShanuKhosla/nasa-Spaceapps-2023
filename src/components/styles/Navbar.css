@@ -1,36 +1,30 @@
-
+/* Reset default styles */
 * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-}
-
-:root {
+	
+  }
+  
+  :root {
 	--mainColor: linear-gradient(45deg, #0042A6, #07173F);
 	--mainColorLight: #5767aa;
 	--secondaryColor: #0042A6;
 	--textColor: #eee;
-}
-
-
-
-.scrolled {
-  background-color: #fffff;
-}
-
-
-header {
+  }
+  
+  /* Navbar styles */
+  header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	/* padding: 2rem; */
 	color: var(--textColor);
 	max-height: 150px;
-
-}
-
-
-nav a {
+	padding: 0 20px; /* Adjust padding for different screen sizes */
+	background: var(--mainColor);
+  }
+  
+  nav a {
 	margin: 0 1.7rem;
 	color: var(--textColor);
 	text-decoration: none;
@@ -38,69 +32,71 @@ nav a {
 	position: relative;
 	color: #07173F;
 	font-size: 1.1rem;
-
-}
-
-nav a:hover {
+  }
+  
+  nav a:hover {
 	color: var(--secondaryColor);
-}
-
-header .nav-btn {
+  }
+  
+  header .nav-btn {
 	padding: 5px;
 	cursor: pointer;
 	background: transparent;
 	border: none;
 	outline: none;
 	color: var(--textColor);
+	font-size: 2rem;
 	visibility: hidden;
 	opacity: 0;
-	font-size: 2rem;
-}
-
-header div,
-nav {
+  }
+  
+  header div,
+  nav {
 	display: flex;
 	align-items: center;
 	background-color: #eafe07;
 	padding: 0.75rem 1.5rem;
 	border-radius: 9999px;
-	}
-
-@media only screen and (max-width: 1024px) {
+  }
+  
+  /* Media query for smaller screens (e.g., mobile) */
+  @media only screen and (max-width: 1024px) {
 	header .nav-btn {
-		visibility: visible;
-		opacity: 1;
+	  visibility: visible;
+	  opacity: 1;
 	}
-
-	header nav {
-		position: fixed;
-		z-index: 1000;
-		top: -100vh;
-		left: 0;
-		height: 100%;
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		gap: 1.5rem;
-		background-color: #2E96F5;
-		transition: 1s;
-		border-radius: 0;
+  
+	nav {
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	  justify-content: center;
+	  gap: 1.5rem;
+	  background-color: #2E96F5;
+	  transition: transform 1s;
+	  border-radius: 0;
+	  height: 100%;
+	  width: 100%;
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+	  transform: translateY(-100%);
+	  z-index: 1000;
+	  overflow-x: hidden;
 	}
-
+  
 	header .responsive_nav {
-		transform: translateY(100vh);
+	  transform: translateY(0);
 	}
-
+  
 	nav .nav-close-btn {
-		position: absolute;
-		top: 2rem;
-		right: 2rem;
+	  position: absolute;
+	  top: 2rem;
+	  right: 2rem;
 	}
-
+  
 	nav a {
-		font-size: 1.5rem;
-
+	  font-size: 1.5rem;
 	}
-}
+  }
+  

@@ -13,11 +13,11 @@ const CTA = () => {
   };
   return (
     <motion.div
-      className="h-full px-[20px] sm:px-[40px] lg:px-[60px] py-8 md:py-70 bg-[#0042A6] bg-left bg-no-repeat bg-cover flex flex-col items-center justify-center"
+      className="h-full w-full px-[20px] sm:px-[40px] lg:px-[60px] py-8 md:py-[70px] bg-[#0042A6] bg-left bg-no-repeat bg-cover flex flex-col items-center justify-center"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <motion.h1
-        variants={fadeIn('left', 'tween', 0.2, 0.7)}
+        variants={fadeIn('down', 'tween', 0.2, 0.7)}
         initial={animationComplete ? "" : "hidden"}
         whileInView="show"
         onAnimationComplete={handleAnimationComplete} // Update the state when animation is complete
@@ -27,7 +27,7 @@ const CTA = () => {
       <a href='https://www.spaceappschallenge.org/2023/locations/athlone/' target='_blank'>
 
       <motion.button
-        variants={fadeIn('right', 'tween', 0.2, 0.7)}
+        variants={fadeIn('up', 'tween', 0.2, 0.7)}
         initial={animationComplete ? "" : "hidden"}
         whileInView="show"
         onAnimationComplete={handleAnimationComplete} // Update the state when animation is complete

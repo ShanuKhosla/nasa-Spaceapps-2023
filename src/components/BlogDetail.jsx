@@ -22,7 +22,7 @@ const BlogDetail = () => {
 
    
     <div>
-    <img src="/SpaceApps-defaultLogo.png" className=" mx-[4%] my-[-2%] object-contain h-[200px] w-[200px] sm:h-[260px] sm:w-[260px]" />
+    <img src="/athloneLogo.svg" className=" mx-[4%] my-[-2%] object-contain h-[190px] w-[190px] sm:h-[260px] sm:w-[260px]" />
     </div>
     <div className="mx-auto max-w-[70%] flex flex-col items-start justify-center p-2">
       <h2 className="text-4xl xs:text-5xl lg:text-6xl font-extrabold font-firaSans tracking-wider mb-2">

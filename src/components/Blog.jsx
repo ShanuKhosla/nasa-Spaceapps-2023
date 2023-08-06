@@ -16,7 +16,7 @@ const Blog = () => {
   return (
     <>
       <div>
-    <img src="/SpaceApps-defaultLogo.png" className=" mx-[4%] my-[-2%] object-contain h-[200px] w-[200px] sm:h-[260px] sm:w-[260px]" />
+      <img src="/athloneLogo.svg" className=" mx-[4%] my-[-2%] object-contain h-[190px] w-[190px] sm:h-[260px] sm:w-[260px]" />
     </div>
     
     <motion.div
