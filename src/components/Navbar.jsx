@@ -6,6 +6,8 @@ import { navVariants } from '../utils/motion';
 
 const Navbar = () => {
   const [animationComplete, setAnimationComplete] = useState(false);
+  const [scrolled, setScrolled] = useState(false); // State to track if the user has scrolled
+
   const handleAnimationComplete = () => {
     setAnimationComplete(true);
   };
@@ -19,16 +21,20 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsTabletView(window.innerWidth <= 1024); // Adjust the breakpoint as per your tablet view
+      setIsTabletView(window.innerWidth <= 1024);
     };
 
-    handleResize(); // Call the function initially to set the state based on the initial window width
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20); // Set scrolled to true when the user scrolls down 20px
+    };
 
-    window.addEventListener('resize', handleResize); // Add resize event listener
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    window.addEventListener('scroll', handleScroll);
 
-    // Clean up the event listener when the component unmounts
     return () => {
       window.removeEventListener('resize', handleResize);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
@@ -36,19 +42,20 @@ const Navbar = () => {
     <motion.header
       variants={navVariants}
       initial="hidden"
-      animate={animationComplete ? 'show' : 'hidden'} // Only animate when animationComplete is true
-      onAnimationComplete={handleAnimationComplete} // Update the state when animation is complete
-      className="px-[20px] sm:px-[40px] lg:px-[60px] bg-[#0042A6] flex flex-row items-center justify-between gap-[15%] overflow-hidden"
+      animate={animationComplete ? 'show' : 'hidden'}
+      onAnimationComplete={handleAnimationComplete}
+      className={`bg-opacity-40 backdrop-filter backdrop-blur-sm bg-white/20 dark:bg-black/20 px-[20px] sm:px-[40px] lg:px-[60px] bg-[#0042A6] flex flex-row items-center justify-between gap-[15%] overflow-hidden ${scrolled ? 'scrolled' : ''}`}
       id="Navbar"
+      
     >
       <a href="/">
-        <img src="/athloneLogo.svg" className="object-contain h-[190px] w-[190px] sm:h-[260px] sm:w-[260px]" />
+        <img src="/athloneLogo.svg" className="object-contain h-[170px] w-[170px] sm:h-[210px] sm:w-[210px]" alt="Logo" />
       </a>
       <nav ref={navRef} className="font-overpass">
         <a href="/about">ABOUT</a>
         <a href="#timeline">TIMELINE</a>
         <a href="/contact">CONTACT</a>
-        <a href="/ambassador">AMBASSADOR</a> 
+        <a href="/ambassador">AMBASSADOR</a>
         <a href="/volunteer">VOLUNTEER</a>
         <a href="/sponsors">SPONSORS</a>
         {isTabletView && (

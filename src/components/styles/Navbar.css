@@ -16,14 +16,19 @@
   /* Navbar styles */
   header {
 	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	color: var(--textColor);
-	max-height: 150px;
-	padding: 0 20px; /* Adjust padding for different screen sizes */
-	background: var(--mainColor);
+  align-items: center;
+  justify-content: space-between;
+  color: var(--textColor);
+  max-height: 120px;
+  padding: 0 20px; /* Adjust padding for different screen sizes */
+  background: var(--mainColor);
+  position: sticky; /* Make the Navbar sticky */
+  top: 0; /* Stick the Navbar to the top of the viewport */
+  z-index: 1000; /* Ensure the Navbar is above other elements */
+  transition: height 0.3s ease; /* Add a smooth transition for height change */
   }
-  
+
+
   nav a {
 	margin: 0 1.7rem;
 	color: var(--textColor);

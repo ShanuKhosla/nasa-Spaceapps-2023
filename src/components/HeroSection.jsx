@@ -18,9 +18,9 @@ const HeroSection = () => {
       initial="hidden"
       animate={animationComplete ? "show" : "hidden"} // Only animate when animationComplete is true
       onAnimationComplete={handleAnimationComplete} // Update the state when animation is complete
-      className="h-screen px-[20px] sm:px-[40px] lg:px-[60px] py-[70px] bg-[#0042A6] header my-5"
+      className="flex items-center justify-center flex-col h-screen my-[-60px] bg-[#0042A6]"
     >
-      <h1 className=" text-4xl  xs:text-6xl lg:text-7xl text-[#FFFFFF] font-extrabold font-firaSans text-center tracking-wider mb-2"><span className='font-bolder text-[#E43700]'>HackAth</span><span className='font-light text-[#eafe07]'>l</span><span className='font-bolder text-[#E43700]'>on</span><span className='font-light text-[#eafe07]'>e</span> <br /></h1>
+      <h1 className=" text-4xl  xs:text-6xl lg:text-7xl text-[#FFFFFF] font-extrabold font-firaSans text-center tracking-wider mb-2"><span className='font-black text-[#eafe07]'>HackAth</span><span className='font-thin text-[#ffffff]'>l</span><span className='font-black text-[#eafe07]'>on</span><span className='font-thin text-[#ffffff]'>e</span> <br /></h1>
       <h1 className='text-xl text-[#FFFFFF] font-extrabold font-firaSans text-center tracking-wider'>also known as</h1> 
       <br />
       
