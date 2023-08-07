@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import './App.css';
@@ -13,6 +14,7 @@ import AboutSpaceApps from './components/AboutSpaceApps';
 import Blog from './components/Blog';
 import BlogDetail from './components/BlogDetail';
 
+
 function App() {
   const location = useLocation();
 
@@ -20,7 +22,7 @@ function App() {
   const isBlogsPage = location.pathname.startsWith('/blogs');
 
   return (
-    <div className="bg-[#0042A6]">
+    <div className="bg-black">
       {!isBlogsPage && <Navbar />} {/* Show Navbar for all routes except those that start with "/blogs" */}
       <Routes>
         <Route path="/" element={<HomePage />} />

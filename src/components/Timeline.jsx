@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { events } from "../constants";
-import backgroundImage from '/nasaPlusTheme.svg';
 import { motion } from 'framer-motion';
 import {fadeIn, staggerContainer, textVariant, slideIn} from '../utils/motion';
 import { TypingText } from "./CustomTexts";
+import backgroundImage from '/starsUpscaled.png';
+
 
 
 const EventCard = ({ event }) => (

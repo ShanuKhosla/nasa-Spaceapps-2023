@@ -1,12 +1,13 @@
+/* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import Navbar from './Navbar';
 import HeroSection from './HeroSection';
 import SpaceAppsRecap from './SpaceAppsRecap';
 import ParticipationDetails from './ParticipationDetails';
 import Timeline from './Timeline';
 import CTA from './CTA';
 import Footer from './Footer';
+import GlobalCollaborators from './GlobalCollaborators';
 
 const HomePage = () => {
   const [showBackToTop, setShowBackToTop] = useState(false);
@@ -34,20 +35,25 @@ const HomePage = () => {
   };
 
   return (
-    <div className="">
+    <div>
       <div
         style={{
           width: '100%',
           height: '100%',
-          backgroundColor: '#0042A6',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
+    
         }}
       >
         <HeroSection />
       </div>
+      
+        <div>
       <SpaceAppsRecap />
+
+        </div>
+      
+      
       <ParticipationDetails />
+      <GlobalCollaborators />
       <Timeline />
       <CTA />
 

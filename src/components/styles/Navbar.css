@@ -19,9 +19,8 @@
   align-items: center;
   justify-content: space-between;
   color: var(--textColor);
-  max-height: 120px;
+  max-height: 110px;
   padding: 0 20px; /* Adjust padding for different screen sizes */
-  background: var(--mainColor);
   position: sticky; /* Make the Navbar sticky */
   top: 0; /* Stick the Navbar to the top of the viewport */
   z-index: 1000; /* Ensure the Navbar is above other elements */
@@ -60,7 +59,7 @@
 	display: flex;
 	align-items: center;
 	background-color: #eafe07;
-	padding: 0.75rem 1.5rem;
+	padding: 0.7rem 1.5rem;
 	border-radius: 9999px;
   }
   

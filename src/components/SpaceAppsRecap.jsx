@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
-import backgroundImage from '/Group_6.svg';
 import { motion } from 'framer-motion';
 import {fadeIn, staggerContainer, textVariant} from '../utils/motion';
 import { TypingText } from "./CustomTexts";
+import backgroundImage from '/about.png';
 
 
 const SpaceAppsRecap = () => {
@@ -15,8 +15,9 @@ const SpaceAppsRecap = () => {
 
   return (
     <motion.div
-      className="h-full  px-[20px] sm:px-[40px] lg:px-[60px] py-8 md:py-70 bg-[#07173F] bg-left bg-no-repeat bg-cover"
+      className="h-full  px-[20px] sm:px-[40px] lg:px-[60px] py-8 md:py-70 bg-cover bg-no-repeat bg-bottom"
       style={{ backgroundImage: `url(${backgroundImage})` }}
+
     >
       <motion.h1
         variants={fadeIn('right', 'tween', 0.2, 0.4)}
@@ -43,10 +44,11 @@ const SpaceAppsRecap = () => {
           whileInView="show"
           onAnimationComplete={handleAnimationComplete} // Update the state when animation is complete
           className="text-justify mt-5 max-w-full md:max-w-[58%] text-lg md:text-xl leading-snug font-overpass font-normal tracking-wide text-white">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          <br /><br />
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </motion.p>
+          The NASA International Space Apps Challenge (or Space Apps) is an international hackathon that will take place virtually and in person over a 48 hour period around the globe on dates October 6th, 7th and 8th, 2023.          <br /><br />
+          Since its inception in 2012 by the Earth Science division, NASA's International Space Apps Challenge has engaged 220,000+ registrants from 180+ countries in using NASA's open data to build innovative solutions that solve challenges we face on Earth and in Space. <br /><br />
+          The event embraces collaborative problem solving with a goal of producing open-source solutions to challenges we currently face on Earth and in space. Space Apps is open to the public and free for all ages to attend.
+          
+          </motion.p>
     </div>
       <motion.a
         variants={fadeIn('down', 'tween', 1, 0.4)}

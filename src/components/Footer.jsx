@@ -1,8 +1,13 @@
 import React from 'react';
+import backgroundImage from '/starsUpscaled.png';
+
 
 const Footer = () => {
   return (<>
-    <div className = "bg-black px-[20px] sm:px-[40px] lg:px-[60px] py-[40px] flex flex-col gap-[50px] xl:flex-row items-center justify-between">
+    <div 
+    style={{ backgroundImage: `url(${backgroundImage})` }}
+    className = "bg-center bg-no-repeat bg-cover px-[20px] sm:px-[40px] lg:px-[60px] py-[40px] flex flex-col gap-[50px] xl:flex-row items-center justify-between">
+
     <div className="">
     <p className="xl:max-w-[500px] max-w-[700px] text-justify text-xl leading-snug font-overpass font-normal">Space Apps is funded by  NASA's <span className="underline-offset-4 text-semibold"><a href="https://science.nasa.gov/earth-science">Earth Science Division</a></span>  through a contract with Booz Allen Hamilton,  Mindgrub, and SecondMuse.</p>
   </div>

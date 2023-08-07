@@ -44,20 +44,17 @@ const Navbar = () => {
       initial="hidden"
       animate={animationComplete ? 'show' : 'hidden'}
       onAnimationComplete={handleAnimationComplete}
-      className={`bg-opacity-40 backdrop-filter backdrop-blur-sm bg-white/20 dark:bg-black/20 px-[20px] sm:px-[40px] lg:px-[60px] bg-[#0042A6] flex flex-row items-center justify-between gap-[15%] overflow-hidden ${scrolled ? 'scrolled' : ''}`}
+      className={`bg-opacity-10 backdrop-filter backdrop-blur-xl dark:bg-black/80 px-[20px] sm:px-[40px] lg:px-[60px]  flex flex-row items-center justify-between  overflow-hidden `}
       id="Navbar"
       
     >
       <a href="/">
-        <img src="/athloneLogo.svg" className="object-contain h-[170px] w-[170px] sm:h-[210px] sm:w-[210px]" alt="Logo" />
+        <img src="/athloneLogo.svg" className="object-contain h-[170px] w-[170px] sm:h-[190px] sm:w-[190px]" alt="Logo" />
       </a>
-      <nav ref={navRef} className="font-overpass">
-        <a href="/about">ABOUT</a>
+      <nav ref={navRef} className="font-overpass fixed right-10">
+        <a href="/blogs">BLOGS</a>
         <a href="#timeline">TIMELINE</a>
         <a href="/contact">CONTACT</a>
-        <a href="/ambassador">AMBASSADOR</a>
-        <a href="/volunteer">VOLUNTEER</a>
-        <a href="/sponsors">SPONSORS</a>
         {isTabletView && (
           <button className="nav-btn nav-close-btn" onClick={showNavbar}>
             <FaTimes />
