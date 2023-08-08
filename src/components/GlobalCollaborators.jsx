@@ -15,13 +15,17 @@ const GlobalCollaborators = () => {
   };
 
   const logos = [
-    { id: 1, src: '/twitter.png' }, // Add your image URLs here
-    { id: 2, src: '/twitter.png' },
-    { id: 3, src: '/twitter.png' },
-    { id: 4, src: '/twitter.png' },
-    { id: 5, src: '/twitter.png' },
-    { id: 6, src: '/twitter.png' },
-    { id: 7, src: '/twitter.png' },
+    { id: 1, src: '/adobeXD.png' }, // Add your image URLs here
+    { id: 2, src: '/google.png' },
+    { id: 3, src: '/microsoft.png' },
+    { id: 4, src: '/tableau.png' },
+    { id: 5, src: '/goDaddy.png' },
+    { id: 6, src: '/planet.png' },
+    { id: 7, src: '/azure.png' },
+    { id: 8, src: '/miro.png' },
+    { id: 9, src: '/ibm.png' },
+    { id: 10, src: '/teams.png' },
+    { id: 11, src: '/meteomatics.png' },
   ];
 
   const sliderSettings = {
@@ -39,7 +43,7 @@ const GlobalCollaborators = () => {
     <motion.div
     style={{
     backgroundImage: `url(${backgroundImage})`}}
-     className="h-full px-[20px] sm:px-[40px] lg:px-[60px] py-8 md:py-70 bg-[#ffffff] bg-cover bg-no-repeat bg-bottom">
+     className="h-full w-full px-[20px] sm:px-[40px] lg:px-[60px] py-8 md:py-70 overflow-x-hidden bg-[#ffffff] bg-cover bg-no-repeat bg-bottom">
     <div>      
       <motion.h1
         variants={fadeIn('right', 'tween', 0.2, 0.4)}
@@ -56,20 +60,20 @@ const GlobalCollaborators = () => {
         initial={animationComplete ? '' : 'hidden'}
         whileInView="show"
         onAnimationComplete={handleAnimationComplete}
-        className="text-justify my-8 max-w-full md:max-w-[58%] text-lg md:text-xl leading-snug font-overpass font-normal tracking-wide text-black"
+        className="text-justify my-8 max-w-full md:max-w-[90%] text-lg md:text-xl leading-snug font-overpass font-normal tracking-wide text-black"
       >
         Each year the NASA International Space Apps Challenge Global Organizing Team collaborates with organizations from around the world to provide participants and/or Local Leads with tools and resources that enable the creation of solutions.
         These tools and resources can be used for free during the event.
       </motion.p>
     </div>
 
-      <Slider className='my-10' {...sliderSettings}>
+      <Slider className='my-10 w-full ml-[4%] sm:ml-[7%] flex flex-row items-center justify-around' {...sliderSettings}>
         {logos.map((logo) => (
-          <div key={logo.id} className="w-[120px] h-[120px] gap-10"> {/* Adjust width and height as needed */}
+          <div key={logo.id} className="w-[120px] h-[120px]"> {/* Adjust width and height as needed */}
             <img
               src={logo.src}
               alt={`Logo ${logo.id}`}
-              className="w-full h-full object-contain"
+              className=" aspect-ratio-auto w-[60px] h-[60px] gap-2 md:w-[70px] md:h-[70px] lg:w-[100px] lg:h-[100px] object-contain"
             />
           </div>
         ))}

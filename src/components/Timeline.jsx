@@ -5,7 +5,7 @@ import { events } from "../constants";
 import { motion } from 'framer-motion';
 import {fadeIn, staggerContainer, textVariant, slideIn} from '../utils/motion';
 import { TypingText } from "./CustomTexts";
-import backgroundImage from '/starsUpscaled.png';
+import backgroundImage from '/timeline.png';
 
 
 
@@ -72,7 +72,7 @@ const Timeline = () => {
         initial={animationComplete ? "" : "hidden"}
         whileInView="show"
         onAnimationComplete={handleAnimationComplete} // Update the state when animation is complete
-        className="text-4xl  md:text-5xl lg:text-6xl text-[#FFFFFF] font-extrabold font-firaSans tracking-wider mb-2">
+        className="text-4xl text-center md:text-5xl lg:text-6xl text-[#FFFFFF] font-extrabold font-firaSans tracking-wider mb-2">
         EVENT TIMELINE
       </motion.h1>
       <motion.div className="mt-20 flex flex-col">

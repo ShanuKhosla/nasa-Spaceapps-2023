@@ -52,8 +52,10 @@ const Navbar = () => {
         <img src="/athloneLogo.svg" className="object-contain h-[170px] w-[170px] sm:h-[190px] sm:w-[190px]" alt="Logo" />
       </a>
       <nav ref={navRef} className="font-overpass fixed right-10">
+        <a href="/">HOME</a>
         <a href="/blogs">BLOGS</a>
         <a href="#timeline">TIMELINE</a>
+        <a href="https://docs.google.com/forms/d/1EYUQxLAllIdm3bygjkTN76sDyDh9SxiAeS3DbMIqQp0/viewform?edit_requested=true">VOLUNTEER</a>
         <a href="/contact">CONTACT</a>
         {isTabletView && (
           <button className="nav-btn nav-close-btn" onClick={showNavbar}>

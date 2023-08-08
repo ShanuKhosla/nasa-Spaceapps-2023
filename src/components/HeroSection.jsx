@@ -38,7 +38,7 @@ const HeroSection = () => {
       initial="hidden"
       animate={animationComplete ? "show" : "hidden"} // Only animate when animationComplete is true
       onAnimationComplete={handleAnimationComplete}
-      className=" text-2xl  xs:text-3xl lg:text-4xl text-[#FFFFFF] font-extrabold font-firaSans text-center tracking-wider mb-2">NASA International SpaceApps 2023 <span className='font-black'>Athlone</span></motion.h1>
+      className=" text-2xl  xs:text-3xl lg:text-4xl text-[#FFFFFF] font-extrabold font-firaSans text-center tracking-wider mb-2">NASA International SpaceApps <br /> Challenge 2023 <span className='font-black'>Athlone</span></motion.h1>
       <motion.p
         variants={fadeIn('down', 'tween', 1.7, 0.5)}
         initial="hidden"
@@ -49,15 +49,16 @@ const HeroSection = () => {
         Explore Open Science <span className='font-extrabold text-[#eafe07]'>Together</span>
       </motion.p>     
       
-      <motion.p
-        variants={fadeIn('down', 'tween', 1.7, 0.5)}
-        initial="hidden"
-        animate={animationComplete ? "show" : "hidden"} // Only animate when animationComplete is true
-        onAnimationComplete={handleAnimationComplete} // Update the state when animation is complete
-        className="text-lg sm:text-2xl leading-relaxed font-normal font-overpass tracking-wide mt-2 text-center"
-      >
-        Empowering Knowledge Sharing for <span className='font-black text-[#eafe07]'>GLOBAL IMPACT</span>
-      </motion.p>
+      <div className='mt-5'>
+        <a href='#about'>
+        <img className='' src="scrollDown.gif" />
+        </a>
+      </div>
+
+
+      <div id='about'>
+
+      </div>
     </motion.div>
   );
 }

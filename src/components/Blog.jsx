@@ -15,10 +15,6 @@ const Blog = () => {
 
   return (
     <>
-      <div>
-      <img src="/athloneLogo.svg" className=" mx-[4%] my-[-2%] object-contain h-[190px] w-[190px] sm:h-[260px] sm:w-[260px]" />
-    </div>
-    
     <motion.div
       variants={fadeIn('down', 'tween', 0.2, 0.5)}
       initial="hidden"
