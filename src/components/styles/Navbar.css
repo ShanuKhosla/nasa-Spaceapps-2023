@@ -1,29 +1,10 @@
-/* Reset default styles */
 * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
 	
-	
   }
   
-  /* Add this to your CustomTexts.css */
-.translucent-background {
-	position: relative;
-  }
-  
-  .translucent-background::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
-	opacity: 0.5; /* Adjust the opacity value as needed */
-  }
-  
-
   :root {
 	--mainColor: linear-gradient(45deg, #0042A6, #07173F);
 	--mainColorLight: #5767aa;
@@ -121,4 +102,3 @@
 	  font-size: 1.5rem;
 	}
   }
-  

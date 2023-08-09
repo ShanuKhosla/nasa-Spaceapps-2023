@@ -18,13 +18,13 @@ const GlobalCollaborators = () => {
     { id: 1, src: '/adobeXD.png' }, // Add your image URLs here
     { id: 2, src: '/google.png' },
     { id: 3, src: '/microsoft.png' },
+    { id: 10, src: '/teams.png' },
     { id: 4, src: '/tableau.png' },
     { id: 5, src: '/goDaddy.png' },
     { id: 6, src: '/planet.png' },
     { id: 7, src: '/azure.png' },
     { id: 8, src: '/miro.png' },
     { id: 9, src: '/ibm.png' },
-    { id: 10, src: '/teams.png' },
     { id: 11, src: '/meteomatics.png' },
   ];
 
@@ -52,7 +52,7 @@ const GlobalCollaborators = () => {
         onAnimationComplete={handleAnimationComplete}
         className="text-4xl  xs:text-5xl lg:text-6xl font-extrabold text-[#07173F] font-firaSans tracking-wider mb-2"
       >
-        GLOBAL COLLABORATORS
+        GLOBAL COLLABORATORS IN THE PAST
       </motion.h1>
 
       <motion.p

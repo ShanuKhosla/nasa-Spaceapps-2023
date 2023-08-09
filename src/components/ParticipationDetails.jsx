@@ -72,7 +72,7 @@ const ParticipationDetails = () => {
   >
   </CountUp>
 </div>
-              <p className='text-2xl mt-2 font-overpass text-center font-semibold tracking-wide'>
+              <p className='text-2xl mt-2 font-overpass text-center relative left-[5px] font-semibold tracking-wide'>
                 Registered <br /> Participants
               </p>
             </motion.div>
@@ -130,7 +130,7 @@ const ParticipationDetails = () => {
             >
               <CountUp
                 start={animationComplete ? 0 : null}
-                end={10}
+                end={12}
                 duration={1.4}
                 delay={2.2}
                 separator=","

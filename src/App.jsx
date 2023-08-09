@@ -16,6 +16,7 @@ import BlogDetail from './components/BlogDetail';
 import GlobalCollaborators from './components/GlobalCollaborators';
 
 
+
 function App() {
   return (
     <div className="bg-black">

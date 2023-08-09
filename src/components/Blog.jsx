@@ -5,6 +5,8 @@ import { motion } from 'framer-motion';
 import { fadeIn } from '../utils/motion';
 import { blogs } from '../constants';
 import BlogCard from './BlogCard'; // Make sure the import is correct
+import backgroundImage from '/blogsBg.png';
+
 
 const Blog = () => {
   const [animationComplete, setAnimationComplete] = useState(false);
@@ -20,7 +22,8 @@ const Blog = () => {
       initial="hidden"
       animate={animationComplete ? 'show' : 'hidden'}
       onAnimationComplete={handleAnimationComplete}
-      className="h-full px-[20px] sm:px-[40px] lg:px-[60px] py-[70px] bg-[#0042A6] header"
+      className="h-full px-[20px] sm:px-[40px] lg:px-[60px] py-5 header bg-center bg-no-repeat bg-cover"
+      style={{backgroundImage: `url(${backgroundImage})`}}
     >
   
 
