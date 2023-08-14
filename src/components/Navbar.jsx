@@ -44,17 +44,17 @@ const Navbar = () => {
       initial="hidden"
       animate={animationComplete ? 'show' : 'hidden'}
       onAnimationComplete={handleAnimationComplete}
-      className={`bg-opacity-10 backdrop-filter backdrop-blur-xl dark:bg-black/80 px-[20px] sm:px-[40px] lg:px-[60px]  flex flex-row items-center justify-between  overflow-hidden `}
+      className={`bg-opacity-80 dark:bg-black dark:bg-opacity-90 px-[20px] sm:px-[40px] lg:px-[60px]  flex flex-row items-center justify-between  overflow-hidden `}
       id="Navbar"
-      
-    >
+>
+
       <a href="/">
-        <img src="/athloneLogo.svg" className="object-contain h-[170px] w-[170px] sm:h-[190px] sm:w-[190px]" alt="Logo" />
+        <img src="/athloneLogo.svg" className="object-contain h-[120px] w-[120px] sm:h-[190px] sm:w-[190px]" alt="Logo" />
       </a>
-      <nav ref={navRef} className="font-overpass fixed right-10">
+      <nav
+      ref={navRef} className={`font-overpass fixed right-10`}>
         <a href="/">HOME</a>
         <a href="/blogs">BLOGS</a>
-        <a href="#timeline">TIMELINE</a>
         <a href="https://docs.google.com/forms/d/1EYUQxLAllIdm3bygjkTN76sDyDh9SxiAeS3DbMIqQp0/viewform?edit_requested=true">VOLUNTEER</a>
         <a href="/contact">CONTACT</a>
         {isTabletView && (

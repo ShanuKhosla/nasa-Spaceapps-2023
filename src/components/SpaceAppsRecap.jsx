@@ -62,8 +62,25 @@ const SpaceAppsRecap = () => {
   </button>
 </motion.a>
 </motion.div>
+  <div 
+  style={{ backgroundImage: `url(${backgroundImage})` }}
+  >
   <img className="hidden xs:hidden sm:hidden md:block object-contain md:w-[300px] xl:w-[450px] mr-[20px]" src="/TUS.png" />
+  </div>
     </div>
+    <motion.div className='bg-center'
+    style={{ backgroundImage: `url(${backgroundImage})` }}
+    >
+
+    <motion.img 
+    variants={fadeIn('down', 'tween', 0.2, 0.9)}
+        initial={animationComplete ? "" : "hidden"}
+        whileInView="show"
+        onAnimationComplete={handleAnimationComplete} 
+    className=' relative bottom-5 sm:top-[70px] sm:left-5 lg:top-[110px] lg:left-10 px-[20px] sm:px-[30px] lg:px-[50px]' src='/tusLogo.png' />
+    </motion.div>
+
+      
     </>
   );
 };
