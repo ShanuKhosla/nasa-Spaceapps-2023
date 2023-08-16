@@ -62,7 +62,7 @@ const SpaceAppsRecap = () => {
   </motion.a>
 
   <div 
-  className='relative bottom-[50px]'
+  className=''
   id='discover' />  
 
 </motion.div>

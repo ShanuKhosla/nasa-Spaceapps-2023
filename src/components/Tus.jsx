@@ -100,6 +100,7 @@ const Tus = () => {
     </MapContainer>
       </div>
     </motion.div>
+    <div className='h-[100px]' id='timeline' />
     </>
   );
 };
