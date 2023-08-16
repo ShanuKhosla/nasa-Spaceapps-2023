@@ -1,8 +1,10 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/jsx-no-target-blank */
 import React, {useState} from 'react';
-import backgroundImage from '/binaryNumbers.svg';
+import backgroundImage from '/ctaStars.png';
 import { motion } from 'framer-motion';
-import {fadeIn, staggerContainer, textVariant} from '../utils/motion';
-import { TypingText } from "./CustomTexts";
+import {fadeIn} from '../utils/motion';
+
 
 const CTA = () => {
 
@@ -13,7 +15,7 @@ const CTA = () => {
   };
   return (
     <motion.div
-      className="h-full w-full px-[20px] sm:px-[40px] lg:px-[60px] py-8 md:py-[70px] bg-[#0042A6] bg-left bg-no-repeat bg-cover flex flex-col items-center justify-center"
+      className="h-full w-full px-[20px] sm:px-[40px] lg:px-[60px] py-8 md:py-[70px]  bg-center bg-no-repeat bg-cover flex flex-col items-center justify-center"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <motion.h1

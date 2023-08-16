@@ -4,7 +4,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import backgroundImage from '/global.png';
-import { fadeIn, staggerContainer, textVariant } from '../utils/motion';
+import { fadeIn} from '../utils/motion';
 import './styles/CustomTexts.css';
 
 const GlobalCollaborators = () => {
@@ -31,20 +31,24 @@ const GlobalCollaborators = () => {
   const sliderSettings = {
     dots: false,
     infinite: true,
-    speed: 800, // Slower speed for smoother effect
+    speed: 10000, // Slower speed for smoother effect
     autoplay: true,
-    autoplaySpeed: 3000, // Adjust as needed
-    slidesToShow: 4,    // Adjust the number of visible logos
+    autoplaySpeed: 0, // Adjust as needed
+    slidesToShow: 5,    // Adjust the number of visible logos
+    swipeToSlide: true, // Allow sliding on swipe
+    focusOnSelect: false, // Do not focus on slide selection
     slidesToScroll: 1,
-    cssEase: 'ease', // Linear easing for smoother transition
-  };
+    cssEase: 'linear', // Linear easing for smoother transition
+    prevArrow: null, // Disable previous arrow
+    nextArrow: null,
+  }
 
   return (
     <motion.div
     style={{
     backgroundImage: `url(${backgroundImage})`}}
-     className="h-full w-full px-[20px] sm:px-[40px] lg:px-[60px] py-8 md:py-70 overflow-x-hidden bg-[#ffffff] bg-cover bg-no-repeat bg-bottom">
-    <div>      
+     className="h-full w-full py-4 overflow-x-hidden bg-[#ffffff] bg-cover bg-no-repeat bg-bottom">
+    <div className='px-[20px] sm:px-[40px] lg:px-[60px] '>      
       <motion.h1
         variants={fadeIn('right', 'tween', 0.2, 0.4)}
         initial={animationComplete ? '' : 'hidden'}
@@ -62,18 +66,17 @@ const GlobalCollaborators = () => {
         onAnimationComplete={handleAnimationComplete}
         className="text-justify my-8 max-w-full md:max-w-[90%] text-lg md:text-xl leading-snug font-overpass font-normal tracking-wide text-black"
       >
-        Each year the NASA International Space Apps Challenge Global Organizing Team collaborates with organizations from around the world to provide participants and/or Local Leads with tools and resources that enable the creation of solutions.
-        These tools and resources can be used for free during the event.
+<span className='font-black text-[#07173F]'>Each year</span> the <span className='font-black text-[#07173F]'>NASA International Space Apps Challenge Global Organizing Team</span> collaborates with <span className='font-black text-[#07173F]'>organizations</span> from <span className='font-black text-[#07173F]'>around the world</span> to provide <span className='font-black text-[#07173F]'>participants</span> and/or <span className='font-black text-[#07173F]'>Local Leads</span> with <span className='font-black text-[#07173F]'>tools</span> and <span className='font-black text-[#07173F]'>resources</span> that enable the <span className='font-black text-[#07173F]'>creation</span> of <span className='font-black text-[#07173F]'>solutions</span>. These <span className='font-black text-[#07173F]'>tools</span> and <span className='font-black text-[#07173F]'>resources</span> can be used for <span className='font-black text-[#07173F]'>free</span> during the <span className='font-black text-[#07173F]'>event</span>.
       </motion.p>
     </div>
 
-      <Slider className='my-10 w-full ml-[4%] sm:ml-[7%] flex flex-row items-center justify-around' {...sliderSettings}>
+      <Slider className='my-10 w-full flex flex-row items-center justify-around' {...sliderSettings}>
         {logos.map((logo) => (
           <div key={logo.id} className="w-[120px] h-[120px]"> {/* Adjust width and height as needed */}
             <img
               src={logo.src}
               alt={`Logo ${logo.id}`}
-              className=" aspect-ratio-auto w-[60px] h-[60px] gap-2 md:w-[70px] md:h-[70px] lg:w-[100px] lg:h-[100px] object-contain"
+              className=" aspect-ratio-auto w-[60px] h-[60px] gap-2 md:w-[70px] md:h-[70px] lg:w-[180px] lg:h-[100px] object-contain"
             />
           </div>
         ))}

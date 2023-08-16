@@ -6,8 +6,9 @@ import SpaceAppsRecap from './SpaceAppsRecap';
 import ParticipationDetails from './ParticipationDetails';
 import Timeline from './Timeline';
 import CTA from './CTA';
-import Footer from './Footer';
 import GlobalCollaborators from './GlobalCollaborators';
+import SpaceAgencies from './SpaceAgencies';
+import Tus from './Tus';
 
 const HomePage = () => {
   const [showBackToTop, setShowBackToTop] = useState(false);
@@ -45,15 +46,11 @@ const HomePage = () => {
       >
         <HeroSection />
       </div>
-      
-        <div>
-      <SpaceAppsRecap />
-
-        </div>
-      
-      
+      <SpaceAppsRecap />  
       <ParticipationDetails />
+      <SpaceAgencies />
       <GlobalCollaborators />
+      <Tus />
       <Timeline />
       <CTA />
 

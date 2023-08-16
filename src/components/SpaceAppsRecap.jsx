@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import { motion } from 'framer-motion';
-import {fadeIn, staggerContainer, textVariant} from '../utils/motion';
-import { TypingText } from "./CustomTexts";
+import {fadeIn} from '../utils/motion';
 import backgroundImage from '/starsUpscaled.png';
 
 
@@ -14,10 +13,10 @@ const SpaceAppsRecap = () => {
   };
 
   return (
-    <>
+    <div className='flex items-center flex-col justify-center'>
     <div className='flex flex-row items-center justify-around'>
     <motion.div
-      className="h-full  px-[20px] sm:px-[30px] lg:px-[50px] py-3 bg-cover bg-no-repeat bg-bottom"
+      className="h-full  px-[20px] sm:px-[30px] lg:px-[50px] py-3 bg-cover bg-no-repeat bg-right"
       style={{ backgroundImage: `url(${backgroundImage})` }}
       id=''
     >
@@ -46,42 +45,38 @@ const SpaceAppsRecap = () => {
           whileInView="show"
           onAnimationComplete={handleAnimationComplete} // Update the state when animation is complete
           className="text-justify mt-1 lg:mt-5 w-full md:max-w-[95%] text-md md:text-lg leading-snug font-overpass font-normal tracking-wide text-white">
-          SpaceApps Athlone, also known as <span className='font-black text-[#eafe07]'>HackAthlone</span>, is one of the 300+ locations for this year's NASA SpaceApps Challenge. <span className='font-semibold tracking-tight'>Technology University of the Shannon</span> takes pride in hosting 200 participants on their campus for 48 hours to collaborate on 25 problem statements that cater to all STEAM fields.<br /><br />
+          SpaceApps Athlone, also known as <span className='font-black text-[#eafe07]'>HackAthlone</span>, is one of the 300+ locations for this year's NASA SpaceApps Challenge.<a className='text-[#eafe07]  no-underline' href='#tus'> <span className='font-bold tracking-sung text-[#eafe07]'> Technology University of the Shannon</span></a> takes pride in hosting 200 participants on their campus for 48 hours to collaborate on 25 problem statements that cater to all STEAM fields.<br /><br />
           HackAthlone stands as the sole in-person Hackathon location in Ireland for this event, offering exciting prizes, goodies, and all necessary technical components and F&B provisions. It also holds the distinction of being the sole location in Europe that will livestream the event to the public. <br /><br />
           Skilled mentors from both academia and industry will join in to assist the students in producing high-quality projects. This hackathon will be documented for open-source research purposes.          
           </motion.p>
     </div> 
-      <motion.a
-        variants={fadeIn('down', 'tween', 1, 0.4)}
-        initial={animationComplete ? "" : "hidden"}
-        whileInView="show"
-        onAnimationComplete={handleAnimationComplete} // Update the state when animation is complete
-        href="/faq" className="pointer">
-  <button className="my-5 bg-[#eafe07] px-5 py-3 mb-[100px] rounded-md text-xl text-black font-overpass font-bold" style={{ cursor: 'pointer' }}>
-    Space Apps 2023 FAQ
-  </button>
-</motion.a>
-</motion.div>
-  <div 
-  style={{ backgroundImage: `url(${backgroundImage})` }}
-  >
-  <img className="hidden xs:hidden sm:hidden md:block object-contain md:w-[300px] xl:w-[450px] mr-[20px]" src="/TUS.png" />
-  </div>
-    </div>
-    <motion.div className='bg-center'
-    style={{ backgroundImage: `url(${backgroundImage})` }}
-    >
 
-    <motion.img 
-    variants={fadeIn('down', 'tween', 0.2, 0.9)}
+  <motion.a 
+          variants={fadeIn('down', 'tween', 0.8, 0.4)}
         initial={animationComplete ? "" : "hidden"}
         whileInView="show"
         onAnimationComplete={handleAnimationComplete} 
-    className=' relative bottom-5 sm:top-[70px] sm:left-5 lg:top-[110px] lg:left-10 px-[20px] sm:px-[30px] lg:px-[50px]' src='/tusLogo.png' />
-    </motion.div>
+  href='#timeline'><button className=" pointer my-5 bg-[#eafe07] px-5 py-3 mb-[100px] text-black rounded-md text-xl font-bold font-overpass " style={{ cursor: 'pointer' }}>
+   Unfold the Timeline
+  </button>
+  </motion.a>
 
-      
-    </>
+  <div 
+  className='relative bottom-[50px]'
+  id='discover' />  
+
+</motion.div>
+</div>
+    
+    <div
+    style={{ backgroundImage: `url(${backgroundImage})` }}
+     className='mt-[-60px] w-full flex items-center justify-center bg-cover bg-no-repeat bg-left'>
+        <a href='#discover'>
+        <img className='' src="scrollDown.gif" />
+        </a>
+      </div>
+
+    </div>
   );
 };
 

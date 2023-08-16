@@ -23,10 +23,10 @@ const Footer = () => {
     <div>
       <p className="max-w-[400px] text-lg leading-snug font-overpass font-normal ">Connect with #SpaceApps</p>
     </div>
-    <div className="flex flex-row items-center gap-8">
-      <a href='https://www.facebook.com/spaceappschallenge'><img className="w-[55px] " src="/facebook.png" /></a>
-      <a href='https://twitter.com/spaceapps'><img className="w-[55px] " src="/twitter.png" /></a>
-      <a href='https://www.instagram.com/nasa_spaceapps/'><img className="w-[55px] " src="/instagram.png" /></a>
+    <div className="flex flex-row items-center gap-6">
+      <a href='https://www.facebook.com/spaceapps.athlone'><img className="w-[52px]" src="/facebook.png" /></a>
+      <a href='https://twitter.com/hack_athlone'><img className="w-[52px] " src="/twitter.png" /></a>
+      <a href='https://www.instagram.com/spaceapps_athlone'><img className="w-[52px] " src="/instagram.png" /></a>
     </div>
   </div>
 
