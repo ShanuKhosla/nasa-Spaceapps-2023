@@ -16,20 +16,21 @@ const SpaceAgencies = () => {
   };
 
   const logos = [
-    { id: 1, src: '/australia.png' }, // Add your image URLs here
-    { id: 2, src: '/brazil.png' },
-    { id: 3, src: '/canada.png' },
-    { id: 4, src: '/european.png' },
-    { id: 5, src: '/isro.png' },
-    { id: 6, src: '/italy.png' },
-    { id: 7, src: '/japan.png' },
-    { id: 8, src: '/mexico.png' },
-    { id: 9, src: '/argentina.png' },
-    { id: 10, src: '/nssa.png' },
-    { id: 11, src: '/paraguay.png' },
-    { id: 12, src: '/southAfrica.png' },
-    { id: 13, src: '/turkey.png' },
+    { id: 1, src: '/australia.png', link: "https://www.industry.gov.au/australian-space-agency" }, // Add your image URLs here
+    { id: 2, src: '/brazil.png', link: "https://www.iafastro.org/membership/all-members/brazilian-space-agency-aeb.html"},
+    { id: 3, src: '/canada.png' , link: "https://www.asc-csa.gc.ca/eng/"},
+    { id: 4, src: '/european.png' , link: "https://www.esa.int/"},
+    { id: 5, src: '/isro.png' , link: "https://www.isro.gov.in/"},
+    { id: 6, src: '/italy.png' , link: "https://www.asi.it/en/"},
+    { id: 7, src: '/japan.png' , link: "https://global.jaxa.jp/"},
+    { id: 8, src: '/mexico.png' , link: "https://www.iafastro.org/membership/all-members/agencia-espacial-mexicana-aem.html"},
+    { id: 9, src: '/argentina.png' , link: "https://www.iafastro.org/membership/all-members/comision-nacional-de-actividades-espaciales-(conae).html"},
+    { id: 10, src: '/nssa.png' , link: "https://www.iafastro.org/membership/all-members/national-space-science-agency-nssa.html"},
+    { id: 11, src: '/paraguay.png' , link: "https://www.aep.gov.py/"},
+    { id: 12, src: '/southAfrica.png' , link: "https://www.sansa.org.za/"},
+    { id: 13, src: '/turkey.png' , link: "https://tua.gov.tr/en"},
   ];
+
 
   const sliderSettings = {
     dots: false,
@@ -74,14 +75,16 @@ In <span className='font-black text-[#eafe07]'>2022</span>, NASA collaborated wi
       </motion.p>
     </div>
 
-      <Slider className='my-10 w-full flex flex-row items-center justify-around' {...sliderSettings}>
+      <Slider className='my-10 w-full flex flex-row items-center py-2 justify-around bg-white bg-opacity-10' {...sliderSettings}>
         {logos.map((logo) => (
           <div key={logo.id} className="w-[120px] h-[120px]"> {/* Adjust width and height as needed */}
+          <a href={logo.link} target="_blank" rel="noopener noreferrer">
             <img
               src={logo.src}
               alt={`Logo ${logo.id}`}
-              className=" aspect-ratio-auto w-[60px] h-[60px] gap-2 md:w-[70px] md:h-[70px] lg:w-[180px] lg:h-[100px] object-contain"
+              className=" relative top-2 aspect-ratio-auto w-[60px] h-[60px] gap-2 md:w-[70px] md:h-[70px] lg:w-[180px] lg:h-[100px] object-contain"
             />
+          </a>            
           </div>
         ))}
       </Slider>

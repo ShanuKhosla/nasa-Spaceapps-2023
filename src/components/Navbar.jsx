@@ -44,7 +44,7 @@ const Navbar = () => {
       initial="hidden"
       animate={animationComplete ? 'show' : 'hidden'}
       onAnimationComplete={handleAnimationComplete}
-      className={`bg-opacity-80 dark:bg-black dark:bg-opacity-90 px-[20px] sm:px-[40px] lg:px-[60px]  flex flex-row items-center justify-between  overflow-hidden `}
+      className={`bg-opacity-80 bg-black  px-[20px] sm:px-[40px] lg:px-[60px]  flex flex-row items-center justify-between  overflow-hidden `}
       id="Navbar"
 >
 

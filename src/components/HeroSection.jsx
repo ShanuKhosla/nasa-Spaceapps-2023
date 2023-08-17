@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
@@ -46,7 +47,7 @@ const HeroSection = () => {
         onAnimationComplete={handleAnimationComplete} // Update the state when animation is complete
         className="text-lg sm:text-2xl leading-relaxed font-normal font-overpass tracking-wide mt-10 text-center"
       >
-        Explore Open Science <span className='font-extrabold text-[#eafe07]'>Together</span>
+        Explore Open Science Together,  <span className='font-extrabold text-[#eafe07]'> <a className='no-underline text-[#eafe07]' href='https://www.spaceappschallenge.org/2023/locations/athlone/' target='_blank'>Register now </a> </span>
       </motion.p>     
       
       <div className='mt-5'>

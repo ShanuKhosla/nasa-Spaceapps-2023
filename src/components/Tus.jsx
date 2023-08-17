@@ -43,7 +43,7 @@ const Tus = () => {
       style={{
         backgroundImage: `url(${backgroundImage})`
       }}
-      className="h-full w-full py-4 overflow-x-hidden bg-[#000000] bg-contain bg-no-repeat bg-right"
+      className="h-full w-full py-8 overflow-x-hidden bg-[#000000] bg-contain bg-no-repeat bg-right"
     >
       <div className="px-[20px] sm:px-[40px] lg:px-[60px]">
         <motion.h1
