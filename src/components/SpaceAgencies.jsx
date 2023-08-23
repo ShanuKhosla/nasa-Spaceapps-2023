@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -10,13 +10,32 @@ import './styles/CustomTexts.css';
 const SpaceAgencies = () => {
 
     const [animationComplete, setAnimationComplete] = useState(false);
+    const [slidesToShow, setSlidesToShow] = useState(4);
 
   const handleAnimationComplete = () => {
     setAnimationComplete(true);
   };
 
+  useEffect(() => {
+    const updateSlidesToShow = () => {
+      if(window.innerWidth < 768)
+      {
+        setSlidesToShow(2);
+      }
+      else{
+        setSlidesToShow(4);
+      }
+    };
+
+    updateSlidesToShow();
+    window.addEventListener('resize', updateSlidesToShow);
+
+    return () => {
+      window.removeEventListener('resize', updateSlidesToShow);
+    };
+  }, []);
+
   const logos = [
-    { id: 1, src: '/australia.png', link: "https://www.industry.gov.au/australian-space-agency" }, // Add your image URLs here
     { id: 2, src: '/brazil.png', link: "https://www.iafastro.org/membership/all-members/brazilian-space-agency-aeb.html"},
     { id: 3, src: '/canada.png' , link: "https://www.asc-csa.gc.ca/eng/"},
     { id: 4, src: '/european.png' , link: "https://www.esa.int/"},
@@ -24,21 +43,22 @@ const SpaceAgencies = () => {
     { id: 6, src: '/italy.png' , link: "https://www.asi.it/en/"},
     { id: 7, src: '/japan.png' , link: "https://global.jaxa.jp/"},
     { id: 8, src: '/mexico.png' , link: "https://www.iafastro.org/membership/all-members/agencia-espacial-mexicana-aem.html"},
-    { id: 9, src: '/argentina.png' , link: "https://www.iafastro.org/membership/all-members/comision-nacional-de-actividades-espaciales-(conae).html"},
-    { id: 10, src: '/nssa.png' , link: "https://www.iafastro.org/membership/all-members/national-space-science-agency-nssa.html"},
+    { id: 9, src: '/argentina(1).png' , link: "https://www.argentina.gob.ar/ciencia/conae"},
     { id: 11, src: '/paraguay.png' , link: "https://www.aep.gov.py/"},
     { id: 12, src: '/southAfrica.png' , link: "https://www.sansa.org.za/"},
-    { id: 13, src: '/turkey.png' , link: "https://tua.gov.tr/en"},
+    { id: 13, src: '/turkey.svg' , link: "https://tua.gov.tr/en"},
+    { id: 10, src: '/nssa.png' , link: "https://www.iafastro.org/membership/all-members/national-space-science-agency-nssa.html"},
+    { id: 1, src: '/australia.png', link: "https://www.industry.gov.au/australian-space-agency" }, // Add your image URLs here
   ];
 
 
   const sliderSettings = {
     dots: false,
     infinite: true,
-    speed: 11000, // Slower speed for smoother effect
+    speed: 10000, // Slower speed for smoother effect
     autoplay: true,
-    autoplaySpeed: 0, // Adjust as needed
-    slidesToShow: 5,    // Adjust the number of visible logos
+    autoplaySpeed: 100, // Adjust as needed
+    slidesToShow: slidesToShow,    // Adjust the number of visible logos
     swipeToSlide: true, // Allow sliding on swipe
     focusOnSelect: false, // Do not focus on slide selection
     slidesToScroll: 1,
@@ -71,18 +91,19 @@ const SpaceAgencies = () => {
         onAnimationComplete={handleAnimationComplete}
         className="text-justify my-8 max-w-full md:max-w-[95%] text-lg md:text-xl leading-snug font-overpass font-normal tracking-wide text-white"
       >
-In <span className='font-black text-[#eafe07]'>2022</span>, NASA collaborated with even more <span className='font-black text-[#eafe07]'>space agency partners</span> to bring the largest annual global hackathon to communities around the world! These <span className='font-black text-[#eafe07]'>space agency partners</span>, along with <span className='font-black text-[#eafe07]'>NASA’s engineers</span> at the <span className='font-black text-[#eafe07]'>Earth Science Division</span>, came up with <span className='font-black text-[#eafe07]'>innovative problem statements</span> (literally out of this world). They provide access to this data and other resources around <span className='font-black text-[#eafe07]'>Earth Observations</span> for solving the <span className='font-black text-[#eafe07]'>challenges</span>.
+In <span className='font-black text-[#eafe07]'>2022</span>, NASA collaborated with even more <span className='font-black text-[#eafe07]'>space agency partners</span> to bring the largest annual global hackathon to communities around the world! These space agency partners , along with NASA’s engineers at the <span className='font-black text-[#eafe07]'>Earth Science Division</span>, came up with <span className='font-black text-[#eafe07]'>innovative problem statements</span> (literally out of this world). They provide access to this data and other resources around Earth Observations for solving the <span className='font-black text-[#eafe07]'>challenges</span>.
       </motion.p>
     </div>
 
-      <Slider className='my-10 w-full flex flex-row items-center py-2 justify-around bg-white bg-opacity-10' {...sliderSettings}>
+      <Slider className='slick-slide py-2  w-full flex flex-row items-center justify-around bg-black
+       bg-opacity-60' {...sliderSettings}>
         {logos.map((logo) => (
           <div key={logo.id} className="w-[120px] h-[120px]"> {/* Adjust width and height as needed */}
           <a href={logo.link} target="_blank" rel="noopener noreferrer">
             <img
               src={logo.src}
               alt={`Logo ${logo.id}`}
-              className=" relative top-2 aspect-ratio-auto w-[60px] h-[60px] gap-2 md:w-[70px] md:h-[70px] lg:w-[180px] lg:h-[100px] object-contain"
+              className="relative top-1 md:top-1 aspect-ratio-auto mx-5 w-[120px] h-[120px] md:w-[160px] md:h-[120px] lg:w-[250px] lg:h-[110px] object-contain"
             />
           </a>            
           </div>

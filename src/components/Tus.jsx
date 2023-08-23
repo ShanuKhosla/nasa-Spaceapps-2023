@@ -41,9 +41,10 @@ const Tus = () => {
 
     <motion.div
       style={{
-        backgroundImage: `url(${backgroundImage})`
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundSize: '21%'
       }}
-      className="h-full w-full py-8 overflow-x-hidden bg-[#000000] bg-contain bg-no-repeat bg-right"
+      className="h-full w-full py-8 overflow-x-hidden bg-[#000000] bg-contain bg-repeat-y bg-right"
     >
       <div className="px-[20px] sm:px-[40px] lg:px-[60px]">
         <motion.h1
@@ -51,7 +52,7 @@ const Tus = () => {
           initial={animationComplete ? '' : 'hidden'}
           whileInView="show"
           onAnimationComplete={handleAnimationComplete}
-          className="text-4xl xs:text-5xl lg:text-6xl font-extrabold text-white font-firaSans tracking-wider mb-2"
+          className="text-4xl max-w-[80%] md:w-full  xs:text-5xl lg:text-6xl font-extrabold text-white font-firaSans tracking-wide mb-2"
         >
           Technology University of the Shannon
         </motion.h1>
@@ -61,12 +62,9 @@ const Tus = () => {
           initial={animationComplete ? '' : 'hidden'}
           whileInView="show"
           onAnimationComplete={handleAnimationComplete}
-          className="text-justify my-8 max-w-full md:max-w-[90%] text-lg md:text-xl leading-snug font-overpass font-normal tracking-wide text-white w-[70%]"
+          className="text-justify my-8 max-w-full md:max-w-[90%] text-lg md:text-xl leading-snug font-overpass font-normal tracking-wide text-white w-[76%] md:w-[75%]"
         >
-          At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque
-          corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in
-          culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga
-        </motion.p>
+        <span className='font-black text-[#eafe07]'>NASA Spaceapps Challenge 2023</span> is being held at the heart of Ireland, Athlone. <span className='font-black text-[#eafe07]'>Technology University of the Shannon</span> is being presented as the host location for this massive in-person hackathon. The university needs no introduction for its merits in innovation and technology, preaching knowledge and excellence to over <span className='font-black text-[#eafe07]'>7000+</span> students. It is also responsible for supporting the hackathon with technological components, hackshop materials and subject matter experts to provide mentorship for a smooth and exciting event.</motion.p>
       </div>
       <div className="px-[20px] sm:px-[40px] lg:px-[60px]">
       <MapContainer center={[53.41799981189298, -7.9051877486443285]} zoom={16} scrollWheelZoom={false}>

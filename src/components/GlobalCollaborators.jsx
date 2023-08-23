@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect} from 'react';
 import { motion } from 'framer-motion';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -9,10 +9,31 @@ import './styles/CustomTexts.css';
 
 const GlobalCollaborators = () => {
   const [animationComplete, setAnimationComplete] = useState(false);
+  const [slidesToShow, setSlidesToShow] = useState(4);
+
 
   const handleAnimationComplete = () => {
     setAnimationComplete(true);
   };
+
+    useEffect(() => {
+    const updateSlidesToShow = () => {
+      if(window.innerWidth < 768)
+      {
+        setSlidesToShow(2);
+      }
+      else{
+        setSlidesToShow(4);
+      }
+    };
+
+    updateSlidesToShow();
+    window.addEventListener('resize', updateSlidesToShow);
+
+    return () => {
+      window.removeEventListener('resize', updateSlidesToShow);
+    };
+  }, []);
 
   const logos = [
     { id: 1, src: '/adobeXD.png', link: "https://adobexdplatform.com/"}, // Add your image URLs here
@@ -33,15 +54,15 @@ const GlobalCollaborators = () => {
     infinite: true,
     speed: 10000, // Slower speed for smoother effect
     autoplay: true,
-    autoplaySpeed: 0, // Adjust as needed
-    slidesToShow: 5,    // Adjust the number of visible logos
+    autoplaySpeed: 100, // Adjust as needed
+    slidesToShow: slidesToShow,    // Adjust the number of visible logos
     swipeToSlide: true, // Allow sliding on swipe
     focusOnSelect: false, // Do not focus on slide selection
     slidesToScroll: 1,
     cssEase: 'linear', // Linear easing for smoother transition
     prevArrow: null, // Disable previous arrow
     nextArrow: null,
-  }
+    };
 
   return (
     <motion.div
@@ -66,18 +87,18 @@ const GlobalCollaborators = () => {
         onAnimationComplete={handleAnimationComplete}
         className="text-justify my-8 max-w-full md:max-w-[90%] text-lg md:text-xl leading-snug font-overpass font-normal tracking-wide text-white"
       >
-<span className='font-black text-[#eafe07]'>Each year</span> the <span className='font-black text-[#eafe07]'>NASA International Space Apps Challenge Global Organizing Team</span> collaborates with <span className='font-black text-[#eafe07]'>organizations</span> from <span className='font-black text-[#eafe07]'>around the world</span> to provide <span className='font-black text-[#eafe07]'>participants</span> and/or <span className='font-black text-[#eafe07]'>Local Leads</span> with <span className='font-black text-[#eafe07]'>tools</span> and <span className='font-black text-[#eafe07]'>resources</span> that enable the <span className='font-black text-[#eafe07]'>creation</span> of <span className='font-black text-[#eafe07]'>solutions</span>. These <span className='font-black text-[#eafe07]'>tools</span> and <span className='font-black text-[#eafe07]'>resources</span> can be used for <span className='font-black text-[#eafe07]'>free</span> during the <span className='font-black text-[#eafe07]'>event</span>.
+<span className='font-black text-[#eafe07]'>Each year</span>, the NASA International Space Apps Challenge <span className='font-black text-[#eafe07]'>Global Organizing Team</span> collaborates with <span className='font-black text-[#eafe07]'>organizations</span> from around the world to provide <span className='font-black text-[#eafe07]'>participants</span> and/or <span className='font-black text-[#eafe07]'>Local Leads</span> with tools and resources that enable the creation of <span className='font-black text-[#eafe07]'>solutions</span>. These tools and resources can be used for free during the event.
       </motion.p>
     </div>
 
-      <Slider className='my-10 w-full bg-white bg-opacity-10 py-2 flex flex-row items-center justify-around' {...sliderSettings}>
+      <Slider className='slick-slide py-2 h-ful w-full flex flex-row items-center justify-around bg-black bg-opacity-50' {...sliderSettings}>
         {logos.map((logo) => (
           <div key={logo.id} className="w-[120px] h-[120px]"> {/* Adjust width and height as needed */}
           <a href={logo.link} target="_blank" rel="noopener noreferrer">
             <img
               src={logo.src}
               alt={`Logo ${logo.id}`}
-              className=" relative top-2 aspect-ratio-auto w-[60px] h-[60px] gap-2 md:w-[70px] md:h-[70px] lg:w-[180px] lg:h-[100px] object-contain"
+              className=" relative top-2 aspect-ratio-auto w-[120px] h-[110px] gap-2 md:w-[130px] md:h-[110px] lg:w-[230px] lg:h-[110px] object-contain"
             />
             </a>
           </div>

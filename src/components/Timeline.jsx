@@ -6,7 +6,7 @@ import 'react-vertical-timeline-component/style.min.css';
 import { events } from "../constants";
 import { motion } from 'framer-motion';
 import {fadeIn} from '../utils/motion';
-import backgroundImage from '/hey.png';
+import backgroundImage from '/timelineBg.png';
 
 
 
@@ -61,7 +61,7 @@ const EventCard = ({ event }) => (
       ))}
     </ul>
 
-    <a className='pointer' href=''><button className='pointer bg-black px-3 py-2 text-white rounded-md text-md font-semibold font-overpass tracking-snug' style={{ cursor: 'pointer' }}>Learn More</button></a>
+    <a target='_blank' className='pointer btn' href={event.links}><button className='pointer bg-black px-3 py-2 text-white rounded-md text-md font-semibold font-overpass tracking-snug' style={{ cursor: 'pointer' }}>Learn More</button></a>
 
   </VerticalTimelineElement>
 );

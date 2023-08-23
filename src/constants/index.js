@@ -8,6 +8,7 @@ export const events = [
     ],
     date: "06/10/2023 • 6PM",
       iconBg: "#000000",
+      links: "/day-one"
   },
   {
     icon : "./hackathon.png",
@@ -18,6 +19,7 @@ export const events = [
     ],
     date: "07/10/2023 ",
     iconBg: "#000000",
+    links: "/day-two"
   },
   {
     icon : "./trophy.png",
@@ -27,9 +29,171 @@ export const events = [
           "Day 3 of the hackathon features team acknowledgment, global live sessions, closing ceremony and results announcement, submission of draft presentations, practice presentations and feedback, final presentations, judges' deliberation, and feedback session."
     ],
     date: "08/10/2023",
-    iconBg:"#000000"
+    iconBg:"#000000",
+    links: "/day-three"
   },
 ];
+
+
+export const dayones = [
+  {
+    icon : "./clipboard.png",
+    day: "18:00",
+    title : "Registration Check and Opening Ceremony",
+    points: [
+"Participants register themselves at the Engineering Building desk to collect IDs, T-Shirts and Merchandise."    ],
+    
+      iconBg: "#000000",
+  },
+  
+  {
+    icon : "./informative.png",
+    day: "18:30",
+    title : "HACK101",
+    points: [
+"NASA Space Apps Challenge 2023 Itinerary and Problem statements would be discussed (in detail) Participants would be introduced to NASA Open Data, judging criteria and other helpful resources."    ],
+    
+      iconBg: "#000000",
+  },
+  
+  {
+    icon : "./brainstorm.png",
+    day: "19:15",
+    title : "PITCH101 and Pitches",
+    points: [
+"First it is explained, how to give a pitch, for which each participant will be given a maximum of 30 seconds. Everyone is welcome to get in a queue and one by one pitch own idea and need on the stage. This is a good way to lookout for skilled team mates that can collaborate.."    ],
+      iconBg: "#000000",
+  },
+  
+  {
+    icon : "./rocket.png",
+    day: "20:00",
+    title : "The Hack begins officially... starting with Ice Breaking Sessions",
+    points: [
+"Networking sessions to help participants find teammates and approach for collaboration after Pitches"    ],
+      iconBg: "#000000",
+  },{
+    icon : "./coffee-cup.png",
+    day: "23:00",
+    title : "Fuel up, the night is young",
+    points: [
+"Survival is a prerequisite for creating overnight marvels."    ],
+      iconBg: "#000000",
+  },
+]
+
+export const daytwos = [
+  {
+    icon : "./conversation.png",
+    day: "10:00",
+    title : "Mentor Hours (10 AM -10 PM)",
+    points: [
+"Mentors from diverse backgrounds would be accessible to all the participants (first come-first served basis)"    
+    ],
+      iconBg: "#000000",
+  },
+  
+  {
+    icon : "./qa.png",
+    day: "11:00",
+    title : "Resume Hacking - Industry Session (Open for all)",
+    points: [
+'A live Q/A with industry experts on the current state of job market in Ireland and what all students in various domains of STEAM can do to land a job followed by a session on Resume Building'    
+    ],
+      iconBg: "#000000",
+  },
+  
+  {
+    icon : "./lunch-time.png",
+    day: "13:00",
+    title : "Lunch Time",
+    points: [
+"Grab your Lunch Coupons from the organizers and make sure to refill."     
+    ],
+ iconBg: "#000000",
+  },
+  
+  {
+    icon : "./meeting.png",
+    day: "19:00",
+    title : "Meeting",
+    points: [
+"Let's ALL connect again and talk about the Final Demo Day"],
+      iconBg: "#000000",
+  },{
+    icon : "./pizza.png",
+    day: "21:00",
+    title : "Dinner Break",
+    points: [
+'Hackers in the hacker house need fuel to survive. Pizza on the house.'
+],
+      iconBg: "#000000",
+  },
+]
+
+export const daythrees = [
+  {
+    icon : "./acknowledgement.png",
+    day: "06:00",
+    title : "Team Acknowledgement",
+    points: [
+"Presentation schedule generated according to the confirmation of final teams and team members list."   
+ ],
+      iconBg: "#000000",
+  },
+  
+  {
+    icon : "./international.png",
+    day: "06:00",
+    title : "Closing Ceremony and Results",
+    points: [
+"The most awaited moment! The Global Nominees are announced, along with the next steps." 
+   ],
+      iconBg: "#000000",
+  },
+  
+  {
+    icon : "./document.png",
+    day: "09:00",
+    title : "Submit Draft Presentations",
+    points: [
+"This is when participants submit a PDF which will be reviewed by the judges as print copy."    
+],
+ iconBg: "#000000",
+  },
+  
+  {
+    icon : "./practice.png",
+    day: "10:00",
+    title : "Practice Presentations and Feedback Session",
+    points: [
+"Time to iterate and critical feedback will be given with the help of a dry run of the final presentations."],
+      iconBg: "#000000",
+  },{
+    icon : "./lunch-time.png",
+    day: "13:00",
+    title : "Lunch",
+    points: [
+],
+      iconBg: "#000000",
+  },{
+    icon : "./presentation.png",
+    day: "14:00",
+    title : "Final Presentations Start",
+    points: [
+    "The time for the participants to show off their hard work done during the SpaceAppsChallenge!"  
+    ],
+      iconBg: "#000000",
+  },{
+    icon : "./decision.png",
+    day: "17:00",
+    title : " Judges Deliberation and Feedback Session",
+    points: [
+      "Participants will be reminded to focus on giving kind, specific and helpful feedback. Meanwhile judging scores are tallied, and judges finalize the results."
+],
+      iconBg: "#000000",
+  },
+]
 
 
 const blogs = [

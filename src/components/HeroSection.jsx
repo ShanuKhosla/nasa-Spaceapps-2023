@@ -45,9 +45,9 @@ const HeroSection = () => {
         initial="hidden"
         animate={animationComplete ? "show" : "hidden"} // Only animate when animationComplete is true
         onAnimationComplete={handleAnimationComplete} // Update the state when animation is complete
-        className="text-lg sm:text-2xl leading-relaxed font-normal font-overpass tracking-wide mt-10 text-center"
+        className="text-lg sm:text-2xl leading-relaxed font-normal font-overpass tracking-wide mt-10 text-center md:w-full max-w-[90%]"
       >
-        Explore Open Science Together,  <span className='font-extrabold text-[#eafe07]'> <a className='no-underline text-[#eafe07]' href='https://www.spaceappschallenge.org/2023/locations/athlone/' target='_blank'>Register now </a> </span>
+        Explore Open Science Together,  <span className='font-extrabold text-[#eafe07]'> <a className='no-underline text-[#eafe07]' href='https://www.spaceappschallenge.org/2023/locations/athlone/' target='_blank'>Register Now </a> </span>
       </motion.p>     
       
       <div className='mt-5'>

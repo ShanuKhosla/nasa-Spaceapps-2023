@@ -3,6 +3,7 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 import './styles/Navbar.css';
 import { motion } from 'framer-motion';
 import { navVariants } from '../utils/motion';
+import ProgressBar from "react-scroll-progress-bar";
 
 const Navbar = () => {
   const [animationComplete, setAnimationComplete] = useState(false);
@@ -39,6 +40,8 @@ const Navbar = () => {
   }, []);
 
   return (
+    <>
+
     <motion.header
       variants={navVariants}
       initial="hidden"
@@ -67,6 +70,14 @@ const Navbar = () => {
         <FaBars />
       </button>
     </motion.header>
+    <div className='progress-bar-container'>
+                <ProgressBar
+                 height="5px"
+      bgcolor="#ffffff"
+      duration="1"
+                />
+            </div>
+    </>
   );
 };
 

@@ -13,7 +13,9 @@ import Footer from './components/Footer';
 import AboutSpaceApps from './components/AboutSpaceApps';
 import Blog from './components/Blog';
 import BlogDetail from './components/BlogDetail';
-import GlobalCollaborators from './components/GlobalCollaborators';
+import DayOne from './components/DayOne';
+import DayTwo from './components/DayTwo';
+import DayThree from './components/DayThree';
 
 
 
@@ -32,6 +34,9 @@ function App() {
         <Route path="/sponsors" element={<Sponsors />} />
         <Route path="/blogs" element={<Blog />} />
         <Route path="/blogs/:title" element={<BlogDetail />} /> {/* Update the route to include "/blogs/:title" */}
+        <Route path="/day-one" element={<DayOne />} />
+        <Route path='/day-two' element={<DayTwo />} />
+        <Route path='/day-three' element={<DayThree />} />
       </Routes>
       <Footer />
     </div>
