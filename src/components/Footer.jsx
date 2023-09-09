@@ -3,37 +3,102 @@ import backgroundImage from '/starsUpscaled.png';
 
 
 const Footer = () => {
-  return (<>
-    <div 
-    style={{ backgroundImage: `url(${backgroundImage})` }}
-    className = "bg-center bg-no-repeat bg-cover px-[20px] sm:px-[40px] lg:px-[60px] py-[40px] flex flex-col gap-[30px] xl:flex-row items-start justify-between"
-    >
 
-    <div className="">
-    <p className="xl:max-w-[800px] max-w-[700px] text-justify text-md leading-snug font-overpass font-normal">
-    Space Apps is funded by NASA's <span className="font-semibold"><a className="text-[#2E96F5] no-underline" href="https://science.nasa.gov/earth-science">Earth Science Division</a></span> through a contract with <a className='font-semibold text-[#2E96F5] no-underline'  href='https://www.boozallen.com/'>Booz Allen Hamilton</a>, <a  className='font-semibold text-[#2E96F5] no-underline' href='https://www.mindgrub.com/'>Mindgrub</a>, and <a className='font-semibold text-[#2E96F5] no-underline'  href='https://www.secondmuse.com/'>SecondMuse</a>.
-    <br /><br />
-    <span className=''> Copyright ©2023 NASA | <a className='font-semibold text-[#2E96F5] no-underline' href='https://www.nasa.gov/about/highlights/HP_Privacy.html'>Privacy Policy</a> | <a className='font-semibold text-[#2E96F5] no-underline' href='https://www.spaceappschallenge.org/legal/'>Legal</a> | <a className='font-semibold text-[#2E96F5] no-underline'>Contact</a> | <a className='font-semibold text-[#2E96F5] no-underline' href='https://www.spaceappschallenge.org/resources/'>Resources</a> </span>
-</p>
-<br />
+  const currentYear = new Date().getFullYear();
 
-  </div>
+  return (
+    <>
+<div 
+className='h-full py-2 flex flex-col justify-evenly w-full gap-4 text-[#F6F4F4]'
+style={{ backgroundImage: `url(${backgroundImage})` }}
+>
+  <div className='flex flex-col lg:flex-row lg:items-center lg:justify-evenly text-[14px] gap-1 px-[5%] py-[1%] '>
+      <div className=''>
+        <div className='flex flex-col gap-2 items-center justify-evenly'>
+        <img className='' src='./spaceapps_Logo.png' width={180}/>
+        <p className='w-[80%] sm:w-[62%] lg:w-[220px] mt-1 text-justify leading-snug font-overpass font-normal mt-1 mb-6'>
+        Space Apps is funded by NASA's <span className="font-semibold"><a className="text-[#2E96F5] no-underline" href="https://science.nasa.gov/earth-science">Earth Science Division</a></span> through a contract with <a className='font-semibold text-[#2E96F5] no-underline'  href='https://www.boozallen.com/'>Booz Allen Hamilton</a>, <a  className='font-semibold text-[#2E96F5] no-underline' href='https://www.mindgrub.com/'>Mindgrub</a>, and <a className='font-semibold text-[#2E96F5] no-underline'  href='https://www.secondmuse.com/'>SecondMuse</a>.
+                </p>
+        </div>
 
-  <hr className='visible lg:hidden w-full'/>
+        <div className='flex gap-3 relative right-1 flex-row items-center justify-between mb-6 '>
+          <a href='https://www.facebook.com/spaceapps.athlone'><img className='hover:scale-110 transition-transform ease-in-out duration-800' width={40}  src='facebook.png' /></a>
+          <a href='https://www.instagram.com/spaceapps_athlone'><img className='hover:scale-110 transition-transform ease-in-out duration-800' width={40}  src='instagram.png' /></a>
+          <a href='https://www.linkedin.com/company/spaceapps-hackathlone/'><img className='hover:scale-110 transition-transform ease-in-out duration-800' width={40}  src='linkedin.png' /></a>
+          <a href='https://twitter.com/hack_athlone'><img className='hover:scale-110 transition-transform ease-in-out duration-800' width={40} src='twitter.png' /></a>
+        </div>
 
-  <div className=" flex flex-col items-center justify-between gap-4">
-    <div>
-      <p className="max-w-[400px] text-md leading-snug font-overpass font-normal ">Connect with #SpaceAppsAthlone</p>
-    </div>
-    <div className="flex flex-row items-center gap-8">
-      <a href='https://www.facebook.com/spaceapps.athlone'><img className="w-[52px]" src="/facebook.png" /></a>
-      <a href='https://twitter.com/hack_athlone'><img className="w-[52px] " src="/twitter.png" /></a>
-      <a href='https://www.instagram.com/spaceapps_athlone'><img className="w-[52px] " src="/instagram.png" /></a>
-    </div>
-  </div>
+        {/* <div className='flex items-center flex-col justify-center lg:items-start'>
+          <h2 className='font-overpass font-bold text-lg tracking-snug mb-1'>Contact Us</h2>
+          <div className='flex flex-row items-center gap-4 mb-1'>
+            <img width={22} src='./phone.png' alt='phone icon' />
+            <p className='font-overpass font-semibold text-[15px]'>+353 831 148 266</p>
+          </div> 
+          
+          <div className='flex flex-row items-center gap-5 mb-1'>
+            <img width={20} src='./email.png' alt='email icon' />
+            <p className='font-overpass font-semibold text-[15px]'>info@waytoindia.com</p>
+          </div>
+        </div> */}
+        <hr className='lg:hidden mt-10' />
 
+      </div>
+
+<div className='lg:flex lg:flex-row lg:items-center w-full  lg:justify-evenly grid grid-cols-2'>
+  
+  <div className='mt-4 lg:mt-4'>
+  <h3 className='font-overpass font-bold text-xl tracking-snug mb-1 lg:mb-10'>Assets</h3>
+  <ul className='font-firaSans list-none leading-relaxed'>
+    <li className='my-2'><a className='tracking-wide no-underline text-[#f6f4f4] hover:text-[#eafe07]' href="#">lorem ipsum</a></li>
+    <li className='my-2'><a className='tracking-wide no-underline text-[#f6f4f4] hover:text-[#eafe07]' href="#">lorem ipsum</a></li>
+    <li className='my-2'><a className='tracking-wide no-underline text-[#f6f4f4] hover:text-[#eafe07]' href="#">lorem ipsum</a></li>
+    <li className='my-2'><a className='tracking-wide no-underline text-[#f6f4f4] hover:text-[#eafe07]' href="#">lorem ipsum</a></li>
+  </ul> 
 </div>
-</>);
-};
+
+<div className='mt-4 lg:mt-4 text-right lg:text-left'>
+  <h3 className='font-overpass font-bold text-xl tracking-snug mb-1 lg:mb-10 '>Loren Ipsum</h3>
+  <ul className='font-firaSans list-none  leading-relaxed'>
+    <li className='my-2'><a className='tracking-wide no-underline text-[#f6f4f4] hover:text-[#eafe07]' href="#">Blogs</a></li>
+    <li className='my-2'><a className='tracking-wide no-underline text-[#f6f4f4] hover:text-[#eafe07]' href="#">Testimonials</a></li>
+    <li className='my-2'><a className='tracking-wide no-underline text-[#f6f4f4] hover:text-[#eafe07]' href="#">About us</a></li>
+    <li className='my-2'><a className='tracking-wide no-underline text-[#f6f4f4] hover:text-[#eafe07]' href="#">Contact us</a></li>
+  </ul>
+</div>
+
+<div className='mt-6 lg:mt-4'>
+  <h3 className='font-overpass font-bold text-xl tracking-snug mb-1 lg:mb-10'>Loren Ipsum</h3>
+  <ul className='font-firaSans list-none leading-relaxed'>
+    <li className='my-2'><a className='tracking-wide no-underline text-[#f6f4f4] hover:text-[#eafe07]' href="#">Sitemap</a></li>
+    <li className='my-2'><a className='tracking-wide no-underline text-[#f6f4f4] hover:text-[#eafe07]' href="#">Feedback</a></li>
+    <li className='my-2'><a className='tracking-wide no-underline text-[#f6f4f4] hover:text-[#eafe07]' href="#">Help & FAQs</a></li>
+    <li className='my-2'><a className='tracking-wide no-underline text-[#f6f4f4] hover:text-[#eafe07]' href="#">Plan My Tour</a></li>
+  </ul>
+</div>
+
+<div className='mt-6 lg:mt-4 text-right lg:text-left'>
+  <h3 className='font-overpass font-bold text-xl tracking-snug mb-1 lg:mb-10 '>Loren Ipsum</h3>
+  <ul className='font-firaSans list-none leading-relaxed'>
+    <li className='my-2'><a className='tracking-wide no-underline text-[#f6f4f4] hover:text-[#eafe07]' href="#"> Privacy Policy</a></li>
+    <li className='my-2'><a className='tracking-wide no-underline text-[#f6f4f4] hover:text-[#eafe07]' href="#"> User Agreement</a></li>
+    <li className='my-2'><a className='tracking-wide no-underline text-[#f6f4f4] hover:text-[#eafe07]' href="#"> Terms & Conditions</a></li>
+    <li className='my-2'><a className='tracking-wide no-underline text-[#f6f4f4] hover:text-[#eafe07]' href="#"> Covid-19 Safety</a></li>
+  </ul>
+</div>
+</div>
+
+  </div>
+
+      <div className='w-full'>
+      <hr className='w-[92%] mx-auto'/>
+      <div className='flex flex-col sm:flex-row sm:flex items-center justify-between px-[5%]'>
+      <p className='font-firaSans text-center py-3'>Copyright ©2023 NASA</p>
+      <p className='font-overpass text-center py-3'>Developed by <span><a className='font-firaSans tracking-wide no-underline text-[#f6f4f4] hover:text-[#eafe07]' href='https://www.linkedin.com/in/shantanu-khosla-48b8ba21b/'>Shantanu Khosla</a></span></p>
+      </div>
+      </div>
+</div>
+    </>
+  );
+}
 
 export default Footer;

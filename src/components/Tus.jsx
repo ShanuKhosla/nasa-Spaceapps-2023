@@ -44,9 +44,9 @@ const Tus = () => {
         backgroundImage: `url(${backgroundImage})`,
         backgroundSize: '21%'
       }}
-      className="h-full w-full py-8 overflow-x-hidden bg-[#000000] bg-contain bg-repeat-y bg-right"
+      className="h-full w-full mt-20 py-8 overflow-x-hidden bg-[#000000] bg-contain bg-repeat-y bg-right"
     >
-      <div className="px-[20px] sm:px-[40px] lg:px-[60px]">
+      <div className="px-[20px] sm:px-[40px] lg:px-[60px] ">
         <motion.h1
           variants={fadeIn('right', 'tween', 0.2, 0.4)}
           initial={animationComplete ? '' : 'hidden'}

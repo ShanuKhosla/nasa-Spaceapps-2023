@@ -130,7 +130,7 @@ const ParticipationDetails = () => {
             >
               <CountUp
                 start={animationComplete ? 0 : null}
-                end={12}
+                end={13}
                 duration={1.4}
                 delay={2.2}
                 separator=","
