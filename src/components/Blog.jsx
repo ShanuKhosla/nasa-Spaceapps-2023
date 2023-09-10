@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { fadeIn } from '../utils/motion';
 import { blogs } from '../constants';
 import BlogCard from './BlogCard'; // Make sure the import is correct
-import backgroundImage from '/blogsBg.png';
+import backgroundImage from '/blogsBgd.jpg';
 
 
 const Blog = () => {
@@ -17,19 +17,28 @@ const Blog = () => {
 
   return (
     <>
+    <div
+    className='bg-center bg-no-repeat bg-cover'
+    style={{backgroundImage: `url(${backgroundImage})`}}
+    >
     <motion.div
       variants={fadeIn('down', 'tween', 0.2, 0.5)}
       initial="hidden"
       animate={animationComplete ? 'show' : 'hidden'}
       onAnimationComplete={handleAnimationComplete}
-      className="h-full px-[20px] sm:px-[40px] lg:px-[60px] py-5 header bg-center bg-no-repeat bg-cover"
-      style={{backgroundImage: `url(${backgroundImage})`}}
+      className="h-full px-[20px] sm:px-[40px] lg:px-[60px] py-5 header"
+      
     >
   
 
-      <h1 className="text-4xl xs:text-5xl lg:text-6xl text-[#FFFFFF] font-extrabold font-firaSans tracking-wider mb-2">
+      <motion.h1 
+      variants={fadeIn('down', 'tween', 0.2, 0.5)}
+          initial={animationComplete ? "" : "hidden"}
+          whileInView="show"
+          onAnimationComplete={handleAnimationComplete}
+      className="text-4xl xs:text-5xl lg:text-6xl text-[#FFFFFF] font-extrabold font-firaSans tracking-wider mb-2">
         BLOGS
-      </h1>
+      </motion.h1>
       <motion.p
         variants={fadeIn('down', 'tween', 0.7, 0.5)}
         initial="hidden"
@@ -55,6 +64,7 @@ const Blog = () => {
         ))}
       </div>
     </motion.div>
+    </div>
     </>
   );
 };

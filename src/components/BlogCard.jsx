@@ -10,11 +10,12 @@ const BlogCard = ({ image, title, summary, author, date }) => {
       <motion.div variants={fadeIn('down', 'spring', 1.2, 2)} className="">
         <Tilt
           options={{
-            max: 45,
+            max: 10,
             scale: 1,
-            speed: 450
+            speed: 50
           }}
           className="bg-[#07173F] shadow-xl rounded-2xl sm:w-[360px] w-full h-full"
+          
         >
           <div>
             <img
@@ -27,20 +28,22 @@ const BlogCard = ({ image, title, summary, author, date }) => {
   
           <div className="p-5">
             <div className="mt-1 mb-5">
-              <h2 className="text-lg sm:text-xl lg:text-2xl mb-2 font-overpass font-semibold tracking-tight">
+              <h2 className="text-lg sm:text-xl lg:text-2xl mb-2 font-overpass font-extrabold tracking-tight">
                 {title}
               </h2>
-              <p className="text-md font-overpass font-light">{summary}</p>
+              <p className="text-md font-overpass font-thin">{summary}</p>
             </div>
             <div className="flex flex-row align-center justify-between ">
               <div className="">
-                <p className="text-xs font-overpass font-light">{author}</p>
-                <p className="text-xs font-overpass font-light">{date}</p>
+                <p className="text-[15px] font-overpass font-semibold">{author}</p>
+                <p className="text-[15px] font-overpass font-semibold">{date}</p>
               </div>
-              <button className="bg-blue-500 text-white py-2 px-4 rounded-md shadow-md hover:bg-blue-600 transition-colors duration-300">
+              <button className="bg-[#07173F] rounded-md  border-1 border-white">
                 <Link 
                 style={{ textDecoration: 'none' }}
-                to={`/blogs/${encodeURIComponent(title)}`}>Read More</Link>
+                to={`/blogs/${encodeURIComponent(title)}`}
+                className=' text-[20px] font-firaSans font-semibold  py-2 px-4 rounded-md border-1 border-white hover:bg-[#eafe07] transition-colors duration-300 text-[#f6f4f4] hover:text-black'
+                >Read More</Link>
               </button>
             </div>
           </div>

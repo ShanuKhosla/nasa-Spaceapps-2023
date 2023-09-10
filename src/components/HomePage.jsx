@@ -58,7 +58,7 @@ const HomePage = () => {
         <motion.img
           onClick={handleBackToTop}
           src="/arrow-circle-up.svg"
-          className="w-[50px] fixed bottom-4 right-4 bg-blue-500 hover:bg-blue-600 text-white rounded-full"
+          className="cursor-pointer w-[50px] fixed bottom-4 right-4 bg-blue-500 hover:bg-blue-600 text-white rounded-full"
           initial="hidden"
           animate="visible"
           variants={buttonVariants}

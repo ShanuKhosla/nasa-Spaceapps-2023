@@ -196,7 +196,7 @@ export const daythrees = [
 ]
 
 
-const blogs = [
+export const blogs = [
   {
     image: "./blog1.png",
     tags: [{ name: "Technology" }],
@@ -220,5 +220,28 @@ const blogs = [
   }, 
 ];
 
-export {blogs}
+export const faqs = [
+  {
+    question: "What is Lorem Ipsum?",
+    answer:"um et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem ",
+  },   {
+    question: "What is Lorem Ipsum?",
+    answer:"um et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem ",
+  },   {
+    question: "What is Lorem Ipsum?",
+    answer:"um et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem ",
+  },   {
+    question: "What is Lorem Ipsum?",
+    answer:"um et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem ",
+  },   {
+    question: "What is Lorem Ipsum?",
+    answer:"um et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem ",
+  },   {
+    question: "What is Lorem Ipsum?",
+    answer:"um et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem ",
+  },   {
+    question: "What is Lorem Ipsum?",
+    answer:"um et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem ",
+  }, 
+]
 

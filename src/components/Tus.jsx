@@ -28,13 +28,13 @@ const Tus = () => {
   });
 
   const logos = [
-    { id: 1, src: '/australia.png' },
-    { id: 2, src: '/brazil.png' },
-    { id: 3, src: '/canada.png' },
-    { id: 4, src: '/european.png' },
-    { id: 5, src: '/isro.png' }, // Add your image URLs here
-
+    { id: 1, src: '/tus1.jpg' },
+    { id: 2, src: '/tus2.jpg' },
+    { id: 3, src: '/tus3.jpg' },
+    { id: 4, src: '/tus4.jpg' },
   ];
+
+  const [isCarouselPaused, setIsCarouselPaused] = useState(false);
 
   return (
     <>
@@ -80,15 +80,19 @@ const Tus = () => {
       <Carousel 
       showStatus={false} 
       showIndicators={false} 
-      showThumbs={false} // Issue 1: Dots instead of images below the carousel
-       // Issue 2: Centrally align images
+      showThumbs={false}
+      showArrows={false}
+      autoPlay={!isCarouselPaused}
+      infiniteLoop
+      onMouseEnter={() => setIsCarouselPaused(true)} // Pause on hover
+      onMouseLeave={() => setIsCarouselPaused(false)} // Resume on unhover
       className=''>
       {logos.map((logo) => (
-          <div key={logo.id} className="w-full h-full p-7"> {/* Adjust width and height as needed */}
+          <div key={logo.id} className="flex items-center justify-center p-7"> {/* Adjust width and height as needed */}
             <img
               src={logo.src}
               alt={`Logo ${logo.id}`}
-              className="object-contain h-full w-full"
+              className="max-h-full max-w-full"
             />
           </div>
         ))}

@@ -33,6 +33,7 @@
     "react-router-dom": "^6.14.2",
     "react-scroll-progress-bar": "^1.1.13",
     "react-slick": "^0.29.0",
+    "react-spinners": "^0.13.8",
     "react-tilt": "^0.1.4",
     "react-tilty": "^3.0.0",
     "react-vertical-timeline-component": "^3.6.0",
