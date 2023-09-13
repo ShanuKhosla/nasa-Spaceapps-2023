@@ -24,8 +24,8 @@ const FaqCard = ({index, question, answer }) => {
       initial="hidden"
       animate={animationComplete ? 'show' : 'hidden'}
       onAnimationComplete={handleAnimationComplete}
-    className="md:max-w-[80%] lg:max-w-[75%] text-xl text-black my-4 font-firaSans">
-      <div className={`${isOpen ? 'rounded-t-md' : 'rounded-md'} px-4 py-2.5 flex bg-[#eafe07]  items-center gap-5`} onClick={toggleAnswer}>
+    className="md:max-w-[80%] lg:max-w-[75%] text-xl text-black my-4">
+      <div className={`${isOpen ? 'rounded-t-md' : 'rounded-md'} px-4 py-2.5 flex bg-[#eafe07] font-firaSans items-center gap-5`} onClick={toggleAnswer}>
         <span className='relative top-0.5'>{isOpen ? <img src='./minus-sign.png' width={20} /> : <img src='plus.png' width={20} />}</span>
         {question}
       </div>
@@ -34,7 +34,7 @@ const FaqCard = ({index, question, answer }) => {
       initial="hidden"
       animate={animationComplete ? "show" : "hidden"} // Only animate when animationComplete is true
       onAnimationComplete={handleAnimationComplete}
-      className="rounded-b-md px-4 py-2 bg-[#f6f4f4]">{answer}</motion.div>}
+      className="font-overpass font-normal rounded-b-md px-4 py-2 bg-[#f6f4f4]">{answer}</motion.div>}
     </motion.div>
   );
 };
@@ -66,7 +66,7 @@ const Faqs = () => {
         initial="hidden"
         animate={animationComplete ? 'show' : 'hidden'}
         onAnimationComplete={handleAnimationComplete}
-        className="text-lg sm:text-2xl leading-relaxed font-normal font-overpass tracking-wide"
+        className="text-lg sm:text-2xl leading-relaxed font-light font-overpass tracking-wide"
       >
         Quick Answers to Your Queries
       </motion.p>
@@ -85,3 +85,4 @@ const Faqs = () => {
 }
 
 export default Faqs;
+ 

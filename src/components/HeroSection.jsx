@@ -51,19 +51,28 @@ const HeroSection = () => {
         className="text-lg sm:text-2xl leading-relaxed font-normal font-overpass tracking-wide mt-4 text-center md:w-full max-w-[80%]"
       >
         Explore Open Science Together
+        </motion.p>
         <br />
-        <a className='no-underline relative top-0.5' href='https://www.spaceappschallenge.org/2023/locations/athlone/' target='_blank'><button className='cursor-pointer text-md sm:text-xl leading-relaxed relative top-0.5 text-[#f6f4f4] font-overpass font-semibold my-3 border-2 border-solid border-sky-500 px-5 py-2 rounded-md bg-black hover:bg-[#eafe07] text-[#f6f4f4] hover:text-black transition-all duration-1000 ease-in-out'>Register Now </button></a></motion.p>     
-      
-      <div className='mt-5'>
+        <a href='https://www.spaceappschallenge.org/2023/locations/athlone/' target='_blank'>
+
+        <motion.button
+          variants={fadeIn('down', 'tween', 2.3, 0.7)}
+          initial={animationComplete ? "" : "hidden"}
+          whileInView="show"
+          onAnimationComplete={handleAnimationComplete} // Update the state when animation is complete
+          className="px-6 py-3 bg-white text-[#0042A6] text-xl md:text-2xl font-firaSans font-semibold rounded-full hover:bg-[#07173F] hover:text-white transition-colors duration-500 border-[4px] cursor-pointer border-sky-500 ">
+          Register Now
+        </motion.button>
+        </a>        
+        <div id='about' /> 
+      <div className='mt-2'>
         <a href='#about'>
         <img className='' src="scrollDown.gif" />
         </a>
       </div>
 
 
-      <div id='about'>
-
-      </div>
+      
     </motion.div>
   );
 }

@@ -8,7 +8,8 @@ export const events = [
     ],
     date: "06/10/2023 • 6PM",
       iconBg: "#000000",
-      links: "/day-one"
+      links: "/day-one",
+      button: "Explore Day 1"
   },
   {
     icon : "./hackathon.png",
@@ -19,7 +20,9 @@ export const events = [
     ],
     date: "07/10/2023 ",
     iconBg: "#000000",
-    links: "/day-two"
+    links: "/day-two",
+    button: "Explore Day 2"
+
   },
   {
     icon : "./trophy.png",
@@ -30,7 +33,9 @@ export const events = [
     ],
     date: "08/10/2023",
     iconBg:"#000000",
-    links: "/day-three"
+    links: "/day-three",
+    button: "Explore Day 3"
+
   },
 ];
 
@@ -222,26 +227,23 @@ export const blogs = [
 
 export const faqs = [
   {
-    question: "What is Lorem Ipsum?",
-    answer:"um et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem ",
-  },   {
-    question: "What is Lorem Ipsum?",
-    answer:"um et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem ",
-  },   {
-    question: "What is Lorem Ipsum?",
-    answer:"um et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem ",
-  },   {
-    question: "What is Lorem Ipsum?",
-    answer:"um et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem ",
-  },   {
-    question: "What is Lorem Ipsum?",
-    answer:"um et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem ",
-  },   {
-    question: "What is Lorem Ipsum?",
-    answer:"um et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem ",
-  },   {
-    question: "What is Lorem Ipsum?",
-    answer:"um et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem ",
+    question: "What is Hackathlone?",
+    answer: "SpaceApps Athlone, also known as HackAthlone, is one of the 300+ global locations participating in this year's NASA SpaceApps Challenge. Hosted by the Technology University of the Shannon, this event brings together participants for an intensive 48-hour collaboration session, addressing 25 problem statements spanning various STEAM fields. Established in 2012, the Space Apps Challenge has evolved into the world's largest annual hackathon, emphasizing teamwork and creativity. Its mission revolves around inspiring collaboration, nurturing interest in Earth and space sciences, promoting awareness of NASA's data, and fostering growth and diversity in the upcoming generation of scientists, engineers, technologists, and designers.",
+  },  {
+    question: "What is the theme of the 2023 Space Apps Challenge?",
+    answer:"This year's theme is 'Explore Open Science Together' in collaboration with NASA Transform to Open Science (TOPS). This theme acknowledges 2023 as A Year of Open Science - as declared by NASA, the White House, and other Federal Agencies.",
+  },  {
+    question: "Who can participate?",
+    answer:"The hackathon is open to individuals of all ages, backgrounds, and skill levels. Space Apps is for everyone, including those who have never 'hacked' before. All passionate problem solvers, from students to life-long learners, are encouraged to join. While some of our challenges are technical, others ask you to use artistic skills, business acumen, or your imagination.In other words, you do not need to be a coder or data expert to be a part of the Space Apps Challenge. In fact, teams with the most diverse sets of skills are often the most successful!",
+  },  {
+    question: "Does it cost anything to participate?",
+    answer:"No, participation in the NASA Space Apps Hackathon is free of charge.",
+  },  {
+    question: "What resources will be provided at hackathlone?",
+    answer:"All necessary technical components and F&B provisions will be made for participants",
+  },  {
+    question: "What is Virtual Bootcamp?",
+    answer:"The Space Apps Virtual Bootcamp is a series of video tutorials developed by Space Apps Navigators, Global Winners, Space Agency Partners, Local Leads, Global Collaborators, and Subject Matter Experts. At the beginning of August, videos will be posted to the Space Apps website and YouTube. Video hosts will provide tips for a successful hackathon experience and guidance regarding the Space Apps Challenge Statements, resources, and open data.",
   }, 
 ]
 

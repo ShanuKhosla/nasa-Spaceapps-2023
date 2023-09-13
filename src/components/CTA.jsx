@@ -18,6 +18,10 @@ const CTA = () => {
       className="h-full w-full px-[20px] sm:px-[40px] lg:px-[60px] py-8 md:py-[70px]  bg-center bg-no-repeat bg-cover flex flex-col items-center justify-center"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
+
+<iframe 
+className='my-10 z-10 border-2 border-slate-500 rounded-xl'
+width="1000" height="564" src="https://www.youtube.com/embed/ybgqC-gtQVw" title="Explore Open Science Together | NASA Space Apps Challenge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       <motion.h1
         variants={fadeIn('down', 'tween', 0.2, 0.7)}
         initial={animationComplete ? "" : "hidden"}
@@ -33,7 +37,7 @@ const CTA = () => {
         initial={animationComplete ? "" : "hidden"}
         whileInView="show"
         onAnimationComplete={handleAnimationComplete} // Update the state when animation is complete
-        className="px-6 py-3 bg-white text-[#0042A6] text-lg md:text-xl font-overpass font-semibold rounded-full hover:bg-[#07173F] hover:text-white transition-colors duration-300">
+        className="px-6 py-3 bg-white text-[#0042A6] text-lg md:text-2xl font-firaSans font-semibold rounded-full hover:bg-[#07173F] hover:text-white transition-colors duration-300 border-4 cursor-pointer border-sky-500 shadow-xl">
         Register Now
       </motion.button>
       </a>

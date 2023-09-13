@@ -15,7 +15,7 @@ style={{ backgroundImage: `url(${backgroundImage})` }}
   <div className='flex flex-col lg:flex-row lg:items-center lg:justify-evenly text-[14px] gap-1 px-[5%] py-[1%] '>
       <div className=''>
         <div className='flex flex-col gap-2 items-center justify-evenly'>
-        <img className='' src='./spaceapps_Logo.png' width={180}/>
+        <a className='cursor-pointer' href='/'><img className='' src='./spaceapps_Logo.png' width={180}/></a>
         <p className='w-[80%] sm:w-[62%] lg:w-[220px] mt-1 text-justify leading-snug font-overpass font-normal mt-1 mb-6'>
         Space Apps is funded by NASA's <span className="font-semibold"><a className="text-[#2E96F5] no-underline" href="https://science.nasa.gov/earth-science">Earth Science Division</a></span> through a contract with <a className='font-semibold text-[#2E96F5] no-underline'  href='https://www.boozallen.com/'>Booz Allen Hamilton</a>, <a  className='font-semibold text-[#2E96F5] no-underline' href='https://www.mindgrub.com/'>Mindgrub</a>, and <a className='font-semibold text-[#2E96F5] no-underline'  href='https://www.secondmuse.com/'>SecondMuse</a>.
                 </p>
@@ -47,7 +47,7 @@ style={{ backgroundImage: `url(${backgroundImage})` }}
 <div className='lg:flex lg:flex-row lg:items-center w-full  lg:justify-evenly grid grid-cols-2'>
   
   <div className='mt-4 lg:mt-4'>
-  <h3 className='font-overpass font-bold text-xl tracking-snug mb-1 lg:mb-10'>Assets</h3>
+  <h3 className='font-overpass font-bold text-xl tracking-snug mb-1 lg:mb-10'>Resources</h3>
   <ul className='font-firaSans list-none leading-relaxed'>
     <li className='my-2'><a className='tracking-wide no-underline text-[#f6f4f4] hover:text-[#eafe07]' href="#">lorem ipsum</a></li>
     <li className='my-2'><a className='tracking-wide no-underline text-[#f6f4f4] hover:text-[#eafe07]' href="#">lorem ipsum</a></li>
@@ -77,7 +77,7 @@ style={{ backgroundImage: `url(${backgroundImage})` }}
 </div>
 
 <div className='mt-6 lg:mt-4 text-right lg:text-left'>
-  <h3 className='font-overpass font-bold text-xl tracking-snug mb-1 lg:mb-10 '>Loren Ipsum</h3>
+  <h3 className='font-overpass font-bold text-xl tracking-snug mb-1 lg:mb-10 '>Terms & Policies</h3>
   <ul className='font-firaSans list-none leading-relaxed'>
     <li className='my-2'><a className='tracking-wide no-underline text-[#f6f4f4] hover:text-[#eafe07]' href="#"> Privacy Policy</a></li>
     <li className='my-2'><a className='tracking-wide no-underline text-[#f6f4f4] hover:text-[#eafe07]' href="#"> User Agreement</a></li>

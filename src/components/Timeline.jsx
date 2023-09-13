@@ -61,7 +61,7 @@ const EventCard = ({ event }) => (
       ))}
     </ul>
 
-    <a target='_blank' className='pointer btn' href={event.links}><button className='pointer bg-black px-3 py-2 text-white rounded-md text-md font-semibold font-overpass tracking-snug' style={{ cursor: 'pointer' }}>Learn More</button></a>
+    <a target='_blank' className='pointer btn' href={event.links}><button className='pointer bg-black px-3 py-2 text-white rounded-md text-md font-semibold font-overpass tracking-snug' style={{ cursor: 'pointer' }}>{event.button}</button></a>
 
   </VerticalTimelineElement>
 );
