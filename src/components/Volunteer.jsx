@@ -20,7 +20,7 @@ const Volunteer = () => {
         initial={animationComplete ? "" : "hidden"}
         whileInView="show"
         onAnimationComplete={handleAnimationComplete}
-        className="text-4xl  xs:text-5xl lg:text-6xl text-[#FFFFFF] font-extrabold font-firaSans tracking-wider mb-2"        >
+        className="text-4xl  xs:text-5xl lg:text-6xl text-[#FFFFFF] font-extrabold font-firaSans tracking-wider mb-2">
         VOLUNTEER PAGE
       </motion.h1>
     </motion.div>

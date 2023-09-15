@@ -41,7 +41,7 @@ const Navbar = () => {
 
   return (
     <>
-
+      
     <motion.header
       variants={navVariants}
       initial="hidden"
@@ -55,7 +55,7 @@ const Navbar = () => {
         <img src="/deeduLogo.png" className="object-contain relative right-3 lg:right-[65px] h-[120px] w-[120px] sm:h-[150px] sm:w-[190px]" alt="Logo" />
       </a>
       <nav
-      ref={navRef} className={`font-overpass fixed right-10`}>
+      ref={navRef} className={`font-overpass fixed right-10 lg:top-6`}>
         <a href="/">HOME</a>
         <a href="/blogs">BLOGS</a>
         <a href="https://docs.google.com/forms/d/1EYUQxLAllIdm3bygjkTN76sDyDh9SxiAeS3DbMIqQp0/viewform?edit_requested=true">VOLUNTEER</a>

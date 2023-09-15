@@ -25,17 +25,17 @@ const BlogDetail = () => {
     style={{backgroundImage: `url(${backgroundImage})`}}
     className="flex flex-col items-start justify-center p-2">
     <div
-    className='mx-auto max-w-[70%]'
+    className='mx-auto max-w-[75%]'
     >
 
       <h2 className="text-4xl xs:text-5xl lg:text-6xl font-extrabold font-firaSans tracking-wider mb-2">
         {title}
       </h2>
-      <div className="my-3">
-        <p className="max-w-full text-md  leading-snug font-overpass font-normal tracking-wide text-white">
+      <div className="mt-3 mb-8">
+        <p className="max-w-full text-md  leading-snug font-overpass font-bold tracking-wide text-white">
           {author}
         </p>
-        <p className="max-w-full text-md  leading-snug font-overpass font-normal tracking-wide text-white">
+        <p className="max-w-full text-md  leading-snug font-overpass font-bold tracking-wide text-white">
           {date}
         </p>
       </div>
