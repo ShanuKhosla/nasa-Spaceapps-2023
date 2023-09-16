@@ -203,11 +203,11 @@ export const daythrees = [
 
 export const blogs = [
   {
-    image: "./blog1.png",
+    image: "./blog1.jpg",
     tags: [{ name: "Technology" }],
     title: "The Importance of Diversity in Space Exploration",
     summary:
-      "Space exploration's success and inclusivity depend on diversity. Embracing varied perspectives, backgrounds, and talents advances our understanding of the universe and fosters a fair and equitable future.",
+      "Valuing diverse perspectives, backgrounds, talents, and experiences amplifies our comprehension of the universe and nurtures a just and equitable future for everyone, making space exploration more successful and inclusive.",
       points: [
         "Space exploration is one of the most important endeavors of our time. It has the potential to transform our understanding of the universe, and help us develop new technologies that can benefit humanity as a whole. But to reach its full potential, space exploration must be inclusive and diverse.",
         "Diversity in spatial analysis is important for many different reasons. First, it can bring a broader perspective on the challenges of spatial exploration. With teams of scientists, engineers and astronauts, we are able to think critically and solve problems in new and innovative ways.",
@@ -219,11 +219,12 @@ export const blogs = [
         "In the early days of the space program, women were excluded from many important roles. However, many women, such as Catherine Johnson and Margaret Hamilton, were able to make important contributions. Their work contributed to the success of the Apollo mission.",
         "In recent years, there has been a growing movement to increase the number of people of color in the space program. This group has been able to bring more diversity to the program, as well as help inspire young people of color to pursue careers in STEM fields. There is also a growing movement to increase the number of people with disabilities in the space program. This movement is important because it shows that people with disabilities can be as successful as anyone else in the space.",
         "These are just a few examples of how diversity has helped advance space exploration. As we explore the universe, it is important to continuously increase the diversity of the spatial system. This will help us reach our full potential in the space, and help create an inclusive and equitable society.",
+        
       ],
     author: "Mitrashi Das",
     date: "Aug 04, 2023",
   }, {
-    image: "./blog1.png",
+    image: "./blog2.jpg",
     tags: [{ name: "Technology" }],
     title: "Here's How to Register for SpaceApps 2023!",
     summary:
@@ -251,11 +252,11 @@ export const blogs = [
         
       ],
     author: "Shaiv Mehrotra",
-    date: "Sep 14, 2023",
+    date: "Aug 24, 2023",
   },  {
-    image: "./blog1.png",
+    image: "./blog3.jpg",
     tags: [{ name: "Technology" }],
-    title: "Navigating the SpaceApps Hackathon Challenges: A Guide to Choosing Your Path",
+    title: "Navigating the SpaceApps Hackathon Challenges",
     summary:
       "Explore NASA's SpaceApps Challenge 2023 with 31 unique challenges across four domains: Space Exploration, Creative, Data Science, and Game Development. Tailor your cosmic journey by selecting challenges based on difficulty and your passion.",
       points: [

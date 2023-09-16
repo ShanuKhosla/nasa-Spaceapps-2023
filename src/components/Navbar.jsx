@@ -7,7 +7,18 @@ import ProgressBar from "react-scroll-progress-bar";
 
 const Navbar = () => {
   const [animationComplete, setAnimationComplete] = useState(false);
-  const [scrolled, setScrolled] = useState(false); // State to track if the user has scrolled
+  const [scrolled, setScrolled] = useState(false);// State to track if the user has scrolled
+  const [showPopup, setShowPopup] = useState(false);
+
+  const handleMouseEnter = () => {
+    setShowPopup(true);
+    console.log("hovered");
+  };
+
+  const handleMouseLeave = () => {
+    setShowPopup(false);
+  };
+
 
   const handleAnimationComplete = () => {
     setAnimationComplete(true);
@@ -55,10 +66,17 @@ const Navbar = () => {
         <img src="/deeduLogo.png" className="object-contain relative right-3 lg:right-[65px] h-[120px] w-[120px] sm:h-[150px] sm:w-[190px]" alt="Logo" />
       </a>
       <nav
-      ref={navRef} className={`font-overpass fixed right-10 lg:top-6`}>
+      ref={navRef} className={`font-overpass fixed right-10 xl:top-6`}>
         <a href="/">HOME</a>
         <a href="/blogs">BLOGS</a>
-        <a href="https://docs.google.com/forms/d/1EYUQxLAllIdm3bygjkTN76sDyDh9SxiAeS3DbMIqQp0/viewform?edit_requested=true">VOLUNTEER</a>
+        {/* <a href="https://docs.google.com/forms/d/1EYUQxLAllIdm3bygjkTN76sDyDh9SxiAeS3DbMIqQp0/viewform?edit_requested=true">VOLUNTEER</a> */}
+        <a
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+         href="">VOLUNTEER</a>
+         {showPopup && <div className='bg-white h-10 w-10'>
+
+         </div>}
         <a href="/faq">FAQ's</a>
         <a href="/contact">CONTACT</a>
         {isTabletView && (
