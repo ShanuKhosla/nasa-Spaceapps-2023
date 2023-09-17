@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Tilt } from 'react-tilt';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../utils/motion';
 import { blogs } from '../constants';
@@ -60,6 +58,7 @@ const Blog = () => {
             summary={blog.summary}
             author={blog.author}
             date={blog.date}
+            link={blog.link}
           />
         ))}
       </div>

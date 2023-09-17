@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { fadeIn } from '../utils/motion';
 import { blogs } from '../constants';
 
-const BlogCard = ({ image, title, summary, author, date }) => {
+const BlogCard = ({ image, title, summary, author, date, link }) => {
     return (
       <motion.div variants={fadeIn('down', 'spring', 1.2, 2)} className="">
         <Tilt
@@ -38,13 +38,11 @@ const BlogCard = ({ image, title, summary, author, date }) => {
                 <p className="text-[15px] font-overpass font-semibold">{author}</p>
                 <p className="text-[15px] font-overpass font-semibold">{date}</p>
               </div>
-              <button className="bg-[#07173F] rounded-md  border-1 border-white">
-                <Link 
-                style={{ textDecoration: 'none' }}
-                to={`/blogs/${encodeURIComponent(title)}`}
-                className=' text-[20px] font-firaSans font-semibold  py-2 px-4 rounded-md border-1 border-white hover:bg-[#eafe07] transition-colors duration-300 text-[#f6f4f4] hover:text-black'
-                >Read More</Link>
+              <Link className='' to={link}>
+              <button className="bg-[#07173F] text-xl font-firaSans cursor-pointer hover:bg-[#eafe07] hover:text-black transition duration-700 px-4 py-1 rounded-md border-1 border-white">
+                Read More
               </button>
+            </Link>
             </div>
           </div>
         </Tilt>

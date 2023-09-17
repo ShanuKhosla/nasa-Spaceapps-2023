@@ -44,45 +44,46 @@ style={{ backgroundImage: `url(${backgroundImage})` }}
 
       </div>
 
-<div className='lg:flex lg:flex-row lg:items-center w-full  lg:justify-evenly grid grid-cols-2'>
+<div className='lg:flex lg:flex-row lg:items-start w-full  lg:justify-evenly grid grid-cols-2'>
   
   <div className='mt-4 lg:mt-4'>
-  <h3 className='font-overpass font-bold text-xl tracking-snug mb-1 lg:mb-10'>Resources</h3>
+  <h3 className='font-overpass font-bold text-xl tracking-snug mb-1 lg:mb-10'>Participation Kit</h3>
   <ul className='font-firaSans list-none leading-relaxed'>
+    {/* <li className='my-2'><a className='tracking-wide no-underline text-[#f6f4f4] hover:text-[#eafe07]' href="#">lorem ipsum</a></li>
     <li className='my-2'><a className='tracking-wide no-underline text-[#f6f4f4] hover:text-[#eafe07]' href="#">lorem ipsum</a></li>
     <li className='my-2'><a className='tracking-wide no-underline text-[#f6f4f4] hover:text-[#eafe07]' href="#">lorem ipsum</a></li>
-    <li className='my-2'><a className='tracking-wide no-underline text-[#f6f4f4] hover:text-[#eafe07]' href="#">lorem ipsum</a></li>
-    <li className='my-2'><a className='tracking-wide no-underline text-[#f6f4f4] hover:text-[#eafe07]' href="#">lorem ipsum</a></li>
+    <li className='my-2'><a className='tracking-wide no-underline text-[#f6f4f4] hover:text-[#eafe07]' href="#">lorem ipsum</a></li> */}
   </ul> 
 </div>
 
 <div className='mt-4 lg:mt-4 text-right lg:text-left'>
-  <h3 className='font-overpass font-bold text-xl tracking-snug mb-1 lg:mb-10 '>Loren Ipsum</h3>
+  <h3 className='font-overpass font-bold text-xl tracking-snug mb-1 lg:mb-10 '>Past Event</h3>
   <ul className='font-firaSans list-none  leading-relaxed'>
-    <li className='my-2'><a className='tracking-wide no-underline text-[#f6f4f4] hover:text-[#eafe07]' href="#">Blogs</a></li>
-    <li className='my-2'><a className='tracking-wide no-underline text-[#f6f4f4] hover:text-[#eafe07]' href="#">Testimonials</a></li>
-    <li className='my-2'><a className='tracking-wide no-underline text-[#f6f4f4] hover:text-[#eafe07]' href="#">About us</a></li>
-    <li className='my-2'><a className='tracking-wide no-underline text-[#f6f4f4] hover:text-[#eafe07]' href="#">Contact us</a></li>
+    <li className='my-2'><a className='tracking-wide no-underline text-[#f6f4f4] hover:text-[#eafe07]' href="https://www.youtube.com/watch?v=n_KqGdnlOcU">Opening Ceremony</a></li>
+    <li className='my-2'><a className='tracking-wide no-underline text-[#f6f4f4] hover:text-[#eafe07]' href="https://www.youtube.com/watch?v=zFdhwgOyqho">Mentor Sessions</a></li>
+    <li className='my-2'><a className='tracking-wide no-underline text-[#f6f4f4] hover:text-[#eafe07]' href="https://www.youtube.com/watch?v=EjbDhhmpgEk">Practice Presentations</a></li>
+    <li className='my-2'><a className='tracking-wide no-underline text-[#f6f4f4] hover:text-[#eafe07]' href="https://www.youtube.com/watch?v=CFN7ewwBYT0">Closing Ceremony</a></li>
   </ul>
 </div>
 
 <div className='mt-6 lg:mt-4'>
-  <h3 className='font-overpass font-bold text-xl tracking-snug mb-1 lg:mb-10'>Loren Ipsum</h3>
+  <h3 className='font-overpass font-bold text-xl tracking-snug mb-1 lg:mb-10'>Contact & Support</h3>
   <ul className='font-firaSans list-none leading-relaxed'>
-    <li className='my-2'><a className='tracking-wide no-underline text-[#f6f4f4] hover:text-[#eafe07]' href="#">Sitemap</a></li>
-    <li className='my-2'><a className='tracking-wide no-underline text-[#f6f4f4] hover:text-[#eafe07]' href="#">Feedback</a></li>
+    <li className='my-2'><a className='tracking-wide no-underline text-[#f6f4f4] hover:text-[#eafe07]' href="#">About us</a></li>
     <li className='my-2'><a className='tracking-wide no-underline text-[#f6f4f4] hover:text-[#eafe07]' href="#">Help & FAQs</a></li>
-    <li className='my-2'><a className='tracking-wide no-underline text-[#f6f4f4] hover:text-[#eafe07]' href="#">Plan My Tour</a></li>
+    <li className='my-2'><a className='tracking-wide no-underline text-[#f6f4f4] hover:text-[#eafe07]' href="#">Contact us</a></li>
+    {/* <li className='my-2'><a className='tracking-wide no-underline text-[#f6f4f4] hover:text-[#eafe07]' href="#">Sitemap</a></li> */}
+    {/* <li className='my-2'><a className='tracking-wide no-underline text-[#f6f4f4] hover:text-[#eafe07]' href="#">Feedback</a></li> */}
+    {/* <li className='my-2'><a className='tracking-wide no-underline text-[#f6f4f4] hover:text-[#eafe07]' href="#">Plan My Tour</a></li> */}
   </ul>
 </div>
 
 <div className='mt-6 lg:mt-4 text-right lg:text-left'>
   <h3 className='font-overpass font-bold text-xl tracking-snug mb-1 lg:mb-10 '>Terms & Policies</h3>
   <ul className='font-firaSans list-none leading-relaxed'>
-    <li className='my-2'><a className='tracking-wide no-underline text-[#f6f4f4] hover:text-[#eafe07]' href="#"> Privacy Policy</a></li>
-    <li className='my-2'><a className='tracking-wide no-underline text-[#f6f4f4] hover:text-[#eafe07]' href="#"> User Agreement</a></li>
-    <li className='my-2'><a className='tracking-wide no-underline text-[#f6f4f4] hover:text-[#eafe07]' href="#"> Terms & Conditions</a></li>
-    <li className='my-2'><a className='tracking-wide no-underline text-[#f6f4f4] hover:text-[#eafe07]' href="#"> Covid-19 Safety</a></li>
+    <li className='my-2'><a className='tracking-wide no-underline text-[#f6f4f4] hover:text-[#eafe07]' target='_blank' href="https://www.nasa.gov/about/highlights/HP_Privacy.html"> Privacy Policy</a></li>
+    <li className='my-2'><a className='tracking-wide no-underline text-[#f6f4f4] hover:text-[#eafe07]' target='_blank' href="https://www.spaceappschallenge.org/legal/"> Terms & Conditions</a></li>
+    {/* <li className='my-2'><a className='tracking-wide no-underline text-[#f6f4f4] hover:text-[#eafe07]' target='_blank' href="#"> Covid-19 Safety</a></li> */}
   </ul>
 </div>
 </div>

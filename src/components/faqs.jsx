@@ -79,6 +79,7 @@ const Faqs = () => {
           />
         ))}
       </div>
+      <p className=''><a className='no-underline text-lg sm:text-xl leading-relaxed font-bold font-firaSans tracking-wide text-[#f6f4f4] hover:text-[#eafe07] transition ease duration-500' href='/contact'>Have more questions? Reach out to our team for assistance.</a></p>
       </motion.div>
       </>
   );

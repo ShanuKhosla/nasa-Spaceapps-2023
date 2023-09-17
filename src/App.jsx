@@ -16,6 +16,9 @@ import BlogDetail from './components/BlogDetail';
 import DayOne from './components/DayOne';
 import DayTwo from './components/DayTwo';
 import DayThree from './components/DayThree';
+import SpaceExploration from './components/SpaceExploration';
+import HowToRegister from './components/HowToRegister';
+import SpaceappsChallengesGuide from './components/SpaceappsChallengesGuide';
 
 
 
@@ -33,6 +36,9 @@ function App() {
         <Route path="/volunteer" element={<Volunteer />} />
         <Route path="/sponsors" element={<Sponsors />} />
         <Route path="/blogs" element={<Blog />} />
+        <Route path="/spaceexploration" element={<SpaceExploration />} />
+        <Route path="/howToRegister" element={<HowToRegister />} />
+        <Route path="/challenges" element={<SpaceappsChallengesGuide />} />
         <Route path="/blogs/:title" element={<BlogDetail />} /> {/* Update the route to include "/blogs/:title" */}
         <Route path="/day-one" element={<DayOne />} />
         <Route path='/day-two' element={<DayTwo />} />

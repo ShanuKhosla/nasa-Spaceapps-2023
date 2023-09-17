@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
 import backgroundImage from '/spaceAgencies.png';
+import { motion } from 'framer-motion';
 import { fadeIn } from '../utils/motion';
 import './styles/CustomTexts.css';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';

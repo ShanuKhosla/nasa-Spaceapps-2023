@@ -63,20 +63,14 @@ const Navbar = () => {
 >
 
       <a href="/">
-        <img src="/deeduLogo.png" className="object-contain relative right-3 lg:right-[65px] h-[120px] w-[120px] sm:h-[150px] sm:w-[190px]" alt="Logo" />
+        <img src="/DeeduLogo1.png" className="object-contain relative right-3 lg:right-[65px] h-[120px] w-[120px] sm:h-[140px] sm:w-[180px]" alt="Logo" />
       </a>
       <nav
       ref={navRef} className={`font-overpass fixed right-10 xl:top-6`}>
         <a href="/">HOME</a>
         <a href="/blogs">BLOGS</a>
         {/* <a href="https://docs.google.com/forms/d/1EYUQxLAllIdm3bygjkTN76sDyDh9SxiAeS3DbMIqQp0/viewform?edit_requested=true">VOLUNTEER</a> */}
-        <a
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-         href="">VOLUNTEER</a>
-         {showPopup && <div className='bg-white h-10 w-10'>
-
-         </div>}
+        <a href="/volunteer">VOLUNTEER</a>
         <a href="/faq">FAQ's</a>
         <a href="/contact">CONTACT</a>
         {isTabletView && (

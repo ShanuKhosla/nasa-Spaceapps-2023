@@ -223,6 +223,7 @@ export const blogs = [
       ],
     author: "Mitrashi Das",
     date: "Aug 04, 2023",
+    link: "/spaceexploration",
   }, {
     image: "./blog2.jpg",
     tags: [{ name: "Technology" }],
@@ -253,6 +254,8 @@ export const blogs = [
       ],
     author: "Shaiv Mehrotra",
     date: "Aug 24, 2023",
+    link: "/howToRegister",
+
   },  {
     image: "./blog3.jpg",
     tags: [{ name: "Technology" }],
@@ -287,6 +290,8 @@ export const blogs = [
         ],
     author: "Shaiv Mehrotra",
     date: "Sep 14, 2023",
+    link: "/challenges",
+
   }, 
 ];
 
