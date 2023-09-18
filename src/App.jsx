@@ -39,7 +39,6 @@ function App() {
         <Route path="/spaceexploration" element={<SpaceExploration />} />
         <Route path="/howToRegister" element={<HowToRegister />} />
         <Route path="/challenges" element={<SpaceappsChallengesGuide />} />
-        <Route path="/blogs/:title" element={<BlogDetail />} /> {/* Update the route to include "/blogs/:title" */}
         <Route path="/day-one" element={<DayOne />} />
         <Route path='/day-two' element={<DayTwo />} />
         <Route path='/day-three' element={<DayThree />} />

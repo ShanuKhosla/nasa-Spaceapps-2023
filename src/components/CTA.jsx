@@ -30,9 +30,11 @@ const CTA = () => {
       className="h-full w-full px-[20px] sm:px-[40px] lg:px-[60px] py-8 md:py-[70px]  bg-center bg-no-repeat bg-cover flex flex-col items-center justify-center"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
+
+
 <iframe 
 className='my-10 border-2 border-slate-500 rounded-xl max-w-[100%]  md:max-w-[100%] md:h-[491px]'
-width="873" height="315" src="https://www.youtube.com/embed/mSvwzg9xDwQ?si=UTdBdkF3ExgKT0Er" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+width="873" height="315" src="https://www.youtube.com/embed/lUuRRAFhfM0?si=x0y6FHF4p_xhX7dN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       <motion.h1
         variants={fadeIn('down', 'tween', 0.2, 0.7)}
         initial={animationComplete ? "" : "hidden"}
@@ -53,7 +55,7 @@ width="873" height="315" src="https://www.youtube.com/embed/mSvwzg9xDwQ?si=UTdBd
       </motion.button>
       </a>      
       
-      <a href='https://www.hackathlone.com/blogs/The%20Importance%20of%20Diversity%20in%20Space%20Exploration' target='_blank'>
+      <a href='/challenges' target='_blank'>
         <motion.button
           variants={fadeIn('right', 'tween', 0.2, 0.7)}
           initial={animationComplete ? "" : "hidden"}

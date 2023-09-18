@@ -129,7 +129,7 @@ const HeroSection = () => {
           Register Now
         </motion.button>        
         </a>        
-        <a href="https://www.hackathlone.com/blogs/Here's%20How%20to%20Register%20for%20SpaceApps%202023!" target='_blank'>
+        <a href="/challenges" target='_blank'>
         <motion.button
           variants={fadeIn('right', 'tween', 2.9, 0.5)}
           initial={animationComplete ? "" : "hidden"}

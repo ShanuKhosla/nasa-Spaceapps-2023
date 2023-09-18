@@ -6,6 +6,13 @@ import { fadeIn } from '../utils/motion';
 import { blogs } from '../constants';
 
 const BlogCard = ({ image, title, summary, author, date, link }) => {
+
+  const handleReadMoreClick = () => {
+    // Scroll to the top of the page
+    window.scrollTo(0, 0);
+  };
+
+
     return (
       <motion.div variants={fadeIn('down', 'spring', 1.2, 2)} className="">
         <Tilt
@@ -38,7 +45,7 @@ const BlogCard = ({ image, title, summary, author, date, link }) => {
                 <p className="text-[15px] font-overpass font-semibold">{author}</p>
                 <p className="text-[15px] font-overpass font-semibold">{date}</p>
               </div>
-              <Link className='' to={link}>
+              <Link className='' to={link} onClick={handleReadMoreClick}>
               <button className="bg-[#07173F] text-xl font-firaSans cursor-pointer hover:bg-[#eafe07] hover:text-black transition duration-700 px-4 py-1 rounded-md border-1 border-white">
                 Read More
               </button>

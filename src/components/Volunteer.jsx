@@ -40,69 +40,74 @@ const Volunteer = () => {
         Make a difference. Volunteer today.
 </motion.p>
         <div className='flex flex-col xl:flex-row items-start justify-between gap-10 lg:gap-3 mt-8 mb-5'>
-          <div 
-          style={{backgroundImage: `url(${organizingTeam})`}}
-          onMouseEnter={() => setHoveredDiv(1)}
+
+
+        <div 
+          style={{backgroundImage: `url(${mentor})`}}
+          onMouseEnter={() => setHoveredDiv(3)}
           onMouseLeave={() => setHoveredDiv(null)}
-          className={`${hoveredDiv == 1 ? 'lg:opacity-100' : 'lg:opacity-50'} cursor-pointer  h-full w-full bg-cover bg-center bg-no-repeat  rounded-lg py-8  flex flex-col items-center transition ease-in-out duration-1000`}>
-          <div className='flex flex-col items-center justify-between mb-4'>
-            <h1 className='mt-3 mb-1 text-2xl xs:text-4xl font-firaSans'>Organizing Team</h1>
+          className={`${hoveredDiv == 3 ? 'lg:opacity-100 ' : 'lg:opacity-70'} cursor-pointer  h-full w-full bg-cover bg-center bg-no-repeat  rounded-lg py-8  flex flex-col items-center transition ease-in-out duration-1000`}>
+          <div className='flex flex-col items-center justify-between  mb-4'>
+            <h1 className='mt-3 mb-1 text-2xl xs:text-4xl font-firaSans'>Mentor</h1>
             <p className='text-sm font-firaSans'>very short text. max 2 lines</p>
             </div>
-            <hr className='w-[85%] opacity-80' />
-            <div className='flex flex-col items-start justify-between gap-4 mt-8 mb-6 font-overpass'>
+            <hr className='w-[85%] opacity-80 mt-4 mb-20' />
+            {/* <div className='flex flex-col items-start justify-between gap-4 mt-8 mb-6 font-overpass'>
             <p>Loren Ipsum</p>
             <p>Loren Ipsum</p>
             <p>Loren Ipsum</p>
             <p>Loren Ipsum</p>
             <p>Loren Ipsum</p>
             <p>Loren Ipsum</p>
-            </div>
-            
-            <a className="" href='https://forms.gle/agNyHH4QeM8ZB1Cv6' target="_blank"><button className='px-20 sm:px-40 py-2 backdrop-blur-2xl bg-black bg-opacity-10 text-[#2E96F5] text-xl md:text-2xl font-firaSans font-semibold rounded-lg hover:bg-opacity-60 hover:border-white hover:text-white transition-colors duration-700 border-[3px] cursor-pointer border-sky-500 '>Join us</button></a>
-          </div>          
+            </div> */}
+            <a href='' target="_blank"><button className='px-20 sm:px-40 py-2 bg-black bg-opacity-10 backdrop-blur-2xl text-[#2E96F5] text-xl md:text-2xl font-firaSans font-semibold rounded-lg hover:bg-opacity-60 hover:border-white hover:text-white transition-colors duration-700 border-[3px] cursor-pointer border-sky-500 '>Join Us</button></a>
+          </div>
+
+                   
           
           <div 
           style={{backgroundImage: `url(${campusAmbassador})`}}
           onMouseEnter={() => setHoveredDiv(2)}
           onMouseLeave={() => setHoveredDiv(null)}
-          className={`${hoveredDiv == 2 ? 'lg:opacity-100' : 'lg:opacity-50'} cursor-pointer  h-full w-full bg-cover bg-center bg-no-repeat  rounded-lg py-8  flex flex-col items-center transition ease-in-out duration-1000`}>
+          className={`${hoveredDiv == 2 ? 'lg:opacity-100' : 'lg:opacity-70'} cursor-pointer  h-full w-full bg-cover bg-center bg-no-repeat  rounded-lg py-8  flex flex-col items-center transition ease-in-out duration-1000`}>
           <div className='flex flex-col items-center justify-between mb-4'>
             <h1 className='mt-3 mb-1 text-2xl xs:text-4xl font-firaSans'>Campus Ambassador</h1>
             <p className='text-sm font-firaSans'>very short text. max 2 lines</p>
             </div>
-            <hr className='w-[85%] opacity-80' />
-            <div className='flex flex-col items-start justify-between gap-4 mt-8 mb-6 font-overpass'>
+            <hr className='w-[85%] opacity-80 mt-4 mb-20' />
+            {/* <div className='flex flex-col items-start justify-between gap-4 mt-8 mb-6 font-overpass'>
             <p>Loren Ipsum</p>
             <p>Loren Ipsum</p>
             <p>Loren Ipsum</p>
             <p>Loren Ipsum</p>
             <p>Loren Ipsum</p>
             <p>Loren Ipsum</p>
-            </div>
+            </div> */}
             <a href='https://forms.gle/MxBQ4MSdwqP8YDfG9' target="_blank"><button className='px-20 sm:px-40 py-2  backdrop-blur-2xl  bg-black bg-opacity-100 text-[#2E96F5] text-xl md:text-2xl font-firaSans font-semibold rounded-lg hover:bg-opacity-60 hover:border-white hover:text-white transition-colors duration-700 border-[3px] cursor-pointer border-sky-500 '>Join Us</button></a>
-          </div>          
-          
+          </div>  
+
+
           <div 
-          style={{backgroundImage: `url(${mentor})`}}
-          onMouseEnter={() => setHoveredDiv(3)}
+          style={{backgroundImage: `url(${organizingTeam})`}}
+          onMouseEnter={() => setHoveredDiv(1)}
           onMouseLeave={() => setHoveredDiv(null)}
-          className={`${hoveredDiv == 3 ? 'lg:opacity-100 ' : 'lg:opacity-50'} cursor-pointer  h-full w-full bg-cover bg-center bg-no-repeat  rounded-lg py-8  flex flex-col items-center transition ease-in-out duration-1000`}>
-          <div className='flex flex-col items-center justify-between  mb-4'>
-            <h1 className='mt-3 mb-1 text-2xl xs:text-4xl font-firaSans'>Mentor</h1>
+          className={`${hoveredDiv == 1 ? 'lg:opacity-100' : 'lg:opacity-70'} cursor-pointer  h-full w-full bg-cover bg-center bg-no-repeat  rounded-lg py-8  flex flex-col items-center transition ease-in-out duration-1000`}>
+          <div className='flex flex-col items-center justify-between mb-4'>
+            <h1 className='mt-3 mb-1 text-2xl xs:text-4xl font-firaSans'>Organizing Team</h1>
             <p className='text-sm font-firaSans'>very short text. max 2 lines</p>
             </div>
-            <hr className='w-[85%] opacity-80' />
-            <div className='flex flex-col items-start justify-between gap-4 mt-8 mb-6 font-overpass'>
+            <hr className='w-[85%] opacity-80 mt-4 mb-20' />
+            {/* <div className='flex flex-col items-start justify-between gap-4 mt-8 mb-6 font-overpass'>
             <p>Loren Ipsum</p>
             <p>Loren Ipsum</p>
             <p>Loren Ipsum</p>
             <p>Loren Ipsum</p>
             <p>Loren Ipsum</p>
             <p>Loren Ipsum</p>
-            </div>
-            <a href='' target="_blank"><button className='px-20 sm:px-40 py-2 bg-black bg-opacity-10 backdrop-blur-2xl text-[#2E96F5] text-xl md:text-2xl font-firaSans font-semibold rounded-lg hover:bg-opacity-60 hover:border-white hover:text-white transition-colors duration-700 border-[3px] cursor-pointer border-sky-500 '>Join Us</button></a>
-          </div>
+            </div> */}
+            
+            <a className="" href='https://forms.gle/agNyHH4QeM8ZB1Cv6' target="_blank"><button className='px-20 sm:px-40 py-2 backdrop-blur-2xl bg-black bg-opacity-10 text-[#2E96F5] text-xl md:text-2xl font-firaSans font-semibold rounded-lg hover:bg-opacity-60 hover:border-white hover:text-white transition-colors duration-700 border-[3px] cursor-pointer border-sky-500 '>Join us</button></a>
+          </div>         
           
         </div>
       

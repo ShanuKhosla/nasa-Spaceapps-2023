@@ -98,7 +98,7 @@ const GlobalCollaborators = () => {
             <img
               src={logo.src}
               alt={`Logo ${logo.id}`}
-              className=" relative top-2 aspect-ratio-auto w-[120px] h-[110px] gap-2 md:w-[130px] md:h-[110px] lg:w-[230px] lg:h-[110px] object-contain"
+              className=" relative top-2 aspect-ratio-auto w-[120px] h-[110px] gap-2 md:w-[130px] md:h-[110px] lg:w-[220px] lg:h-[100px] object-contain"
             />
             </a>
           </div>

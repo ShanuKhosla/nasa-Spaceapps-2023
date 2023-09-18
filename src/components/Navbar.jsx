@@ -70,7 +70,7 @@ const Navbar = () => {
         <a href="/">HOME</a>
         <a href="/blogs">BLOGS</a>
         {/* <a href="https://docs.google.com/forms/d/1EYUQxLAllIdm3bygjkTN76sDyDh9SxiAeS3DbMIqQp0/viewform?edit_requested=true">VOLUNTEER</a> */}
-        <a href="/volunteer">VOLUNTEER</a>
+        <a href="/volunteer">JOIN US</a>
         <a href="/faq">FAQ's</a>
         <a href="/contact">CONTACT</a>
         {isTabletView && (

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../utils/motion';
 import { blogs } from '../constants';
@@ -12,6 +12,11 @@ const Blog = () => {
   const handleAnimationComplete = () => {
     setAnimationComplete(true);
   };
+
+  useEffect(() => {
+    // Scroll to the top when the component mounts
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>
