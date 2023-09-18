@@ -129,7 +129,7 @@ const HeroSection = () => {
           Register Now
         </motion.button>        
         </a>        
-        <a href="/challenges" target='_blank'>
+        <a href="/howToRegister" target='_blank'>
         <motion.button
           variants={fadeIn('right', 'tween', 2.9, 0.5)}
           initial={animationComplete ? "" : "hidden"}

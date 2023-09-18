@@ -46,12 +46,12 @@ const Volunteer = () => {
           style={{backgroundImage: `url(${mentor})`}}
           onMouseEnter={() => setHoveredDiv(3)}
           onMouseLeave={() => setHoveredDiv(null)}
-          className={`${hoveredDiv == 3 ? 'lg:opacity-100 ' : 'lg:opacity-70'} cursor-pointer  h-full w-full bg-cover bg-center bg-no-repeat  rounded-lg py-8  flex flex-col items-center transition ease-in-out duration-1000`}>
+          className={`${hoveredDiv == 3 ? 'lg:opacity-100 ' : 'lg:opacity-70'} cursor-pointer h-[300px] justify-between h-full w-full bg-cover bg-center bg-no-repeat  rounded-lg py-8  flex flex-col items-center transition ease-in-out duration-1000`}>
           <div className='flex flex-col items-center justify-between  mb-4'>
             <h1 className='mt-3 mb-1 text-2xl xs:text-4xl font-firaSans'>Mentor</h1>
-            <p className='text-sm font-firaSans'>very short text. max 2 lines</p>
+            {/* <p className='text-sm font-firaSans'>very short text. max 2 lines</p> */}
             </div>
-            <hr className='w-[85%] opacity-80 mt-4 mb-20' />
+            {/* <hr className='w-[85%] opacity-80 mt-4 mb-20' /> */}
             {/* <div className='flex flex-col items-start justify-between gap-4 mt-8 mb-6 font-overpass'>
             <p>Loren Ipsum</p>
             <p>Loren Ipsum</p>
@@ -69,12 +69,12 @@ const Volunteer = () => {
           style={{backgroundImage: `url(${campusAmbassador})`}}
           onMouseEnter={() => setHoveredDiv(2)}
           onMouseLeave={() => setHoveredDiv(null)}
-          className={`${hoveredDiv == 2 ? 'lg:opacity-100' : 'lg:opacity-70'} cursor-pointer  h-full w-full bg-cover bg-center bg-no-repeat  rounded-lg py-8  flex flex-col items-center transition ease-in-out duration-1000`}>
+          className={`${hoveredDiv == 2 ? 'lg:opacity-100' : 'lg:opacity-70'} cursor-pointer h-[300px] justify-between h-full w-full bg-cover bg-center bg-no-repeat  rounded-lg py-8  flex flex-col items-center transition ease-in-out duration-1000`}>
           <div className='flex flex-col items-center justify-between mb-4'>
             <h1 className='mt-3 mb-1 text-2xl xs:text-4xl font-firaSans'>Campus Ambassador</h1>
-            <p className='text-sm font-firaSans'>very short text. max 2 lines</p>
+            {/* <p className='text-sm font-firaSans'>very short text. max 2 lines</p> */}
             </div>
-            <hr className='w-[85%] opacity-80 mt-4 mb-20' />
+            {/* <hr className='w-[85%] opacity-80 mt-4 mb-20' /> */}
             {/* <div className='flex flex-col items-start justify-between gap-4 mt-8 mb-6 font-overpass'>
             <p>Loren Ipsum</p>
             <p>Loren Ipsum</p>
@@ -91,12 +91,12 @@ const Volunteer = () => {
           style={{backgroundImage: `url(${organizingTeam})`}}
           onMouseEnter={() => setHoveredDiv(1)}
           onMouseLeave={() => setHoveredDiv(null)}
-          className={`${hoveredDiv == 1 ? 'lg:opacity-100' : 'lg:opacity-70'} cursor-pointer  h-full w-full bg-cover bg-center bg-no-repeat  rounded-lg py-8  flex flex-col items-center transition ease-in-out duration-1000`}>
+          className={`${hoveredDiv == 1 ? 'lg:opacity-100' : 'lg:opacity-70'} cursor-pointer  h-[300px] justify-between w-full bg-cover bg-center bg-no-repeat  rounded-lg py-8  flex flex-col items-center transition ease-in-out duration-1000`}>
           <div className='flex flex-col items-center justify-between mb-4'>
             <h1 className='mt-3 mb-1 text-2xl xs:text-4xl font-firaSans'>Organizing Team</h1>
-            <p className='text-sm font-firaSans'>very short text. max 2 lines</p>
+            {/* <p className='text-sm font-firaSans'>very short text. max 2 lines</p> */}
             </div>
-            <hr className='w-[85%] opacity-80 mt-4 mb-20' />
+            {/* <hr className='w-[85%] opacity-80 mt-4 mb-20' /> */}
             {/* <div className='flex flex-col items-start justify-between gap-4 mt-8 mb-6 font-overpass'>
             <p>Loren Ipsum</p>
             <p>Loren Ipsum</p>

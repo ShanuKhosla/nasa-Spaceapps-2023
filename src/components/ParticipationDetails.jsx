@@ -64,7 +64,7 @@ const ParticipationDetails = () => {
   <CountUp
     start={animationComplete ? 0 : null}
     end={28286}
-    duration={2.4}
+    duration={5.4}
     delay={1.0}
     separator=","
     useEasing={true}
@@ -87,7 +87,7 @@ const ParticipationDetails = () => {
               <CountUp
                 start={animationComplete ? 0 : null}
                 end={323}
-                duration={2.4}
+                duration={5.4}
                 delay={1.4}
                 separator=","
                 useEasing={true}
@@ -109,7 +109,7 @@ const ParticipationDetails = () => {
               <CountUp
                 start={animationComplete ? 0 : null}
                 end={4534}
-                duration={2.4}
+                duration={5.4}
                 delay={1.8}
                 separator=","
                 useEasing={true}
@@ -131,7 +131,7 @@ const ParticipationDetails = () => {
               <CountUp
                 start={animationComplete ? 0 : null}
                 end={12}
-                duration={2.4}
+                duration={5.4}
                 delay={2.2}
                 separator=","
                 useEasing={true}

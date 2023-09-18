@@ -55,7 +55,7 @@ width="873" height="315" src="https://www.youtube.com/embed/lUuRRAFhfM0?si=x0y6F
       </motion.button>
       </a>      
       
-      <a href='/challenges' target='_blank'>
+      <a href="/howToRegister" target='_blank'>
         <motion.button
           variants={fadeIn('right', 'tween', 0.2, 0.7)}
           initial={animationComplete ? "" : "hidden"}
