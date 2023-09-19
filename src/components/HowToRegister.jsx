@@ -99,16 +99,29 @@ return (
     <img className='my-5 rounded-xl object-contain max-w-full' src='./hackathlone4.gif' alt='banner' />
     <p className='font-semibold'> Step 1: Visit the SpaceApps Website </p>
     <p>First things first, open your web browser and head over to the official SpaceApps Challenge website. You can do this by typing "SpaceApps Challenge" into your preferred search engine or by directly entering the URL: <span className=''><a className='text-[#eafe07] no-underline' href='https://www.spaceappschallenge.org/'>https://www.spaceappschallenge.org/</a></span></p>
+    <img className='my-5 rounded-xl object-contain max-w-full' src='./step1.png' alt='banner' />
+
     <p className='font-semibold'> Step 2: Explore the Local Events </p>
     <p>Once you're on the SpaceApps website, take a moment to explore the available options. You'll find a variety of resources, including information about past challenges, inspirational stories, and more. But right now, we're here for SpaceApps 2023, so let's dive in!</p>
+    <img className='my-5 rounded-xl object-contain max-w-full' src='./step2.png' alt='banner' />
+
     <p className='font-semibold'> Step 3: Search for 2023 Local Events </p>
     <p>To participate in SpaceApps 2023, you'll want to find a local event near you. These events serve as the launchpad for your SpaceApps journey. Click on the "Find a Local Event" or similar link to begin your search.</p>
+    <img className='my-5 rounded-xl object-contain max-w-full' src='./step3.png' alt='banner' />
+
     <p className='font-semibold'> Step 4: Choose HackAthlone (TU Shannon, Ireland) </p>
     <p>As you search for local events, you'll come across various locations around the world. However, if you're looking for the Athlone event in Ireland, you're in the right place! Look for "HackAthlone" or simply "Athlone" in the list of events. This event is hosted at TU Shannon (Technological University Shannon) and promises an exciting experience in space innovation and collaboration.</p>
+    <img className='my-5 rounded-xl object-contain max-w-full' src='./step4.png' alt='banner' />
+
     <p className='font-semibold'> Step 5: Sign Up </p>
     <p>Once you've found the Athlone event, it's time to secure your spot. Click on the event to access its dedicated page. There, you'll find all the details you need about Athlone's SpaceApps event, including dates, schedules, and more.</p>
+    <img className='my-5 rounded-xl object-contain max-w-full' src='./step5.png' alt='banner' />
+    <img className='my-5 rounded-xl object-contain max-w-full' src='./step51.png' alt='banner' />
+    
     <p className='font-semibold'> Step 6: Register as an Individual or Team </p>
     <p>Now, it's registration time! Choose whether you want to participate as an individual or as part of a team. If you're planning to collaborate with friends or fellow enthusiasts, team registration is the way to go. Otherwise, you can register as an individual and join or form a team later.</p>
+    <img className='my-5 rounded-xl object-contain max-w-full' src='./step6.png' alt='banner' />
+
     <p className='font-semibold'> Step 7: Access Resources and Challenges </p>
     <p>Congratulations! You're now officially registered for SpaceApps 2023, Athlone. This means you'll have access to a wealth of resources, including datasets, tools, mentorship, and more to help you prepare for the hackathon. Additionally, you can explore the list of exciting challenges that await your innovation and problem-solving skills.</p>
     <p className='font-semibold'> Step 8: Get Ready for the Cosmic Adventure </p>

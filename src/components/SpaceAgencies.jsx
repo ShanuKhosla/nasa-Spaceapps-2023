@@ -37,17 +37,17 @@ const SpaceAgencies = () => {
 
   const logos = [
     { id: 2, src: '/brazil.png', link: "https://www.iafastro.org/membership/all-members/brazilian-space-agency-aeb.html"},
+    { id: 4, src: '/eesa.png' , link: "https://www.esa.int/"},
     { id: 3, src: '/canada.png' , link: "https://www.asc-csa.gc.ca/eng/"},
-    { id: 4, src: '/european.png' , link: "https://www.esa.int/"},
+    { id: 6, src: '/asi.png' , link: "https://www.asi.it/en/"},
     { id: 5, src: '/isro.png' , link: "https://www.isro.gov.in/"},
-    { id: 6, src: '/italy.png' , link: "https://www.asi.it/en/"},
-    { id: 7, src: '/japan.png' , link: "https://global.jaxa.jp/"},
-    { id: 8, src: '/mexico.png' , link: "https://www.iafastro.org/membership/all-members/agencia-espacial-mexicana-aem.html"},
-    { id: 9, src: '/argentina(1).png' , link: "https://www.argentina.gob.ar/ciencia/conae"},
+    { id: 7, src: '/jaxa.png' , link: "https://global.jaxa.jp/"},
     { id: 11, src: '/paraguay.png' , link: "https://www.aep.gov.py/"},
-    { id: 12, src: '/southAfrica.png' , link: "https://www.sansa.org.za/"},
+    { id: 8, src: '/mexico.png' , link: "https://www.iafastro.org/membership/all-members/agencia-espacial-mexicana-aem.html"},
     { id: 13, src: '/turkey.svg' , link: "https://tua.gov.tr/en"},
+    { id: 12, src: '/sansa.png' , link: "https://www.sansa.org.za/"},
     { id: 10, src: '/nssa.png' , link: "https://www.iafastro.org/membership/all-members/national-space-science-agency-nssa.html"},
+    { id: 9, src: '/argentina(1).png' , link: "https://www.argentina.gob.ar/ciencia/conae"},
     { id: 1, src: '/australia.png', link: "https://www.industry.gov.au/australian-space-agency" }, // Add your image URLs here
   ];
 
