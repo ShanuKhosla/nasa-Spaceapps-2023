@@ -52,6 +52,7 @@ const Faqs = () => {
       className="h-full px-[20px] sm:px-[40px] lg:px-[60px] py-5 header bg-center bg-no-repeat bg-cover"
       style={{backgroundImage: `url(${backgroundImage})`}}
     >
+
   
       <motion.h1 
       variants={fadeIn('down', 'tween', 0.2, 0.4)}
@@ -70,6 +71,8 @@ const Faqs = () => {
       >
         Quick Answers to Your Queries
       </motion.p>
+
+      <img src="./faq.png" width={400} className='invisible lg:visible absolute right-0 bottom-5' />
       <div className='my-10'>
         {faqs.map((faq, index) => (
           <FaqCard 
