@@ -16,9 +16,10 @@ import BlogDetail from './components/BlogDetail';
 import DayOne from './components/DayOne';
 import DayTwo from './components/DayTwo';
 import DayThree from './components/DayThree';
-import SpaceExploration from './components/SpaceExploration';
-import HowToRegister from './components/HowToRegister';
-import SpaceappsChallengesGuide from './components/SpaceappsChallengesGuide';
+import SpaceExploration from './components/blogs/SpaceExploration';
+import HowToRegister from './components/blogs/HowToRegister';
+import SpaceappsChallengesGuide from './components/blogs/SpaceappsChallengesGuide';
+import WhySpaceAppsAthlone from './components/blogs/WhySpaceAppsAthlone';
 
 
 
@@ -39,6 +40,7 @@ function App() {
         <Route path="/spaceexploration" element={<SpaceExploration />} />
         <Route path="/howToRegister" element={<HowToRegister />} />
         <Route path="/challenges" element={<SpaceappsChallengesGuide />} />
+        <Route path="/whyAthlone" element={<WhySpaceAppsAthlone />} />
         <Route path="/day-one" element={<DayOne />} />
         <Route path='/day-two' element={<DayTwo />} />
         <Route path='/day-three' element={<DayThree />} />

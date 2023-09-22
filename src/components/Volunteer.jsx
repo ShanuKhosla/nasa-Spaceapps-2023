@@ -46,7 +46,7 @@ const Volunteer = () => {
           style={{backgroundImage: `url(${mentor})`}}
           onMouseEnter={() => setHoveredDiv(3)}
           onMouseLeave={() => setHoveredDiv(null)}
-          className={`${hoveredDiv == 3 ? 'lg:opacity-100 ' : 'lg:opacity-70'} cursor-pointer h-[300px] justify-between h-full w-full bg-cover bg-center bg-no-repeat  rounded-lg py-8  flex flex-col items-center transition ease-in-out duration-1000`}>
+          className={`${hoveredDiv == 3 ? 'lg:opacity-100 ' : 'lg:opacity-70'} cursor-pointer h-[300px] justify-between  w-full bg-cover bg-center bg-no-repeat  rounded-lg py-8  flex flex-col items-center transition ease-in-out duration-1000`}>
           <div className='flex flex-col items-center justify-between  mb-4'>
             <h1 className='mt-3 mb-1 text-2xl xs:text-4xl font-firaSans'>Mentor</h1>
             {/* <p className='text-sm font-firaSans'>very short text. max 2 lines</p> */}
@@ -69,7 +69,7 @@ const Volunteer = () => {
           style={{backgroundImage: `url(${campusAmbassador})`}}
           onMouseEnter={() => setHoveredDiv(2)}
           onMouseLeave={() => setHoveredDiv(null)}
-          className={`${hoveredDiv == 2 ? 'lg:opacity-100' : 'lg:opacity-70'} cursor-pointer h-[300px] justify-between h-full w-full bg-cover bg-center bg-no-repeat  rounded-lg py-8  flex flex-col items-center transition ease-in-out duration-1000`}>
+          className={`${hoveredDiv == 2 ? 'lg:opacity-100' : 'lg:opacity-70'} cursor-pointer h-[300px] justify-between w-full bg-cover bg-center bg-no-repeat  rounded-lg py-8  flex flex-col items-center transition ease-in-out duration-1000`}>
           <div className='flex flex-col items-center justify-between mb-4'>
             <h1 className='mt-3 mb-1 text-2xl xs:text-4xl font-firaSans'>Campus Ambassador</h1>
             {/* <p className='text-sm font-firaSans'>very short text. max 2 lines</p> */}

@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import { motion } from 'framer-motion';
-import { fadeIn } from '../utils/motion';
+import { fadeIn } from '../../utils/motion';
 import backgroundImage from '/starsUpscaled.png';
 
 
@@ -44,7 +44,7 @@ return (
     <>
          <motion.div
     style={{backgroundImage: `url(${backgroundImage})`}}      
-    className="h-full bg-center bg-cover bg-no-repeat px-[1%] overflow-x-hidden"
+    className="h-full bg-center bg-repeat px-[1%] overflow-x-hidden"
       >
 
 <a className='absolute left-2 top-[105px] no-underline' href="/blogs"><button className='invisible lg:visible font-firaSans bg-black cursor-pointer hover:bg-[#eafe07] hover:text-black transition ease duration-500 flex relative top-1 font-bold tracking-wide text-xl px-3 py-1 border-2 border-sky-500 shadow-2xl rounded-md'>Back</button></a>
