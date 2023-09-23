@@ -79,7 +79,7 @@ const HeroSection = () => {
     >
 
       <motion.h1 
-      variants={fadeIn('down', 'tween', 0.2, 0.5)}
+      variants={fadeIn('down', 'tween', 3.2, 0.5)}
       initial="hidden"
       animate={animationComplete ? "show" : "hidden"} // Only animate when animationComplete is true
       onAnimationComplete={handleAnimationComplete}
@@ -89,20 +89,20 @@ const HeroSection = () => {
     
 
       <motion.h1 
-      variants={fadeIn('down', 'tween', 0.7, 0.5)}
+      variants={fadeIn('down', 'tween', 3.7, 0.5)}
       initial="hidden"
       animate={animationComplete ? "show" : "hidden"} // Only animate when animationComplete is true
       onAnimationComplete={handleAnimationComplete}
       className='text-xl text-[#FFFFFF] font-extrabold font-firaSans text-center tracking-wider'>also known as</motion.h1> 
       <br />
       <motion.img 
-      variants={fadeIn('down', 'tween', 1.2, 0.5)}
+      variants={fadeIn('down', 'tween', 4.2, 0.5)}
       initial="hidden"
       animate={animationComplete ? "show" : "hidden"} // Only animate when animationComplete is true
       onAnimationComplete={handleAnimationComplete}
       src="/spaceapps_Logo.png" className="w-[40%] md:w-[18%] lg:w-[15%] relative left-2 bottom-3" alt="Logo" />
       <motion.p
-        variants={fadeIn('down', 'tween', 1.7, 0.5)}
+        variants={fadeIn('down', 'tween', 4.7, 0.5)}
         initial="hidden"
         animate={animationComplete ? "show" : "hidden"} // Only animate when animationComplete is true
         onAnimationComplete={handleAnimationComplete} // Update the state when animation is complete
@@ -113,7 +113,7 @@ const HeroSection = () => {
         <br />
 
         <motion.div
-         variants={fadeIn('down', 'tween', 2.5, 0.7)}
+         variants={fadeIn('down', 'tween', 5.5, 0.7)}
           initial={animationComplete ? "" : "hidden"}
           whileInView="show"
           onAnimationComplete={handleAnimationComplete}
@@ -121,7 +121,7 @@ const HeroSection = () => {
         >
         <a href='https://www.spaceappschallenge.org/2023/locations/athlone/' target='_blank'>
         <motion.button
-          variants={fadeIn('left', 'tween', 2.9, 0.5)}
+          variants={fadeIn('left', 'tween', 5.9, 0.5)}
           initial={animationComplete ? "" : "hidden"}
           whileInView="show"
           onAnimationComplete={handleAnimationComplete} // Update the state when animation is complete
@@ -131,7 +131,7 @@ const HeroSection = () => {
         </a>        
         <a href="/howToRegister" target='_blank'>
         <motion.button
-          variants={fadeIn('right', 'tween', 2.9, 0.5)}
+          variants={fadeIn('right', 'tween', 5.9, 0.5)}
           initial={animationComplete ? "" : "hidden"}
           whileInView="show"
           onMouseEnter={handleMouseEnter}
