@@ -34,7 +34,7 @@ const CTA = () => {
 
 <iframe 
 className='my-10 border-2 border-slate-500 rounded-xl max-w-[100%]  md:max-w-[100%] md:h-[491px]'
-width="873" height="315" src="https://www.youtube.com/embed/lUuRRAFhfM0?si=x0y6FHF4p_xhX7dN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+width="873" height="315" src="https://www.youtube.com/embed/lUuRRAFhfM0?si=x0y6FHF4p_xhX7dN" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
       <motion.h1
         variants={fadeIn('down', 'tween', 0.2, 0.7)}
         initial={animationComplete ? "" : "hidden"}
@@ -46,7 +46,7 @@ width="873" height="315" src="https://www.youtube.com/embed/lUuRRAFhfM0?si=x0y6F
       <div className='flex flex-col sm:flex-row items-center justify-between gap-4'>
       <a href='https://www.spaceappschallenge.org/2023/locations/athlone/' target='_blank'>
       <motion.button
-        variants={fadeIn('left', 'tween', 0.2, 0.7)}
+        variants={fadeIn('down', 'tween', 0.2, 0.7)}
         initial={animationComplete ? "" : "hidden"}
         whileInView="show"
         onAnimationComplete={handleAnimationComplete} // Update the state when animation is complete
@@ -57,7 +57,7 @@ width="873" height="315" src="https://www.youtube.com/embed/lUuRRAFhfM0?si=x0y6F
       
       <a href="/howToRegister" target='_blank'>
         <motion.button
-          variants={fadeIn('right', 'tween', 0.2, 0.7)}
+          variants={fadeIn('down', 'tween', 0.2, 0.7)}
           initial={animationComplete ? "" : "hidden"}
           whileInView="show"
           onMouseEnter={handleMouseEnter}

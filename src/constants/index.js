@@ -303,3 +303,261 @@ export const faqs = [
   }, 
 ]
 
+export const allChallenges = [
+  {
+    title: "A Marketplace for Open Science Projects",
+    iframes: '<iframe width="300" height="180" src="https://www.youtube.com/embed/VzO2HBjLkww" title="Challenge: A Marketplace for Open Science Projects | NASA Space Apps Challenge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen className="w-[50%]"></iframe>',
+  },
+  {
+    title: "Be a Space Geologist",
+    iframes: '<iframe width="300" height="180" src="https://www.youtube.com/embed/CbKnFIzwn1w" title="Challenge: Be a Space Geologist | NASA Space Apps Challenge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen className="max-w-full"></iframe>',
+  },
+  {
+    title: "Building the Space Biology “Model Zoo”",
+    iframes: '<iframe width="300" height="180" src="https://www.youtube.com/embed/m-43vj2zvP8" title="Challenge: Building the Space Biology “Model Zoo” | NASA Space Apps Challenge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen className="max-w-full"></iframe>',
+  },
+  {
+    title: "Create a Work of SARt (Synthetic Aperture Radar Art)",
+    iframes: '<iframe width="300" height="180" src="https://www.youtube.com/embed/tY9uyQa90wg" title="Challenge: Create a Work of SARt (Synthetic Aperture Radar Art) | NASA Space Apps Challenge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen className="max-w-full"></iframe>',
+  },
+  {
+    title: "Develop the Oracle of DSCOVR",
+    iframes: '<iframe width="300" height="180" src="https://www.youtube.com/embed/cdwJ6gqR0AM" title="Challenge: Develop the Oracle of DSCOVR | NASA Space Apps Challenge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen className="max-w-full"></iframe>',
+  },
+  {
+    title: "Everything Starts with Water",
+    iframes: '<iframe width="300" height="180" src="https://www.youtube.com/embed/DYSa2jw1c9Y" title="Challenge: Everything Starts with Water | NASA Space Apps Challenge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen className="max-w-full"></iframe>',
+  },
+  {
+    title: "Explore a Biodiversity Hotspot with Imaging Spectroscopy",
+    iframes: '<iframe width="300" height="180" src="https://www.youtube.com/embed/30kSI2ZWt1g" title="Challenge: Explore a Biodiversity Hotspot with Imaging Spectroscopy | NASA Space Apps Challenge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen className="max-w-full"></iframe>',
+  },
+  {
+    title: "GeoAI Reimagined: Transformative and Diverse Earth Science Applications Using Foundation Models",
+    iframes: '<iframe width="300" height="180" src="https://www.youtube.com/embed/rbXM1egSe-k?si=H1sygj1rWfM9OPAH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen className="max-w-full"></iframe>',
+  },
+  {
+    title: "Immersed in the Sounds of Space",
+    iframes: '<iframe width="300" height="180" src="https://www.youtube.com/embed/IxaYAgIo_Ok?si=U4RY0z2yrPplBp5s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen className="max-w-full"></iframe>',
+  },
+  {
+    title: "Magnetic Reconnection",
+    iframes: '<iframe width="300" height="180" src="https://www.youtube.com/embed/vTY0JGTaSsg" title="Challenge: Magnetic Reconnection | NASA Space Apps Challenge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen className="max-w-full"></iframe>',
+  },
+  {
+    title: "Managing Fire: Increasing Community-based Fire Management Opportunities",
+    iframes: '<iframe width="300" height="180" src="https://www.youtube.com/embed/2JQzp51iFQw" title="Challenge: Managing Fire: Increasing Community-based Fire Management Opportunities | NASA Space Apps" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen className="max-w-full"></iframe>',
+  },
+  {
+    title: "Mapping Data for Societal Benefit",
+    iframes: '<iframe width="300" height="180" src="https://www.youtube.com/embed/EyexuohU6YE" title="Challenge: Mapping Data for Societal Benefit | NASA Space Apps Challenge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen className="max-w-full"></iframe>',
+  },
+  {
+    title: "NASA in Your Neighborhood",
+    iframes: '<iframe width="300" height="180" src="https://www.youtube.com/embed/t9zxokrUrhM" title="Challenge: NASA in Your Neighborhood | NASA Space Apps Challenge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen className="max-w-full"></iframe>',
+  },
+  {
+    title: "Ocean Gardens",
+    iframes: '<iframe width="300" height="180" src="https://www.youtube.com/embed/txcCv3rilko" title="Challenge: Ocean Gardens | NASA Space Apps Challenge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen className="w-[300px] md: w-full"></iframe>',
+  },
+  {
+    title: "Open Science Storytelling!",
+    iframes: '<iframe width="300" height="180" src="https://www.youtube.com/embed/IxZLhJ_4ffY" title="Challenge: Open Science Storytelling! | NASA Space Apps Challenge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen className="max-w-full"></iframe>',
+  },
+  {
+    title: "Plan a Party to Celebrate NASA\'s Journey to a Metal World",
+    iframes: '<iframe width="300" height="180" src="https://www.youtube.com/embed/T3kFtta2Rw0" title="Challenge: Plan a Party to Celebrate NASA\'s Journey to a Metal World | NASA Space Apps Challenge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen className="max-w-full"></iframe>',
+  },
+  {
+    title: "Planetary Tourism Office",
+    iframes: '<iframe width="300" height="180" src="https://www.youtube.com/embed/tRGPTn5cgHg" title="Challenge: Planetary Tourism Office | NASA Space Apps Challenge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen className="max-w-full"></iframe>',
+  },
+  {
+    title: "Space Biology Digital Twins: Modeling Worms in Space!",
+    iframes: '<iframe width="300" height="180" src="https://www.youtube.com/embed/AIx8Vdpt3lw" title="Challenge: Space Biology Digital Twins: Modeling Worms in Space! | NASA Space Apps Challenge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen className="max-w-full"></iframe>',
+  },
+  {
+    title: "STAR Revolutionizing Technical Standards with AI",
+    iframes: '<iframe width="300" height="180" src="https://www.youtube.com/embed/2p_1jrIE9UU" title="Challenge: STAR: Revolutionizing Technical Standards with AI (educational) | NASA Space Apps" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen className="max-w-full"></iframe>',
+  },
+  {
+    title: "Visualize a Space Mission Using Virtual Reality",
+    iframes: '<iframe width="300" height="180" src="https://www.youtube.com/embed/x--oStYtNYQ" title="Challenge: Visualize a Space Mission Using Virtual Reality | NASA Space Apps Challenge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen className="max-w-full"></iframe>',
+  },
+  {
+    title: "What’s Up With This Water?",
+    iframes: '<iframe width="300" height="180" src="https://www.youtube.com/embed/fH4pHazGyaw" title="Challenge: What’s Up With This Water? | NASA Space Apps Challenge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen className="max-w-full"></iframe>',
+  },
+  {
+    title: "Winning the Helio Big Year with Joy, Curiosity, and Science!",
+    iframes: '<iframe width="300" height="180" src="https://www.youtube.com/embed/E8OZ1KCd0I8" title="Challenge: Winning the Helio Big Year with Joy, Curiosity, and Science! | NASA Space Apps Challenge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen className="max-w-full"></iframe>',
+  },
+];
+
+export const softwareDevelopment = [
+  {
+    title: "A Marketplace for Open Science Projects",
+    iframes: '<iframe width="300" height="180" src="https://www.youtube.com/embed/VzO2HBjLkww" title="Challenge: A Marketplace for Open Science Projects | NASA Space Apps Challenge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+  },
+  {
+    title: "Be a Space Geologist",
+    iframes: '<iframe width="300" height="180" src="https://www.youtube.com/embed/CbKnFIzwn1w" title="Challenge: Be a Space Geologist | NASA Space Apps Challenge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+  },
+  {
+    title: "Everything Starts with Water",
+    iframes: '<iframe width="300" height="180" src="https://www.youtube.com/embed/DYSa2jw1c9Y" title="Challenge: Everything Starts with Water | NASA Space Apps Challenge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+  },
+  {
+    title: "Magnetic Reconnection",
+    iframes: '<iframe width="300" height="180" src="https://www.youtube.com/embed/vTY0JGTaSsg" title="Challenge: Magnetic Reconnection | NASA Space Apps Challenge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+  },
+  {
+    title: "Managing Fire: Increasing Community-based Fire Management Opportunities",
+    iframes: '<iframe width="300" height="180" src="https://www.youtube.com/embed/2JQzp51iFQw" title="Challenge: Managing Fire: Increasing Community-based Fire Management Opportunities | NASA Space Apps" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+  },
+  {
+    title: "Mapping Data for Societal Benefit",
+    iframes: '<iframe width="300" height="180" src="https://www.youtube.com/embed/EyexuohU6YE" title="Challenge: Mapping Data for Societal Benefit | NASA Space Apps Challenge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+  },
+  {
+    title: "Ocean Gardens",
+    iframes: '<iframe width="300" height="180" src="https://www.youtube.com/embed/txcCv3rilko" title="Challenge: Ocean Gardens | NASA Space Apps Challenge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+  },
+  {
+    title: "Planetary Tourism Office",
+    iframes: '<iframe width="300" height="180" src="https://www.youtube.com/embed/tRGPTn5cgHg" title="Challenge: Planetary Tourism Office | NASA Space Apps Challenge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+  },
+  {
+    title: "STAR: Revolutionizing Technical Standards with AI",
+    iframes: '<iframe width="300" height="180" src="https://www.youtube.com/embed/2p_1jrIE9UU" title="Challenge: STAR: Revolutionizing Technical Standards with AI (educational) | NASA Space Apps" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+  },
+  {
+    title: "What’s Up With This Water?",
+    iframes: '<iframe width="300" height="180" src="https://www.youtube.com/embed/fH4pHazGyaw" title="Challenge: What’s Up With This Water? | NASA Space Apps Challenge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+  },
+  {
+    title: "Visualize a Space Mission Using Virtual Reality",
+    iframes: '<iframe width="300" height="180" src="https://www.youtube.com/embed/x--oStYtNYQ" title="Challenge: Visualize a Space Mission Using Virtual Reality | NASA Space Apps Challenge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+  },
+];
+
+
+
+export const creativeChallenges = [
+
+  {
+    title: "Create a Work of SARt (Synthetic Aperture Radar Art)",
+    iframes: '<iframe width="300" height="180" src="https://www.youtube.com/embed/tY9uyQa90wg" title="Challenge: Create a Work of SARt (Synthetic Aperture Radar Art) | NASA Space Apps Challenge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+  },
+  
+  {
+    title: "Everything Starts with Water",
+    iframes: '<iframe width="300" height="180" src="https://www.youtube.com/embed/DYSa2jw1c9Y" title="Challenge: Everything Starts with Water | NASA Space Apps Challenge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+  },
+  
+  {
+    title: "Immersed in the Sounds of Space",
+    iframes: '<iframe width="300" height="180" src="https://www.youtube.com/embed/IxaYAgIo_Ok?si=U4RY0z2yrPplBp5s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+  },
+  {
+    title: "NASA in Your Neighborhood",
+    iframes: '<iframe width="300" height="180" src="https://www.youtube.com/embed/t9zxokrUrhM" title="Challenge: NASA in Your Neighborhood | NASA Space Apps Challenge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+  },
+  {
+    title: "Ocean Gardens",
+    iframes: '<iframe width="300" height="180" src="https://www.youtube.com/embed/txcCv3rilko" title="Challenge: Ocean Gardens | NASA Space Apps Challenge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+  },
+  
+  {
+    title: "Open Science Storytelling!",
+    iframes: '<iframe width="300" height="180" src="https://www.youtube.com/embed/IxZLhJ_4ffY" title="Challenge: Open Science Storytelling! | NASA Space Apps Challenge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+  },
+  {
+    title: "Plan a Party to Celebrate NASA's Journey to a Metal World",
+    iframes: '<iframe width="300" height="180" src="https://www.youtube.com/embed/T3kFtta2Rw0" title="Challenge: Plan a Party to Celebrate NASA\'s Journey to a Metal World | NASA Space Apps Challenge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+  },
+  
+  {
+    title: "Winning the Helio Big Year with Joy, Curiosity, and Science!",
+    iframes: '<iframe width="300" height="180" src="https://www.youtube.com/embed/E8OZ1KCd0I8" title="Challenge: Winning the Helio Big Year with Joy, Curiosity, and Science! | NASA Space Apps Challenge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+  },
+];
+
+
+export const dataScienceChallenges = [
+  {
+    title: "Building the Space Biology “Model Zoo”",
+    iframes: '<iframe width="300" height="180" src="https://www.youtube.com/embed/m-43vj2zvP8" title="Challenge: Building the Space Biology “Model Zoo” | NASA Space Apps Challenge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+  },
+  {
+    title: "Develop the Oracle of DSCOVR",
+    iframes: '<iframe width="300" height="180" src="https://www.youtube.com/embed/cdwJ6gqR0AM" title="Challenge: Develop the Oracle of DSCOVR | NASA Space Apps Challenge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+  },
+  {
+    title: "Explore a Biodiversity Hotspot with Imaging Spectroscopy",
+    iframes: '<iframe width="300" height="180" src="https://www.youtube.com/embed/30kSI2ZWt1g" title="Challenge: Explore a Biodiversity Hotspot with Imaging Spectroscopy | NASA Space Apps Challenge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+  },
+  {
+    title: "GeoAI Reimagined: Transformative and Diverse Earth Science Applications Using Foundation Models",
+    iframes: '<iframe width="300" height="180" src="https://www.youtube.com/embed/rbXM1egSe-k?si=H1sygj1rWfM9OPAH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+  },
+  {
+    title: "Immersed in the Sounds of Space",
+    iframes: '<iframe width="300" height="180" src="https://www.youtube.com/embed/IxaYAgIo_Ok?si=U4RY0z2yrPplBp5s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+  },
+  
+  {
+    title: "Magnetic Reconnection",
+    iframes: '<iframe width="300" height="180" src="https://www.youtube.com/embed/vTY0JGTaSsg" title="Challenge: Magnetic Reconnection | NASA Space Apps Challenge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+  },
+  
+  {
+    title: "Managing Fire: Increasing Community-based Fire Management Opportunities",
+    iframes: '<iframe width="300" height="180" src="https://www.youtube.com/embed/2JQzp51iFQw" title="Challenge: Managing Fire: Increasing Community-based Fire Management Opportunities | NASA Space Apps" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+  },
+  {
+    title: "Mapping Data for Societal Benefit",
+    iframes: '<iframe width="300" height="180" src="https://www.youtube.com/embed/EyexuohU6YE" title="Challenge: Mapping Data for Societal Benefit | NASA Space Apps Challenge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+  },
+  {
+    title: "NASA in Your Neighborhood",
+    iframes: '<iframe width="300" height="180" src="https://www.youtube.com/embed/t9zxokrUrhM" title="Challenge: NASA in Your Neighborhood | NASA Space Apps Challenge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+  },
+  {
+    title: "Space Biology Digital Twins: Modeling Worms in Space!",
+    iframes: '<iframe width="300" height="180" src="https://www.youtube.com/embed/AIx8Vdpt3lw" title="Challenge: Space Biology Digital Twins: Modeling Worms in Space! | NASA Space Apps Challenge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+  },
+  {
+    title: "STAR: Revolutionizing Technical Standards with AI",
+    iframes: '<iframe width="300" height="180" src="https://www.youtube.com/embed/2p_1jrIE9UU" title="Challenge: STAR: Revolutionizing Technical Standards with AI (educational) | NASA Space Apps" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+  },
+];
+
+
+export const gameDevelopment = [
+
+  {
+    title: "Immersed in the Sounds of Space",
+    iframes: '<iframe width="300" height="180" src="https://www.youtube.com/embed/IxaYAgIo_Ok" title="Challenge: Immersed in the Sounds of Space | NASA Space Apps Challenge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+  },
+  {
+    title: "Managing Fire: Increasing Community-based Fire Management Opportunities",
+    iframes: '<iframe width="300" height="180" src="https://www.youtube.com/embed/2JQzp51iFQw" title="Challenge: Managing Fire: Increasing Community-based Fire Management Opportunities | NASA Space Apps Challenge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+  },
+  {
+    title: "Ocean Gardens",
+    iframes: '<iframe width="300" height="180" src="https://www.youtube.com/embed/txcCv3rilko" title="Challenge: Ocean Gardens | NASA Space Apps Challenge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+  },
+  {
+    title: "Planetary Tourism Office",
+    iframes: '<iframe width="300" height="180" src="https://www.youtube.com/embed/tRGPTn5cgHg" title="Challenge: Planetary Tourism Office | NASA Space Apps Challenge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+  },
+  {
+    title: "Space Biology Digital Twins: Modeling Worms in Space!",
+    iframes: '<iframe width="300" height="180" src="https://www.youtube.com/embed/AIx8Vdpt3lw" title="Challenge: Space Biology Digital Twins: Modeling Worms in Space! | NASA Space Apps Challenge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+  },
+  {
+    title: "Visualize a Space Mission Using Virtual Reality",
+    iframes: '<iframe width="300" height="180" src="https://www.youtube.com/embed/x--oStYtNYQ" title="Challenge: Visualize a Space Mission Using Virtual Reality | NASA Space Apps Challenge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+  },
+];

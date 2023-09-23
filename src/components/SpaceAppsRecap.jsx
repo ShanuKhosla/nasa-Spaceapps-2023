@@ -56,8 +56,8 @@ const SpaceAppsRecap = () => {
         initial={animationComplete ? "" : "hidden"}
         whileInView="show"
         onAnimationComplete={handleAnimationComplete} 
-  href='#timeline'><button className=" pointer my-5 bg-[#eafe07] px-5 py-3 mb-[100px] text-black rounded-md text-xl font-bold font-overpass " style={{ cursor: 'pointer' }}>
-   Unfold the Timeline
+  href='#timeline'><button className="pointer my-5 bg-[#eafe07] px-5 py-3 mb-[100px] text-black rounded-full border-4 border-slate-500 text-2xl font-extrabold font-firaSans " style={{ cursor: 'pointer' }}>
+   Unfold The Timeline
   </button>
   </motion.a>
 

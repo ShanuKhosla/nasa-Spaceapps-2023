@@ -19,6 +19,7 @@ import HowToRegister from './components/blogs/HowToRegister';
 import SpaceappsChallengesGuide from './components/blogs/SpaceappsChallengesGuide';
 import WhySpaceAppsAthlone from './components/blogs/WhySpaceAppsAthlone';
 import Preloader from './components/Preloader';
+import Challenges from './components/Challenges';
 
 function App() {
   const [showPreloader, setShowPreloader] = useState(false);
@@ -59,6 +60,7 @@ function App() {
         <Route path="/day-one" element={<DayOne />} />
         <Route path="/day-two" element={<DayTwo />} />
         <Route path="/day-three" element={<DayThree />} />
+        <Route path="/spaceappsChallenges" element={<Challenges />} />
       </Routes>
       <Footer />
     </div>
