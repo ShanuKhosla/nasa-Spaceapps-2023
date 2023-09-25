@@ -203,7 +203,7 @@ export const daythrees = [
 
 export const blogs = [
   {
-    image: "./blog1.jpg",
+    image: "./blog1.png",
     tags: [{ name: "Technology" }],
     title: "The Importance of Diversity in Space Exploration",
     summary:
@@ -225,7 +225,7 @@ export const blogs = [
     date: "Aug 04, 2023",
     link: "/spaceexploration",
   }, {
-    image: "./blog2.jpg",
+    image: "./blog2.png",
     tags: [{ name: "Technology" }],
     title: "Here's How to Register for SpaceApps 2023!",
     summary:
@@ -257,7 +257,7 @@ export const blogs = [
     link: "/howToRegister",
 
   },  {
-    image: "./blog3.jpg",
+    image: "./blog3.png",
     tags: [{ name: "Technology" }],
     title: "Navigating the SpaceApps Hackathon Challenges",
     summary:
@@ -268,7 +268,7 @@ export const blogs = [
     link: "/challenges",
 
   },{
-    image: "./blog4.jpg",
+    image: "./blog4.png",
     tags: [{ name: "Technology" }],
     title: "Seven Reasons to Choose Space Apps Athlone",
     summary:

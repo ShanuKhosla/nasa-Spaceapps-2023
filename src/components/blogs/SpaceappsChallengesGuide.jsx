@@ -95,7 +95,7 @@ return (
 
     <div className='mt-8 mb-4 text-lg mx-auto font-overpass font-light tracking-tight leading-normal text-justify max-w-[90%] md:max-w-[75%] lg:max-w-[60%] flex flex-col items-center gap-6'>
     <p>Are you ready to embark on an interstellar journey of creativity, data analysis, game development, and space exploration? The NASA SpaceApps Challenge 2023 is here, and it brings with it a galaxy of exciting challenges to choose from. With 31 unique challenges spanning four distinct domains, it's time to chart your course among the stars. In this blog post, we'll guide you through how to choose the perfect challenge for your journey.</p>
-    <img className='my-5 rounded-xl object-contain max-w-full' src='./blog3.jpg' alt='banner' />
+    <img className='my-5 rounded-xl object-contain max-w-full' src='./blog3.png' alt='banner' />
     <p><b> The Four Domains: Space Exploration, Creative, Data Science, and Game Development </b></p>
     <p>The SpaceApps Hackathon 2023 is divided into four domains, each offering a unique set of challenges:</p>
     <p> <b>Space Exploration:</b>  These challenges revolve around exploring the cosmos, understanding celestial phenomena, and solving real-world problems related to space travel.</p>

@@ -95,7 +95,8 @@ return (
 
     <div className='mt-8 mb-4 text-lg mx-auto font-overpass font-light tracking-tight leading-normal text-justify max-w-[90%] md:max-w-[75%] lg:max-w-[60%] flex flex-col items-center gap-6'>
     <p>Are you ready to embark on an extraordinary journey of innovation and discovery at Space Apps Athlone? The countdown has begun, and we're thrilled to share some incredible provisions that await you at this year's hackathon. From access to NASA's Open Data to the chance to win a trip to witness a rocket launch, Space Apps Athlone is packed with opportunities to ignite your creativity and propel your career to new heights.</p>
-    <img className='my-5 rounded-xl object-contain max-w-full' src='./blog4.jpg' alt='banner' />
+    <img className='my-5 rounded-xl object-contain max-w-full' src='./blog4.png' alt='banner' />
+    <img className='my-5 rounded-xl object-contain max-w-full' src='./blog4.png' alt='banner' />
     <p><strong>1. NASA's Open Data: Fuel Your Imagination</strong></p>
 <p>
 Space Apps Athlone offers participants exclusive access to NASA's Open Data. Imagine having the vast resources of NASA at your fingertips—satellite imagery, astronomical data, and a treasure trove of information from the cosmos. With this data, the possibilities are as limitless as the universe itself. Whether you're developing a cutting-edge app or conducting groundbreaking research, NASA's Open Data is your launchpad to success.

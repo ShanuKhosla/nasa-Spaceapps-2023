@@ -28,7 +28,7 @@ const BlogCard = ({ image, title, summary, author, date, link }) => {
             <img
               src={image}
               alt="Blog Image"
-              className="w-full h-1/2 object-contain rounded-t-2xl rounded-b-none"
+              className="w-full h-[50%] object-contain rounded-t-2xl rounded-b-none"
               style={{ borderBottomLeftRadius: 0, borderBottomRightRadius: 0 }}
             />
           </div>

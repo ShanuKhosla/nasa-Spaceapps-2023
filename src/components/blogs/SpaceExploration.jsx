@@ -95,7 +95,7 @@ return (
 
     <div className='mt-8 mb-4 text-lg mx-auto font-overpass font-light tracking-tight leading-normal text-justify max-w-[90%] md:max-w-[75%] lg:max-w-[60%] flex flex-col items-center gap-6'>
     <p>Space exploration is one of the most important endeavors of our time. It has the potential to transform our understanding of the universe, and help us develop new technologies that can benefit humanity as a whole. But to reach its full potential, space exploration must be inclusive and diverse. Diversity in spatial analysis is important for many different reasons. </p>
-    <img className='my-5 rounded-xl object-contain max-w-full' src='./blog1.jpg' alt='banner' />
+    <img className='my-5 rounded-xl object-contain max-w-full' src='./blog1.png' alt='banner' />
     <p><b>First</b>, it can bring a broader perspective on the challenges of spatial exploration. With teams of scientists, engineers and astronauts, we are able to think critically and solve problems in new and innovative ways.</p>
     <p><b>Second</b>, the diversity of space exploration helps us to be an inclusive and equitable society. Seeing people from all walks of life represented in the space program sends the message that everyone has a place in the future of space exploration. This can inspire young people from all walks of life to pursue careers in STEM fields, helping us build a more just and equitable world.</p>
     <p><b>Ultimately</b>, diverse spatial exploration is just the right thing to do. No one group of people has a monopoly on knowledge or skills. If we want to reach our full potential in the space, we need to attract the talents and insights of people from all walks of life.</p>

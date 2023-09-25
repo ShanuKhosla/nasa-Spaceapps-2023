@@ -72,6 +72,7 @@ const Navbar = () => {
         {/* <a href="https://docs.google.com/forms/d/1EYUQxLAllIdm3bygjkTN76sDyDh9SxiAeS3DbMIqQp0/viewform?edit_requested=true">VOLUNTEER</a> */}
         <a href="/volunteer">JOIN US</a>
         <a href="/faq">FAQ's</a>
+        <a href="https://www.spaceappschallenge.org/2023/challenges/" target='_blank'>CHALLENGES</a>
         <a href="/contact">CONTACT</a>
         {isTabletView && (
           <button className="nav-btn nav-close-btn" onClick={showNavbar}>

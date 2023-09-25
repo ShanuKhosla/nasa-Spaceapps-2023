@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { fadeIn } from '../utils/motion';
 import { blogs } from '../constants';
 import BlogCard from './BlogCard'; // Make sure the import is correct
-import backgroundImage from '/blogsBgd.jpg';
+import backgroundImage from '/starsUpscaled.png';
 
 
 const Blog = () => {
@@ -21,7 +21,7 @@ const Blog = () => {
   return (
     <>
     <div
-    className='bg-center bg-no-repeat bg-cover'
+    className='bg-top bg-repeat bg-cover'
     style={{backgroundImage: `url(${backgroundImage})`}}
     >
     <motion.div
