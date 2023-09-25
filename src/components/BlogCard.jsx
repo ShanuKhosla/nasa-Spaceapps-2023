@@ -35,7 +35,7 @@ const BlogCard = ({ image, title, summary, author, date, link }) => {
   
           <div className="p-5">
             <div className="mt-1 mb-5">
-              <h2 className="text-lg sm:text-xl lg:text-2xl mb-2 font-overpass font-extrabold tracking-tight">
+              <h2 className="text-lg sm:text-xl lg:text-xl mb-2 font-overpass font-extrabold tracking-tight">
                 {title}
               </h2>
               <p className="text-md font-overpass font-thin">{summary}</p>

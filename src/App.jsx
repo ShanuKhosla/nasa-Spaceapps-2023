@@ -18,6 +18,7 @@ import SpaceExploration from './components/blogs/SpaceExploration';
 import HowToRegister from './components/blogs/HowToRegister';
 import SpaceappsChallengesGuide from './components/blogs/SpaceappsChallengesGuide';
 import WhySpaceAppsAthlone from './components/blogs/WhySpaceAppsAthlone';
+import Teambuilding from './components/blogs/Teambuilding';
 import Preloader from './components/Preloader';
 import Challenges from './components/Challenges';
 
@@ -57,6 +58,7 @@ function App() {
         <Route path="/howToRegister" element={<HowToRegister />} />
         <Route path="/challenges" element={<SpaceappsChallengesGuide />} />
         <Route path="/whyAthlone" element={<WhySpaceAppsAthlone />} />
+        <Route path="/teamBuilding" element={<Teambuilding />} />
         <Route path="/day-one" element={<DayOne />} />
         <Route path="/day-two" element={<DayTwo />} />
         <Route path="/day-three" element={<DayThree />} />

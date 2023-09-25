@@ -278,6 +278,17 @@ export const blogs = [
     date: "Sep 20, 2023",
     link: "/whyAthlone",
 
+  },{
+    image: "./blog5.jpg",
+    tags: [{ name: "Technology" }],
+    title: "Forming Teams, Joining Forces, and Finding Your Cosmic Crew",
+    summary:
+    "Prepare for SpaceApps Athlone 2023! Discover team options: 1-6 participants, solo or group. Register your team, or join one during team joining. Connect via dedicated chat. Embrace diversity, online inclusion. Team up and conquer cosmos! 🚀🌌",
+      points: [],
+    author: "Shaiv Mehrotra",
+    date: "Sep 27, 2023",
+    link: "/teamBuilding",
+
   }, 
 ];
 
