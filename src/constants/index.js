@@ -264,7 +264,7 @@ export const blogs = [
       "Explore NASA's SpaceApps Challenge 2023 with 31 unique challenges across four domains: Space Exploration, Creative, Data Science, and Game Development. Tailor your cosmic journey by selecting challenges based on difficulty and your passion.",
       points: [],
     author: "Shaiv Mehrotra",
-    date: "Sep 14, 2023",
+    date: "Sep 4, 2023",
     link: "/challenges",
 
   },{
@@ -275,7 +275,7 @@ export const blogs = [
     "Space Apps Athlone promises NASA's Open Data, expert networking, 48-hour innovation in top-notch facilities, a hardware toolkit, sustained meals, and exciting prizes, including a NASA trip—an opportunity to elevate your career. Join the space exploration!",
       points: [],
     author: "Shaiv Mehrotra & Sneha",
-    date: "Sep 20, 2023",
+    date: "Sep 13, 2023",
     link: "/whyAthlone",
 
   },{
@@ -286,8 +286,30 @@ export const blogs = [
     "Prepare for SpaceApps Athlone 2023! Discover team options: 1-6 participants, solo or group. Register your team, or join one during team joining. Connect via dedicated chat. Embrace diversity, online inclusion. Team up and conquer cosmos! 🚀🌌",
       points: [],
     author: "Shaiv Mehrotra",
-    date: "Sep 27, 2023",
+    date: "Sep 18, 2023",
     link: "/teamBuilding",
+
+  }, {
+    image: "./blog6.jpg",
+    tags: [{ name: "Technology" }],
+    title: "How Projects Soar to Victory",
+    summary:
+    "Prepare for SpaceApps Athlone 2023! Understand the judging process evaluating projects in challenge domains for impact, creativity, validity, relevance, and presentation. Embrace diversity and innovation on your stellar journey! 🚀🌠 #SpaceApps2023 #JudgingCriteria",
+      points: [],
+    author: "Shaiv Mehrotra",
+    date: "Sep 21, 2023",
+    link: "/judgingCriteria",
+
+  },{
+    image: "./blog7.jpg",
+    tags: [{ name: "Technology" }],
+    title: "Tips for a Stellar Hackathon Experience",
+    summary:
+    "Gear up for SpaceApps Athlone 2023 with this comprehensive guide. Collaborate effectively, network strategically, present innovatively, manage time wisely, and prioritize ethics. Embark on this cosmic journey from October 6-8, 2023, at TU Shannon. 🚀🌌 #SpaceApps2023 #CosmicHacks",
+      points: [],
+    author: "Shaiv Mehrotra",
+    date: "Sep 23, 2023",
+    link: "/tipsandtricks",
 
   }, 
 ];

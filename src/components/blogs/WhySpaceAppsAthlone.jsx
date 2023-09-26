@@ -63,7 +63,7 @@ return (
 
     <div className='flex flex-col justify-between gap-1 px-[21%] my-6 font-firaSans tracking-wide text-xl'>
       <p>Shaiv Mehrotra & Sneha </p> 
-      <p>4 min read | Sep 20, 2023</p>
+      <p>4 min read | Sep 13, 2023</p>
     </div>
 
     <hr className='opacity-30 w-[90%] md:w-[80%] lg:w-[63%] mx-auto' />

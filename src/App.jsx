@@ -19,8 +19,11 @@ import HowToRegister from './components/blogs/HowToRegister';
 import SpaceappsChallengesGuide from './components/blogs/SpaceappsChallengesGuide';
 import WhySpaceAppsAthlone from './components/blogs/WhySpaceAppsAthlone';
 import Teambuilding from './components/blogs/Teambuilding';
+import JudgingCriteria from './components/blogs/JudgingCriteria';
+import TipsAndTricks from './components/blogs/TipsAndTricks';
 import Preloader from './components/Preloader';
 import Challenges from './components/Challenges';
+import { tooltip } from 'leaflet';
 
 function App() {
   const [showPreloader, setShowPreloader] = useState(false);
@@ -59,6 +62,8 @@ function App() {
         <Route path="/challenges" element={<SpaceappsChallengesGuide />} />
         <Route path="/whyAthlone" element={<WhySpaceAppsAthlone />} />
         <Route path="/teamBuilding" element={<Teambuilding />} />
+        <Route path="/judgingCriteria" element={<JudgingCriteria />} />
+        <Route path="/tipsandtricks" element={<TipsAndTricks />} />
         <Route path="/day-one" element={<DayOne />} />
         <Route path="/day-two" element={<DayTwo />} />
         <Route path="/day-three" element={<DayThree />} />
