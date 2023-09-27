@@ -62,7 +62,7 @@ const Navbar = () => {
       id="Navbar"
 >
 
-      <a href="/">
+      <a target="_blank" href="https://deeducommunity.netlify.app/">
         <img src="/DeeduLogo1.png" className="object-contain relative right-3 lg:right-[65px] h-[120px] w-[120px] sm:h-[140px] sm:w-[180px]" alt="Logo" />
       </a>
       <nav

@@ -311,6 +311,17 @@ export const blogs = [
     date: "Sep 23, 2023",
     link: "/tipsandtricks",
 
+  }, {
+    image: "./blog8.jpg",
+    tags: [{ name: "Technology" }],
+    title: "Unlocking SpaceApps Connect: Your Ultimate Guide",
+    summary:
+    "SpaceApps Connect, an integral part of NASA's International Space Apps Challenge, is hosted on GitHub Discussions. Participants utilize this collaborative hub to form teams, seek guidance, and collaborate in a professional, respectful atmosphere. #SpaceApps2023",
+      points: [],
+    author: "Sneha",
+    date: "Sep 24, 2023",
+    link: "/spaceappsconnect",
+
   }, 
 ];
 
