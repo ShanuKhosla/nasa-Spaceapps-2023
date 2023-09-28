@@ -9,6 +9,7 @@ import CTA from './CTA';
 import GlobalCollaborators from './GlobalCollaborators';
 import SpaceAgencies from './SpaceAgencies';
 import Tus from './Tus';
+import Instagram from './Instagram';
 
 const HomePage = () => {
   const [showBackToTop, setShowBackToTop] = useState(false);
@@ -52,6 +53,7 @@ const HomePage = () => {
       <GlobalCollaborators />
       <Tus />
       <Timeline />
+      <Instagram />
       <CTA />
 
       {showBackToTop && (

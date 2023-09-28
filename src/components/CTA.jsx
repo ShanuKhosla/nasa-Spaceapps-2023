@@ -86,7 +86,7 @@ width="873" height="315" src="https://www.youtube.com/embed/lUuRRAFhfM0?si=x0y6F
         </div>
         </motion.div>
       {showPopup && <div className={`invisible lg:visible z-[9999] ${showPopup ? 'slide-in' : 'slide-out'}  w-[50%] shadow-xl bg-[#f6f4f4] rounded-md popup bottom-5`}>
-            <img className='object-contain flex item-center justify-center w-full max-h-full p-1' src="./hackathlone4.gif" />
+            <img className='object-contain flex item-center justify-center w-full max-h-full p-1' src="./notSureHow.gif" />
           </div>}
     </motion.div>
   );

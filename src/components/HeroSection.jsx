@@ -155,7 +155,7 @@ const HeroSection = () => {
         </div>
         </motion.div>
           {showPopup && <div className={`hidden lg:block z-[9999] ${showPopup ? 'slide-in' : 'slide-out'}  w-[50%] shadow-xl bg-[#f6f4f4] rounded-md popup bottom-5`}>
-            <img className='object-contain flex item-center justify-center w-full max-h-full p-1' src="./hackathlone4.gif" />
+            <img className='object-contain flex item-center justify-center w-full max-h-full p-1' src="./notSureHow.gif" />
           </div>}
 
           <div>
@@ -167,7 +167,7 @@ const HeroSection = () => {
 
       {showMobilePopup && (
         <div className={`z-[9999] ${showMobilePopup ? 'slide-in' : 'slide-out'} sm:w-[50%]  w-[98%] shadow-xl bg-[#f6f4f4] rounded-md popup bottom-0`}>
-          <img className='object-contain flex item-center justify-center w-full max-h-full p-1' src="./hackathlone4.gif" alt="Gif" />
+          <img className='object-contain flex item-center justify-center w-full max-h-full p-1' src="./notSureHow.gif" alt="Gif" />
           <button className='w-6 h-6 bg-opacity-0 bg-black rounded-full z-10 absolute top-1 right-1' onClick={handleClose}><img src='cancel.png' /></button>
         </div>
       )}
