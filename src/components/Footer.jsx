@@ -49,9 +49,10 @@ style={{ backgroundImage: `url(${backgroundImage})` }}
   <div className='mt-4 lg:mt-4'>
   <h3 className='font-overpass font-bold text-xl tracking-snug mb-1 lg:mb-10'>Participation Kit</h3>
   <ul className='font-firaSans list-none leading-relaxed'>
-    <li className='my-2'><a className='tracking-wide no-underline text-[#f6f4f4] hover:text-[#eafe07]' target='_blank' href="https://drive.google.com/file/d/1Z2y_0w7MQXH5dPbiL4hLdYlpkULcw04S/view?usp=sharing" download>How to Register</a></li>
     <li className='my-2'><a className='tracking-wide no-underline text-[#f6f4f4] hover:text-[#eafe07]' href="https://www.spaceappschallenge.org/2023/challenges/" target='_blank'>Challenges</a></li>
-    <li className='my-2'><a className='tracking-wide no-underline text-[#f6f4f4] hover:text-[#eafe07]' href="./flyer.png" download >Event Flyer</a></li>
+    <li className='my-2'><a className='tracking-wide no-underline text-[#f6f4f4] hover:text-[#eafe07]' target='_blank' href="https://drive.google.com/file/d/1Z2y_0w7MQXH5dPbiL4hLdYlpkULcw04S/view?usp=sharing" download>How to Register</a></li>
+    <li className='my-2'><a className='tracking-wide no-underline text-[#f6f4f4] hover:text-[#eafe07]' href="https://www.youtube.com/watch?v=EhF7JJlOKXc" download >Choose a Challenge</a></li>
+    <li className='my-2'><a className='tracking-wide no-underline text-[#f6f4f4] hover:text-[#eafe07]' href="https://www.youtube.com/watch?v=2Ornb12MKxk" download >Tips & Tricks</a></li>
   </ul> 
 </div>
 

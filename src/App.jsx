@@ -22,6 +22,7 @@ import Teambuilding from './components/blogs/Teambuilding';
 import JudgingCriteria from './components/blogs/JudgingCriteria';
 import TipsAndTricks from './components/blogs/TipsAndTricks';
 import SpaceappsConnect from './components/blogs/SpaceappsConnect';
+import Navigation from './components/blogs/Navigation';
 import Preloader from './components/Preloader';
 import Challenges from './components/Challenges';
 import { tooltip } from 'leaflet';
@@ -66,6 +67,7 @@ function App() {
         <Route path="/judgingCriteria" element={<JudgingCriteria />} />
         <Route path="/tipsandtricks" element={<TipsAndTricks />} />
         <Route path="/spaceappsconnect" element={<SpaceappsConnect />} />
+        <Route path="/navigating" element={<Navigation />} />
         <Route path="/day-one" element={<DayOne />} />
         <Route path="/day-two" element={<DayTwo />} />
         <Route path="/day-three" element={<DayThree />} />

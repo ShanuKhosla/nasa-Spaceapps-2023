@@ -79,46 +79,7 @@ const Instagram = () => {
             allowtransparency='true'
             allow='encrypted-media'
           />
-          <iframe
-            src='https://www.instagram.com/p/CxOR-Q_BkmO/embed/'
-            width={300}
-            height={400}
-            className='rounded-md'
-            frameBorder='0'
-            scrolling='no'
-            allowtransparency='true'
-            allow='encrypted-media'
-          />
-          <iframe
-            src='https://www.instagram.com/p/CxOR11rB3uM/embed/'
-            width={300}
-            height={400}
-            className='rounded-md'
-            frameBorder='0'
-            scrolling='no'
-            allowtransparency='true'
-            allow='encrypted-media'
-          />
-          <iframe
-            src='https://www.instagram.com/p/CxLnD5mhm3R/embed/'
-            width={300}
-            height={400}
-            className='rounded-md'
-            frameBorder='0'
-            scrolling='no'
-            allowtransparency='true'
-            allow='encrypted-media'
-          />
-          <iframe
-            src='https://www.instagram.com/p/CxLm6i0BLM3/embed/'
-            width={300}
-            height={400}
-            className='rounded-md'
-            frameBorder='0'
-            scrolling='no'
-            allowtransparency='true'
-            allow='encrypted-media'
-          />
+
         </motion.div>
       </motion.div>
     </>

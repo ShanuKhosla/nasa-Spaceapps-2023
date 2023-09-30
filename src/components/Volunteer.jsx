@@ -60,7 +60,7 @@ const Volunteer = () => {
             <p>Loren Ipsum</p>
             <p>Loren Ipsum</p>
             </div> */}
-            <a href='' target="_blank"><button className='px-20 sm:px-40 py-2 bg-black bg-opacity-10 backdrop-blur-2xl text-[#2E96F5] text-xl md:text-2xl font-firaSans font-semibold rounded-lg hover:bg-opacity-60 hover:border-white hover:text-white transition-colors duration-700 border-[3px] cursor-pointer border-sky-500 '>Join Us</button></a>
+            <a href='https://forms.gle/BX5EWHuyeew5CPd8A' target="_blank"><button className='px-20 sm:px-40 py-2 bg-black bg-opacity-10 backdrop-blur-2xl text-[#2E96F5] text-xl md:text-2xl font-firaSans font-semibold rounded-lg hover:bg-opacity-60 hover:border-white hover:text-white transition-colors duration-700 border-[3px] cursor-pointer border-sky-500 '>Join Us</button></a>
           </div>
 
                    

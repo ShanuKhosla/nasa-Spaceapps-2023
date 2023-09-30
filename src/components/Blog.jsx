@@ -21,7 +21,7 @@ const Blog = () => {
   return (
     <>
     <div
-    className='bg-top bg-repeat bg-cover'
+    className='bg-top bg-repeat bg-contain'
     style={{backgroundImage: `url(${backgroundImage})`}}
     >
     <motion.div

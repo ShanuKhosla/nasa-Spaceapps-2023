@@ -322,6 +322,17 @@ export const blogs = [
     date: "Sep 24, 2023",
     link: "/spaceappsconnect",
 
+  }, {
+    image: "./blog9.jpg",
+    tags: [{ name: "Technology" }],
+    title: "Navigating Your Way to NASA SpaceApps Challenge at TU Shannon in Athlone",
+    summary:
+    "Join the NASA SpaceApps Challenge at TU Shannon in Athlone for an innovative experience. Travel options include buses from major cities, cost-effective trains, or the flexibility of driving. Plan ahead and don't miss this unforgettable event!",
+      points: [],
+    author: "Sneha",
+    date: "Sep 25, 2023",
+    link: "/navigating",
+
   }, 
 ];
 
