@@ -119,7 +119,7 @@ const HeroSection = () => {
           onAnimationComplete={handleAnimationComplete}
           className='flex flex-col sm:flex-row items-center justify-between gap-4'
         >
-        <a href='/spaceappsChallenges' target='_blank'>
+        <a href='https://www.spaceappschallenge.org/2023/challenges/' target='_blank'>
         <motion.button
           variants={fadeIn('left', 'tween', 6.6, 0.9)}
           initial={animationComplete ? "" : "hidden"}
