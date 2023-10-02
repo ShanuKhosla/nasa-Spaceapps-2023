@@ -333,6 +333,17 @@ export const blogs = [
     date: "Sep 25, 2023",
     link: "/navigating",
 
+  }, {
+    image: "./blog10.jpg",
+    tags: [{ name: "Technology" }],
+    title: "Hacking the Night Away: Unveiling the Thrills of SpaceApps Athlone 2023",
+    summary:
+    "SpaceApps Athlone 2023: An electrifying hackathon where global innovators unite, fueled by camaraderie and NASA's challenges. Creativity thrives, teams collaborate, and the excitement never sleeps. Join the journey from October 6th to 8th, 2023. 🚀🌌 #SpaceApps2023 #HackAthlone #InnovationUnleashed",
+      points: [],
+    author: "Shaiv Mehrotra",
+    date: "Sep 27, 2023",
+    link: "/getready",
+
   }, 
 ];
 
