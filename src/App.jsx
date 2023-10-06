@@ -28,6 +28,7 @@ import Preloader from './components/Preloader';
 import Challenges from './components/Challenges';
 import { tooltip } from 'leaflet';
 import Announcements from './components/Announcements';
+import FindATeam from './components/FindATeam';
 
 function App() {
   // const [showPreloader, setShowPreloader] = useState(false);
@@ -75,6 +76,7 @@ function App() {
         <Route path="/day-two" element={<DayTwo />} />
         <Route path="/day-three" element={<DayThree />} />
         <Route path="/announcements" element={<Announcements />} />
+        <Route path="/findateam" element={<FindATeam />} />
         <Route path="/spaceappsChallenges" element={<Challenges />} />
       </Routes>
       <Footer />

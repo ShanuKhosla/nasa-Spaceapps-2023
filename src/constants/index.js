@@ -374,7 +374,90 @@ export const faqs = [
 export const announcements = [
   {
     announcement: "Participants are requested to register themselves at the Engineering Building desk to collect IDs, T-Shirts and Merchandise."
-  }
+  },  {
+    announcement: "Kindly keep checking the Info Hub located on the Home page for crucial information and updates about the hackathon."
+  },{
+    announcement: "Find a Team Link added to the Info Hub. Check it out! ( Home > Info Hub > Resources > Find a Team )"
+  },{
+    announcement: ""
+  },
+]
+
+export const pitchs = [
+  {
+    name:"Thomas McCarthyq",
+    college:"University of Limerick",
+    challenge:"What's in this water",
+    summary:"Bio of life, Coding skills",
+    skillset:"Coding",
+    skillsneeded:"null",
+  },  
+  
+  {
+    name:"Tadhg Ryan",
+    college:"Universty of Limerick",
+    challenge:"-",
+    summary:"Talked about myself, skills, background, work experience",
+    skillset:"Coding, problem solving, java, C, Python",
+    skillsneeded:"None",
+  },  
+  
+  {
+    name:"Adrian Guerras",
+    college:"TUS",
+    challenge:"Exoplanet",
+    summary:"-",
+    skillset:"Games and Web Development",
+    skillsneeded:"None",
+  },
+  
+  {
+    name:"Claudia Ortiz",
+    college:"TUS Athlone",
+    challenge:"Mapping Data for Societal benefit, Everything starts with water, whats up with the water?...",
+    summary:"third year computer engineering student, looking for a team",
+    skillset:"Coding, Website, Imagery..",
+    skillsneeded:"Whatever skill",
+  },
+  
+  {
+    name:"Anton",
+    college:"TUS Athlone",
+    challenge:"Exoplanets, Titan city, Space worms, Biodiversity, ocean gardens, mapping data for soc.ben.",
+    summary:"Biologist for biology/geology/chemistry related projects",
+    skillset:"-",
+    skillsneeded:"-",
+  },
+
+  {
+    name:"Micheál Gill",
+    college:"TUS Midlands",
+    challenge:"Habitable exoplanets",
+    summary:"-",
+    skillset:"business, engineering",
+    skillsneeded:"climate, science",
+  },
+
+      
+  {
+    name:"Qiuran Hu",
+    college:"TUS Athlone",
+    challenge:"Ocean Gardens",
+    summary:"Come join us if you are enthusiastic to incorporate kelp, a seaweed, into our diets to address the global food crisis and climate change!",
+    skillset:"CREATIVITY, SOFTWARE, PROMOTING BIG IDEAS ",
+    skillsneeded:"SOFTWARE, BIOLOGY, SCIENCE",
+  }, 
+
+      
+  {
+    name:"Fabrizio De Fiore",
+    college:"TUS Midlands",
+    challenge:"-",
+    summary:"Two programmers with diverse range of skills in the field - proficient coders and previous winners of Games Fleadh. Looking for science-minded people to provide these skills to a diverse team",
+    skillset:"Game  Development, VR, Software, Web Dev(Java, c++, C#, Python, Javascript, Linux...",
+    skillsneeded:"Science, physics, astronomy, everything spacey ",
+  }, 
+  
 ]
 
 export const allChallenges = [

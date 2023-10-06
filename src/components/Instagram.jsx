@@ -39,6 +39,16 @@ const Instagram = () => {
           className='flex flex-row flex-wrap items-start justify-center gap-8 my-3'
         >
          <iframe
+            src='https://www.instagram.com/p/CyBirTTxKgP/embed/'
+            width={300}
+            height={400}
+            className='rounded-md'
+            frameBorder='0'
+            scrolling='no'
+            allowtransparency='true'
+            allow='encrypted-media'
+          /> 
+          <iframe
             src='https://www.instagram.com/p/Cxuyn6js_Cn/embed/'
             width={300}
             height={400}
@@ -69,16 +79,7 @@ const Instagram = () => {
             allowtransparency='true'
             allow='encrypted-media'
           />
-          <iframe
-            src='https://www.instagram.com/p/CxbBzSyJkFg/embed/'
-            width={300}
-            height={400}
-            className='rounded-md'
-            frameBorder='0'
-            scrolling='no'
-            allowtransparency='true'
-            allow='encrypted-media'
-          />
+
 
         </motion.div>
       </motion.div>

@@ -20,7 +20,7 @@ const InfoHubContent = ({ isOpen, toggleInfoHub }) => {
     <button onClick={toggleInfoHub} className='cursor-pointer'><img width={15} src='./cancel.png' className='absolute top-0 left-0 m-1' /></button>
 
      <div>
-      <h1 className='font-black text-[#E43700] text-xl'>⮞  Emergency Contact</h1>
+      <h1 className='font-black text-[#E43700] text-xl'>   Emergency Contact</h1>
       <p className=' font-black'>999</p>
       <p className=' font-black'>112</p>
       <p className=' font-black'>(087) 111 4444</p>
@@ -29,7 +29,7 @@ const InfoHubContent = ({ isOpen, toggleInfoHub }) => {
       </div>    
       
       {/* <div>
-      <h1 className='text-sm'>⮞  Contact Info</h1>
+      <h1 className='text-sm'>   Contact Info</h1>
       <p>Sahir Sharma: +353 83 375 0317</p>
       <p>Kkhawaish Gulati: +353 89 494 8222</p>
  
@@ -44,27 +44,27 @@ const InfoHubContent = ({ isOpen, toggleInfoHub }) => {
       </details>
 
       
-      <a className='text-black no-underline' target='_blank' href='/announcements'><h1 className='text-sm'>⮞ Announcements</h1></a>
-      <a className='text-black no-underline' target='_blank' href='/day-one'><h1 className='text-sm'>⮞ Today's Schedule</h1></a>
-      {/* <a className='text-black no-underline' target='_blank' href='/'><h1 className='text-sm'>⮞ Facility Information</h1></a> */}
+      <a className='text-black no-underline' target='_blank' href='/announcements'><h1 className='text-sm'>  Announcements</h1></a>
+      <a className='text-black no-underline' target='_blank' href='/day-one'><h1 className='text-sm'>  Today's Schedule</h1></a>
+      {/* <a className='text-black no-underline' target='_blank' href='/'><h1 className='text-sm'>  Facility Information</h1></a> */}
       <details className="w-full rounded-md">
       <summary className="text-sm text-black no-underline font-extrabold cursor-pointer" >Facility Information</summary>
       <ul className="p-2 shadow-xl menu w-full dropdown-content z-[1] bg-slate-100 rounded-box ">
       <details className="w-full rounded-md">
       <summary className="text-sm text-black no-underline font-extrabold cursor-pointer" >Parking Information</summary>
       <ul className="p-2 shadow-xl menu w-full dropdown-content z-[1] bg-slate-100 rounded-box ">
-      <li><a className='text-black no-underline' target='_blank' href='./ParkingLayout.png' download>⮞ Car Parking Map</a></li>
-      <li><a className='text-black no-underline' target='_blank' href='https://www.ait.ie/uploads/downloads/TUS_MIDLANDS_PARKING_REGULATIONS_2023.pdf' download>⮞ Parking Regulations</a></li>
+      <li><a className='text-black no-underline' target='_blank' href='./ParkingLayout.png' download>  Car Parking Map</a></li>
+      <li><a className='text-black no-underline' target='_blank' href='https://www.ait.ie/uploads/downloads/TUS_MIDLANDS_PARKING_REGULATIONS_2023.pdf' download>  Parking Regulations</a></li>
       </ul>
       </details>
-      <li><a className='text-black no-underline'  target='_blank' href='https://www.ait.ie/uploads/downloads/Engineering_Building_-_Emergency_Evacuation_Maps__Information.pdf'>⮞ Emergency Evacuation Plan</a></li>
+      <li><a className='text-black no-underline'  target='_blank' href='https://www.ait.ie/uploads/downloads/Engineering_Building_-_Emergency_Evacuation_Maps__Information.pdf'>  Emergency Evacuation Plan</a></li>
       </ul>
       </details>
 
       <details className="w-full rounded-md ">
       <summary className="text-sm text-black no-underline font-extrabold cursor-pointer" >Classrooms</summary>
       <ul className="p-3 gap-2 shadow-xl menu w-full dropdown-content z-[1] bg-slate-100 rounded-lg font-bold">
-      <button className="border-none text-black font-firaSans text-left bg-transparent text-[14px] hover:bg-[#eafe07] cursor-pointer" onClick={()=>document.getElementById('my_modal_1').showModal()}>⮞ Checkout Classrooms</button>
+      <button className="border-none text-black font-firaSans text-left bg-transparent text-[14px] hover:bg-[#eafe07] cursor-pointer" onClick={()=>document.getElementById('my_modal_1').showModal()}>  Checkout Classrooms</button>
 <dialog id="my_modal_1" className="modal flex items-center justify-center mx-auto">
   <div className="modal-box bg-black text-md text-[#f6f4f4]">
     <h3 className="font-bold text-3xl">Kindly Note</h3>
@@ -77,20 +77,20 @@ const InfoHubContent = ({ isOpen, toggleInfoHub }) => {
     </div>
   </div>
 </dialog>
-      <a className='text-black no-underline' href='./Classrooms.png' download>⮞ Download Floor Layout</a>
+      <a className='text-black no-underline' href='./Classrooms.png' download>  Download Floor Layout</a>
       </ul>
       </details>
       <details className="w-full rounded-md ">
       <summary className="text-sm text-black no-underline font-extrabold cursor-pointer" > Resources</summary>
       <ul className="p-3 gap-2 shadow-xl menu w-full dropdown-content z-[1] bg-slate-100 rounded-lg font-bold">
-      <li>⮞ Stay Tuned</li>
+      <a target="_blank" className='text-black no-underline' href='/findateam'>Find A Team</a>
       </ul>
       </details>  
-      <a className='text-black no-underline' target='_blank' href='https://instagram.com/spaceappsathlone/live/18035428129520568?igshid=MTc4MmM1YmI2Ng=='><h1 className='text-sm'>⮞ Live Stream</h1></a>
+      <a className='text-black no-underline' target='_blank' href='https://instagram.com/spaceappsathlone/live/18035428129520568?igshid=MTc4MmM1YmI2Ng=='><h1 className='text-sm'>  Live Stream</h1></a>
     
-      {/* <a className='text-black no-underline' target='_blank' href='/'><h1 className='text-sm'>⮞ Rules and Regulations</h1></a> */}
-      {/* <a className='text-black no-underline' target='_blank' href='/'><h1 className='text-sm'>⮞ Discord </h1></a> */}
-      {/* <a target='_blank' href='/'><h1 className='text-sm'>⮞ Whatsapp Chatroom</h1></a> */}
+      {/* <a className='text-black no-underline' target='_blank' href='/'><h1 className='text-sm'>  Rules and Regulations</h1></a> */}
+      {/* <a className='text-black no-underline' target='_blank' href='/'><h1 className='text-sm'>  Discord </h1></a> */}
+      {/* <a target='_blank' href='/'><h1 className='text-sm'>  Whatsapp Chatroom</h1></a> */}
     </motion.div>
   );
 };
