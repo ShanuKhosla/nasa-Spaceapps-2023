@@ -2,67 +2,106 @@
 /* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import backgroundImage from '/heroBgd.png';
+import backgroundImage from '/heroBackground.png';
 import { fadeIn, staggerContainer, textVariant } from '../utils/motion';
 import "./styles/CustomTexts.css";
-import Countdown from 'react-countdown';
+
+const InfoHubContent = ({ isOpen, toggleInfoHub }) => {
+
+  
+  return (
+    <motion.div
+      initial={{ x: '100%' }}
+      animate={{ x: isOpen ? 0 : '100%' }}
+      transition={{ duration: 0.5 }}
+      className='absolute h-[340px] w-fit px-3 text-xs top-40 right-0 rounded-l-lg rounded-r-none pb-5 py-2 pl-4 flex items-start justify-start gap-2 flex-col  font-firaSans  bg-[#f6f4f4] text-black overflow-y-scroll  overflow-x-hidden'
+    >
+
+    <button onClick={toggleInfoHub} className='cursor-pointer'><img width={15} src='./cancel.png' className='absolute top-0 left-0 m-1' /></button>
+
+     <div>
+      <h1 className='font-black text-[#E43700] text-xl'>⮞  Emergency Contact</h1>
+      <p className=' font-black'>999</p>
+      <p className=' font-black'>112</p>
+      <p className=' font-black'>(087) 111 4444</p>
+      <p className=' font-black'>Midland Regional Hospital Tullamore: +353 57 932 1501</p>  
+      <p className=' font-black'>Athlone Garda Police Station: +353 90 649 8550</p>  
+      </div>    
+      
+      {/* <div>
+      <h1 className='text-sm'>⮞  Contact Info</h1>
+      <p>Sahir Sharma: +353 83 375 0317</p>
+      <p>Kkhawaish Gulati: +353 89 494 8222</p>
+ 
+      </div> */}
+
+      <details className="w-full rounded-md ">
+      <summary className="text-sm text-black no-underline font-extrabold cursor-pointer" > Contact Info</summary>
+      <ul className="p-3 gap-2 shadow-xl menu w-full dropdown-content z-[1] bg-slate-100 rounded-lg font-bold">
+      <li>Sahir Sharma: +353 83 375 0317</li>
+      <li>Kkhawaish Gulati: +353 89 494 8222</li>
+      </ul>
+      </details>
+
+      
+      <a className='text-black no-underline' target='_blank' href='/announcements'><h1 className='text-sm'>⮞ Announcements</h1></a>
+      <a className='text-black no-underline' target='_blank' href='/day-one'><h1 className='text-sm'>⮞ Today's Schedule</h1></a>
+      {/* <a className='text-black no-underline' target='_blank' href='/'><h1 className='text-sm'>⮞ Facility Information</h1></a> */}
+      <details className="w-full rounded-md">
+      <summary className="text-sm text-black no-underline font-extrabold cursor-pointer" >Facility Information</summary>
+      <ul className="p-2 shadow-xl menu w-full dropdown-content z-[1] bg-slate-100 rounded-box ">
+      <details className="w-full rounded-md">
+      <summary className="text-sm text-black no-underline font-extrabold cursor-pointer" >Parking Information</summary>
+      <ul className="p-2 shadow-xl menu w-full dropdown-content z-[1] bg-slate-100 rounded-box ">
+      <li><a className='text-black no-underline' target='_blank' href='./ParkingLayout.png' download>⮞ Car Parking Map</a></li>
+      <li><a className='text-black no-underline' target='_blank' href='https://www.ait.ie/uploads/downloads/TUS_MIDLANDS_PARKING_REGULATIONS_2023.pdf' download>⮞ Parking Regulations</a></li>
+      </ul>
+      </details>
+      <li><a className='text-black no-underline'  target='_blank' href='https://www.ait.ie/uploads/downloads/Engineering_Building_-_Emergency_Evacuation_Maps__Information.pdf'>⮞ Emergency Evacuation Plan</a></li>
+      </ul>
+      </details>
+
+      <details className="w-full rounded-md ">
+      <summary className="text-sm text-black no-underline font-extrabold cursor-pointer" >Classrooms</summary>
+      <ul className="p-3 gap-2 shadow-xl menu w-full dropdown-content z-[1] bg-slate-100 rounded-lg font-bold">
+      <button className="border-none text-black font-firaSans text-left bg-transparent text-[14px] hover:bg-[#eafe07] cursor-pointer" onClick={()=>document.getElementById('my_modal_1').showModal()}>⮞ Checkout Classrooms</button>
+<dialog id="my_modal_1" className="modal flex items-center justify-center mx-auto">
+  <div className="modal-box bg-black text-md text-[#f6f4f4]">
+    <h3 className="font-bold text-3xl">Kindly Note</h3>
+    <p className="mt-4 font-normal text-md">Here are the designated classrooms for teams to engage in discussions: <br /> <span className='font-extrabold text-xl mt-1 flex flex-wrap max-w-[50%]'>U305, U306, V305, V306, W301, Y305, Y306, Z305, Z306</span></p>
+    <div className="modal-action">
+      <form method="dialog">
+        {/* if there is a button in form, it will close the modal */}
+        <button className="px-4 py-1 rounded-full bg-[#eafe07] font-bold text-lg border-2 border-slate-500 text-black font-firaSans">Thanks!</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+      <a className='text-black no-underline' href='./Classrooms.png' download>⮞ Download Floor Layout</a>
+      </ul>
+      </details>
+      <details className="w-full rounded-md ">
+      <summary className="text-sm text-black no-underline font-extrabold cursor-pointer" > Resources</summary>
+      <ul className="p-3 gap-2 shadow-xl menu w-full dropdown-content z-[1] bg-slate-100 rounded-lg font-bold">
+      <li>⮞ Stay Tuned</li>
+      </ul>
+      </details>  
+      <a className='text-black no-underline' target='_blank' href='https://instagram.com/spaceappsathlone/live/18035428129520568?igshid=MTc4MmM1YmI2Ng=='><h1 className='text-sm'>⮞ Live Stream</h1></a>
+    
+      {/* <a className='text-black no-underline' target='_blank' href='/'><h1 className='text-sm'>⮞ Rules and Regulations</h1></a> */}
+      {/* <a className='text-black no-underline' target='_blank' href='/'><h1 className='text-sm'>⮞ Discord </h1></a> */}
+      {/* <a target='_blank' href='/'><h1 className='text-sm'>⮞ Whatsapp Chatroom</h1></a> */}
+    </motion.div>
+  );
+};
 
 
 const HeroSection = () => {
 
-  const [showPopup, setShowPopup] = useState(false);
-  const [showMobilePopup, setShowMobilePopup] = useState(false);
-  const [buttonClass, setButtonClass] = useState('bg-opacity-90'); // Initial class
+  const [isOpen, setIsOpen] = useState(false);
 
-   // Calculate the target date and time (October 6, 2023, 6:00 AM)
-   const targetDate = new Date('2023-10-06T06:00:00Z').getTime();
-   const currentDate = Date.now();
- 
-   // Calculate the difference in milliseconds
-   const difference = targetDate - currentDate;
-
-  useEffect(() => {
-    let timeoutId; // Variable to store timeout ID
-
-    const handleScroll = () => {
-      // Clear any existing timeout
-      clearTimeout(timeoutId);
-
-      // Set the class to bg-opacity-10 immediately on scroll
-      setButtonClass('bg-opacity-10');
-
-      // Set a timeout to change it back to bg-opacity-90 after 300 milliseconds
-      timeoutId = setTimeout(() => {
-        setButtonClass('bg-opacity-90');
-      }, 300);
-    };
-
-    // Listen for scroll events
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      // Clear the timeout and remove the event listener when component is unmounted
-      clearTimeout(timeoutId);
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-  const handleClick = () => {
-    setShowMobilePopup(true);
-    console.log("Clicked on");
-  }
-
-  const handleClose = () => {
-    setShowMobilePopup(false);
-  };
-
-  const handleMouseEnter = () => {
-    setShowPopup(true);
-    console.log("Hovered on");
-  };
-
-  const handleMouseLeave = () => {
-    setShowPopup(false);
+  const toggleInfoHub = () => {
+    setIsOpen(!isOpen);
   };
 
   const [animationComplete, setAnimationComplete] = useState(false);
@@ -73,123 +112,51 @@ const HeroSection = () => {
 
   return (
     <motion.div
-      className="my-[-30px] py-3 flex items-center justify-center flex-col h-screen bg-[#000000] bg-right bg-cover bg-no-repeat"
+      className="my-[-30px] py-3 flex items-center justify-center flex-col h-screen bg-[#000000] bg-center bg-cover bg-no-repeat"
       style={{ backgroundImage: `url(${backgroundImage})` }}
 
     >
 
-      <motion.h1 
-      variants={fadeIn('down', 'tween', 3.2, 0.5)}
-      initial="hidden"
-      animate={animationComplete ? "show" : "hidden"} // Only animate when animationComplete is true
-      onAnimationComplete={handleAnimationComplete}
-      className=" text-4xl  xs:text-6xl lg:text-7xl text-[#FFFFFF] font-extrabold font-firaSans text-center tracking-wider mb-2"><span className='font-black text-[#eafe07]'>HackAth</span><span className='font-thin text-[#ffffff]'>l</span><span className='font-black text-[#eafe07]'>on</span><span className='font-thin text-[#ffffff]'>e</span> <br /></motion.h1>
 
-      <span className='shootingStars'></span>
-    
 
-      <motion.h1 
-      variants={fadeIn('down', 'tween', 3.7, 0.5)}
-      initial="hidden"
-      animate={animationComplete ? "show" : "hidden"} // Only animate when animationComplete is true
-      onAnimationComplete={handleAnimationComplete}
-      className='text-xl text-[#FFFFFF] font-extrabold font-firaSans text-center tracking-wider'>also known as</motion.h1> 
-      <br />
-      <motion.img 
-      variants={fadeIn('down', 'tween', 4.2, 0.5)}
-      initial="hidden"
-      animate={animationComplete ? "show" : "hidden"} // Only animate when animationComplete is true
-      onAnimationComplete={handleAnimationComplete}
-      src="/spaceapps_Logo.png" className="w-[40%] md:w-[18%] lg:w-[15%] relative left-2 bottom-3" alt="Logo" />
-      <motion.p
-        variants={fadeIn('down', 'tween', 4.7, 0.5)}
-        initial="hidden"
-        animate={animationComplete ? "show" : "hidden"} // Only animate when animationComplete is true
-        onAnimationComplete={handleAnimationComplete} // Update the state when animation is complete
-        className="text-lg sm:text-2xl leading-relaxed font-normal font-overpass tracking-wide mt-4 text-center md:w-full max-w-[80%]"
-      >
-        Explore Open Science Together
-        </motion.p>
-        <br />
+<h1 className='text-xl  text-[#FFFFFF] font-bold font-firaSans text-center tracking-wider contrast-125'>Welcome To</h1> 
+
+      <h1
+      className=" text-4xl  xs:text-6xl lg:text-8xl text-[#FFFFFF] font-extrabold font-firaSans text-center tracking-wider mb-2"><span className='font-black text-[#eafe07]'>HackAth</span><span className='font-thin text-[#ffffff]'>l</span><span className='font-black text-[#eafe07]'>on</span><span className='font-thin text-[#ffffff]'>e</span> <br /></h1>
+
+    <h1 className='text-3xl text-center sm:text-4xl lg:text-6xl mt-3 mb-1 text-[#ffffff] leading-tight font-firaSans font-bold tracking-tight contrast-125'>The Hack has Officially Begun!</h1>
+    <p className='text-center w-full text-lg md:text-3xl mt-1 mb-8 font-overpass font-bold tracking-tight text-[#eafe07] contrast-125'>Ready to Dive In? Let's Make It Epic!</p>
+
+      <button onClick={toggleInfoHub} className='cursor-pointer absolute right-0 top-40 p-1 bg-[#eafe07] rounded-l-full rounded-r-none flex flex-row items-center gap-2'>
+        <img src='./leftarrow.png' width={15} />
+        <p className='text-black text-xs font-firaSans font-bold tracking-tight'>Info Hub</p>
+      </button>
+
+      {isOpen && <InfoHubContent isOpen={isOpen} toggleInfoHub={toggleInfoHub} />}
 
         <motion.div
-         variants={fadeIn('down', 'tween', 5.5, 0.7)}
+         variants={fadeIn('', '', 0.7, 0.3)}
           initial={animationComplete ? "" : "hidden"}
           whileInView="show"
           onAnimationComplete={handleAnimationComplete}
           className='flex flex-col sm:flex-row items-center justify-between gap-4'
-        >
-        <a href='https://www.spaceappschallenge.org/2023/challenges/' target='_blank'>
-        <motion.button
-          variants={fadeIn('left', 'tween', 6.6, 0.9)}
-          initial={animationComplete ? "" : "hidden"}
-          whileInView="show"
-          onAnimationComplete={handleAnimationComplete} // Update the state when animation is complete
-          className="px-9 py-3 bg-opacity-0 bg-black text-[#f6f4f4]  text-lg md:text-2xl font-firaSans font-semibold rounded-full hover:bg-[#eafe07] hover:text-black transition-colors duration-1000 border-[4px] cursor-pointer border-amber-500 ">
-          Challenges
-        </motion.button>        
-        </a>         
-        <div className='flex flex-row items-center justify-between gap-4'>
-        <a href='https://www.spaceappschallenge.org/2023/locations/athlone/' target='_blank'>
-        <motion.button
-          variants={fadeIn('down', 'tween', 5.9, 0.5)}
-          initial={animationComplete ? "" : "hidden"}
-          whileInView="show"
-          onAnimationComplete={handleAnimationComplete} // Update the state when animation is complete
-          className="px-6 py-3 bg-white text-[#0042A6] text-md md:text-2xl font-firaSans font-semibold rounded-full hover:bg-[#07173F] hover:text-white transition-colors duration-500 border-[4px] cursor-pointer border-sky-500 ">
-          Register Now
-        </motion.button>        
-        </a>        
-        <a href="/howToRegister" target='_blank'>
-        <motion.button
-          variants={fadeIn('right', 'tween', 6.6, 0.9)}
-          initial={animationComplete ? "" : "hidden"}
-          whileInView="show"
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-          onAnimationComplete={handleAnimationComplete} // Update the state when animation is complete
-          className="px-4 py-3  bg-black bg-opacity-90 md:bg-opacity-10 text-[#2E96F5] text-md md:text-2xl font-firaSans font-semibold rounded-full hover:bg-[#07173F] hover:text-white transition-colors duration-500 border-[4px] cursor-pointer border-sky-500 ">
-          Not Sure, How?
-        </motion.button>
+        >       
+        <a href='https://github.com/nasa/spaceapps/discussions' target='_blank'>
+        <button className="px-[32px] py-3 bg-white text-[#0042A6] text-md md:text-2xl font-firaSans font-semibold rounded-full hover:bg-[#07173F] hover:text-white transition-colors duration-500 border-[4px] cursor-pointer border-sky-500 ">
+          Connect Platform
+        </button>        
+        </a>  
+              
+        <a href="https://www.spaceappschallenge.org/2023/locations/athlone/" target='_blank'>
+        <button className="px-[46px] py-3  bg-black bg-opacity-90 md:bg-opacity-10 text-[#eafe07] text-md md:text-2xl font-firaSans font-semibold rounded-full hover:bg-[#eafe07] hover:text-black transition-colors duration-500 border-[4px] cursor-pointer border-yellow-300 ">
+          Athlone Page
+        </button>
         </a>
-        </div>
         </motion.div>
-          {showPopup && <div className={`hidden lg:block z-[9999] ${showPopup ? 'slide-in' : 'slide-out'}  w-[50%] shadow-xl bg-[#f6f4f4] rounded-md popup bottom-5`}>
-            <img className='object-contain flex item-center justify-center w-full max-h-full p-1' src="./notSureHow.gif" />
-          </div>}
-
-          <div>
-          <button
-        onClick={handleClick}
-        className={`z-[9000] h-[30px] cursor-pointer border-2 border-sky-500 hover:bg-[#f6f4f4] flex items-center justify-start w-[30px] bg-[#eafe07] rounded-full fixed left-2 bottom-5  transition-all ease duration-500 ${buttonClass}`}>
-        <img src='arrow-right.png' width={30} className='relative right-[1.5px]' alt="Open Gif" />
-      </button>
-
-      {showMobilePopup && (
-        <div className={`z-[9999] ${showMobilePopup ? 'slide-in' : 'slide-out'} sm:w-[50%]  w-[98%] shadow-xl bg-[#f6f4f4] rounded-md popup bottom-0`}>
-          <img className='object-contain flex item-center justify-center w-full max-h-full p-1' src="./notSureHow.gif" alt="Gif" />
-          <button className='w-6 h-6 bg-opacity-0 bg-black rounded-full z-10 absolute top-1 right-1' onClick={handleClose}><img src='cancel.png' /></button>
-        </div>
-      )}
-    </div>
-
-    <div className='absolute bottom-0 right-0 flex flex-col items-center justify-between gap-2  rounded-md px-3 py-3'>
-      <p className='font-firaSans font-bold text-sm sm:text-md md:text-xl lg:text-3xl tracking-wide'>Hack Starts In</p>
-      <Countdown
-        date={currentDate + difference}
-        renderer={({ days, hours, minutes, seconds }) => (
-          <div className='font-firaSans font-bold text-md  sm:xt-lg md:text-2xl lg:text-4xl tracking-wide'>
-            {days}d {hours}h {minutes}m {seconds}s
-          </div>
-        )}
-      />
-    </div>
-
-
         <div id='about' /> 
-      <div className='mt-2'>
+      <div className='mt-10'>
         <a href='#about'>
-        <img className='' src="scrollDown.gif" />
+        <img width={40} className='' src="scrollDown.gif" />
         </a>
       </div>
 

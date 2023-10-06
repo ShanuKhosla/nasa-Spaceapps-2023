@@ -1,3 +1,5 @@
+import Announcements from "../components/Announcements";
+
 export const events = [
   {
     icon : "./light-bulb.png",
@@ -147,15 +149,15 @@ export const daythrees = [
       iconBg: "#000000",
   },
   
-  {
-    icon : "./international.png",
-    day: "06:00",
-    title : "Closing Ceremony and Results",
-    points: [
-"The most awaited moment! The Global Nominees are announced, along with the next steps." 
-   ],
-      iconBg: "#000000",
-  },
+//   {
+//     icon : "./international.png",
+//     day: "06:00",
+//     title : "Closing Ceremony and Results",
+//     points: [
+// "The most awaited moment! The Global Nominees are announced, along with the next steps." 
+//    ],
+//       iconBg: "#000000",
+//   },
   
   {
     icon : "./document.png",
@@ -367,6 +369,12 @@ export const faqs = [
     question: "What is Virtual Bootcamp?",
     answer:"The Space Apps Virtual Bootcamp is a series of video tutorials developed by Space Apps Navigators, Global Winners, Space Agency Partners, Local Leads, Global Collaborators, and Subject Matter Experts. At the beginning of August, videos will be posted to the Space Apps website and YouTube. Video hosts will provide tips for a successful hackathon experience and guidance regarding the Space Apps Challenge Statements, resources, and open data.",
   }, 
+]
+
+export const announcements = [
+  {
+    announcement: "Participants are requested to register themselves at the Engineering Building desk to collect IDs, T-Shirts and Merchandise."
+  }
 ]
 
 export const allChallenges = [

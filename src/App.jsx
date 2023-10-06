@@ -27,29 +27,30 @@ import GetReady from './components/blogs/GetReady';
 import Preloader from './components/Preloader';
 import Challenges from './components/Challenges';
 import { tooltip } from 'leaflet';
+import Announcements from './components/Announcements';
 
 function App() {
-  const [showPreloader, setShowPreloader] = useState(false);
-  const location = useLocation();
+  // const [showPreloader, setShowPreloader] = useState(false);
+  // const location = useLocation();
 
-  useEffect(() => {
-    // Show the preloader only if on the homepage
-    if (location.pathname === '/') {
-      setShowPreloader(true);
+  // useEffect(() => {
+  //   // Show the preloader only if on the homepage
+  //   if (location.pathname === '/') {
+  //     setShowPreloader(true);
 
-      // Hide the preloader after a delay (e.g., 2 seconds)
-      const preloaderTimeout = setTimeout(() => {
-        setShowPreloader(false);
-      }, 2500);
+  //     // Hide the preloader after a delay (e.g., 2 seconds)
+  //     const preloaderTimeout = setTimeout(() => {
+  //       setShowPreloader(false);
+  //     }, 2500);
 
-      // Cleanup the timeout if the component unmounts or when preloader is hidden
-      return () => clearTimeout(preloaderTimeout);
-    }
-  }, [location.pathname]);
+  //     // Cleanup the timeout if the component unmounts or when preloader is hidden
+  //     return () => clearTimeout(preloaderTimeout);
+  //   }
+  // }, [location.pathname]);
 
   return (
     <div className="bg-black">
-      {showPreloader && <Preloader />} {/* Show preloader only on the homepage */}
+      {/* {showPreloader && <Preloader />}  */}
       <Navbar />
       <Routes>
       <Route path="/" element={<HomePage />} />
@@ -73,6 +74,7 @@ function App() {
         <Route path="/day-one" element={<DayOne />} />
         <Route path="/day-two" element={<DayTwo />} />
         <Route path="/day-three" element={<DayThree />} />
+        <Route path="/announcements" element={<Announcements />} />
         <Route path="/spaceappsChallenges" element={<Challenges />} />
       </Routes>
       <Footer />

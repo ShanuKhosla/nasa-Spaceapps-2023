@@ -33,7 +33,7 @@ const SpaceAppsRecap = () => {
         initial={animationComplete ? "" : "hidden"}
         whileInView="show"
         onAnimationComplete={handleAnimationComplete} // Update the state when animation is complete
-        className="md:w-[95%] text-1xl sm:text-2xl lg:text-3xl text-[#ffffff] my-5 leading-tight font-overpass font-normal tracking-wide">
+        className="md:w-[95%] text-xl sm:text-2xl lg:text-3xl text-[#ffffff] my-5 leading-tight font-overpass font-normal tracking-wide">
         Join us <span className='font-extrabold text-[#eafe07]'>October 6-8, 2023 </span>for the 
         largest annual space & sciences
         hackathon in the world!

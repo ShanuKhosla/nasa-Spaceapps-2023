@@ -36,7 +36,6 @@ const GlobalCollaborators = () => {
   }, []);
 
   const logos = [
-    { id: 1, src: '/adobeXD.png', link: "https://adobexdplatform.com/"}, // Add your image URLs here
     { id: 2, src: '/google.png', link: "https://about.google/"},
     { id: 3, src: '/microsoft.png', link: "https://www.microsoft.com/en-in/about/"},
     { id: 10, src: '/teams.png', link: "https://www.microsoft.com/en-US/microsoft-teams/group-chat-software"},
@@ -46,7 +45,6 @@ const GlobalCollaborators = () => {
     { id: 7, src: '/azure.png', link: "https://azure.microsoft.com/en-in/"},
     { id: 8, src: '/miro.png', link: "https://miro.com/"},
     { id: 9, src: '/ibm.png', link: "https://www.ibm.com/in-en"},
-    { id: 11, src: '/meteomatics.png', link: "https://www.meteomatics.com/"},
   ];
 
   const sliderSettings = {
@@ -77,7 +75,7 @@ const GlobalCollaborators = () => {
         onAnimationComplete={handleAnimationComplete}
         className="text-4xl  xs:text-5xl lg:text-6xl font-extrabold text-white font-firaSans tracking-wider mb-2"
       >
-        GLOBAL COLLABORATORS IN THE PAST
+        GLOBAL COLLABORATORS THIS YEAR
       </motion.h1>
 
       <motion.p
@@ -87,7 +85,7 @@ const GlobalCollaborators = () => {
         onAnimationComplete={handleAnimationComplete}
         className="text-justify my-8 max-w-full md:max-w-[90%] text-lg md:text-xl leading-snug font-overpass font-normal tracking-wide text-white"
       >
-<span className='font-black text-[#eafe07]'>Each year</span>, the NASA International Space Apps Challenge <span className='font-black text-[#eafe07]'>Global Organizing Team</span> collaborates with <span className='font-black text-[#eafe07]'>organizations</span> from around the world to provide <span className='font-black text-[#eafe07]'>participants</span> and/or <span className='font-black text-[#eafe07]'>Local Leads</span> with tools and resources that enable the creation of <span className='font-black text-[#eafe07]'>solutions</span>. These tools and resources can be used for free during the event.
+<span className='font-black text-[#eafe07]'>This year</span>, the NASA International Space Apps Challenge <span className='font-black text-[#eafe07]'>Global Organizing Team</span> collaborates with <span className='font-black text-[#eafe07]'>organizations</span> from around the world to provide <span className='font-black text-[#eafe07]'>participants</span> and/or <span className='font-black text-[#eafe07]'>Local Leads</span> with tools and resources that enable the creation of <span className='font-black text-[#eafe07]'>solutions</span>. These tools and resources can be used for free during the event.
       </motion.p>
     </div>
 
