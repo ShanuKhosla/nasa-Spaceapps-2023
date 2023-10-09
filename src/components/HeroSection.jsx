@@ -112,54 +112,46 @@ const HeroSection = () => {
 
   return (
     <motion.div
-      className="my-[-30px] py-3 flex items-center justify-center flex-col h-screen bg-[#000000] bg-center bg-cover bg-no-repeat"
+      className="my-[-30px] py-3 mb-10 flex items-center justify-center flex-col h-screen bg-[#000000] bg-center bg-cover bg-no-repeat"
       style={{ backgroundImage: `url(${backgroundImage})` }}
 
     >
 
 
 
-<h1 className='text-xl  text-[#FFFFFF] font-bold font-firaSans text-center tracking-wider contrast-125'>Welcome To</h1> 
+<h1 className='text-xl mt-4  text-[#FFFFFF] font-bold font-firaSans text-center tracking-wider contrast-125'>Welcome To</h1> 
 
       <h1
       className=" text-4xl  xs:text-6xl lg:text-8xl text-[#FFFFFF] font-extrabold font-firaSans text-center tracking-wider mb-2"><span className='font-black text-[#eafe07]'>HackAth</span><span className='font-thin text-[#ffffff]'>l</span><span className='font-black text-[#eafe07]'>on</span><span className='font-thin text-[#ffffff]'>e</span> <br /></h1>
 
-    <h1 className='text-3xl text-center sm:text-4xl lg:text-6xl mt-3 mb-1 text-[#ffffff] leading-tight font-firaSans font-bold tracking-tight contrast-125'>The Hack has Officially Begun!</h1>
-    <p className='text-center w-full text-lg md:text-3xl mt-1 mb-8 font-overpass font-bold tracking-tight text-[#eafe07] contrast-125'>Ready to Dive In? Let's Make It Epic!</p>
+    <img width={200} src="./spaceapps_Logo.png" />
 
-      <button onClick={toggleInfoHub} className='cursor-pointer absolute right-0 top-40 p-1 bg-[#eafe07] rounded-l-full rounded-r-none flex flex-row items-center gap-2'>
+    <h1 className='text-2xl text-center sm:text-4xl lg:text-6xl mt-3 mb-1 text-[#ffffff] leading-tight font-firaSans font-bold tracking-tight contrast-125'>The hackathon has officially concluded.</h1>
+    <p className='text-center w-[70%] md:w-full text-lg md:text-3xl mt-1 mb-8 font-overpass font-bold tracking-tight text-[#eafe07] contrast-125'>Cheers to the participants! Best of luck to all, and a big thank you for joining us.</p>
+
+      {/* <button onClick={toggleInfoHub} className='cursor-pointer absolute right-0 top-40 p-1 bg-[#eafe07] rounded-l-full rounded-r-none flex flex-row items-center gap-2'>
         <img src='./leftarrow.png' width={15} />
         <p className='text-black text-xs font-firaSans font-bold tracking-tight'>Info Hub</p>
       </button>
 
-      {isOpen && <InfoHubContent isOpen={isOpen} toggleInfoHub={toggleInfoHub} />}
+      {isOpen && <InfoHubContent isOpen={isOpen} toggleInfoHub={toggleInfoHub} />} */}
 
+         {/* <h1 className='underline text-3xl text-center sm:text-2xl mt-5 lg:text-4xl mt-3 mb-1 text-[#eafeo7] leading-tight font-firaSans font-bold tracking-tight contrast-125'>Join The Action!</h1>
         <motion.div
          variants={fadeIn('', '', 0.7, 0.3)}
           initial={animationComplete ? "" : "hidden"}
           whileInView="show"
           onAnimationComplete={handleAnimationComplete}
-          className='flex flex-col sm:flex-row items-center justify-between gap-4'
-        >       
-        <a href='https://github.com/nasa/spaceapps/discussions' target='_blank'>
-        <button className="px-[32px] py-3 bg-white text-[#0042A6] text-md md:text-2xl font-firaSans font-semibold rounded-full hover:bg-[#07173F] hover:text-white transition-colors duration-500 border-[4px] cursor-pointer border-sky-500 ">
-          Connect Platform
-        </button>        
-        </a>  
+          className='flex flex-col sm:flex-row items-center justify-between gap-4 my-3'
+        >        
               
-        <a href="https://www.spaceappschallenge.org/2023/locations/athlone/" target='_blank'>
-        <button className="px-[46px] py-3  bg-black bg-opacity-90 md:bg-opacity-10 text-[#eafe07] text-md md:text-2xl font-firaSans font-semibold rounded-full hover:bg-[#eafe07] hover:text-black transition-colors duration-500 border-[4px] cursor-pointer border-yellow-300 ">
-          Athlone Page
+        <a href="https://www.youtube.com/watch?v=W3y2qN2spO4" target='_blank'>
+        <button className="px-[30px] py-3  bg-black bg-opacity-90 md:bg-opacity-10 text-[#eafe07] text-2xl font-firaSans font-semibold rounded-full hover:bg-[#eafe07] hover:text-black transition-colors duration-500 border-[4px] cursor-pointer border-red-600 ">
+          Youtube Live Stream
         </button>
         </a>
-        </motion.div>
-        <div id='about' /> 
-      <div className='mt-10'>
-        <a href='#about'>
-        <img width={40} className='' src="scrollDown.gif" />
-        </a>
-      </div>
-
+        </motion.div> */}
+         
 
       
     </motion.div>

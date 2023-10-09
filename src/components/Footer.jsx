@@ -71,9 +71,9 @@ style={{ backgroundImage: `url(${backgroundImage})` }}
 <div className='mt-6 lg:mt-4'>
   <h3 className='font-overpass font-bold text-xl tracking-snug mb-1 lg:mb-10'>Contact & Support</h3>
   <ul className='font-firaSans list-none leading-relaxed'>
-    <li className='my-2'><a className='tracking-wide no-underline text-[#f6f4f4] hover:text-[#eafe07]' target='_blank' href="#">About us</a></li>
+    {/* <li className='my-2'><a className='tracking-wide no-underline text-[#f6f4f4] hover:text-[#eafe07]' target='_blank' href="#">About us</a></li> */}
     <li className='my-2'><a className='tracking-wide no-underline text-[#f6f4f4] hover:text-[#eafe07]' target='_blank' href="/faq">Help & FAQs</a></li>
-    <li className='my-2'><a className='tracking-wide no-underline text-[#f6f4f4] hover:text-[#eafe07]' target='_blank' href="/contact">Contact us</a></li>
+    {/* <li className='my-2'><a className='tracking-wide no-underline text-[#f6f4f4] hover:text-[#eafe07]' target='_blank' href="/contact">Contact us</a></li> */}
     {/* <li className='my-2'><a className='tracking-wide no-underline text-[#f6f4f4] hover:text-[#eafe07]' href="#">Sitemap</a></li> */}
     {/* <li className='my-2'><a className='tracking-wide no-underline text-[#f6f4f4] hover:text-[#eafe07]' href="#">Feedback</a></li> */}
     {/* <li className='my-2'><a className='tracking-wide no-underline text-[#f6f4f4] hover:text-[#eafe07]' href="#">Plan My Tour</a></li> */}

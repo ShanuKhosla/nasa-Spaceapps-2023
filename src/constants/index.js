@@ -377,9 +377,9 @@ export const announcements = [
   },  {
     announcement: "Kindly keep checking the Info Hub located on the Home page for crucial information and updates about the hackathon."
   },{
-    announcement: "Find a Team Link added to the Info Hub. Check it out! ( Home > Info Hub > Resources > Find a Team )"
+    announcement: "'Find a Team' Link added to the Info Hub. Check it out! ( Home > Info Hub > Resources > Find a Team )"
   },{
-    announcement: ""
+    announcement: "Dear attendees, we'll be streaming our closing ceremony live on YouTube. Be sure to watch it on the website's homepage"
   },
 ]
 

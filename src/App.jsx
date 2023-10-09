@@ -56,11 +56,11 @@ function App() {
       <Routes>
       <Route path="/" element={<HomePage />} />
         <Route path="/faq" element={<Faqs />} />
-        <Route path="/contact" element={<Contact />} />
+        {/* <Route path="/contact" element={<Contact />} /> */}
         <Route path="/about" element={<AboutSpaceApps />} />
-        <Route path="/ambassador" element={<Ambassador />} />
-        <Route path="/volunteer" element={<Volunteer />} />
-        <Route path="/sponsors" element={<Sponsors />} />
+        {/* <Route path="/ambassador" element={<Ambassador />} /> */}
+        {/* <Route path="/volunteer" element={<Volunteer />} /> */}
+        {/* <Route path="/sponsors" element={<Sponsors />} /> */}
         <Route path="/blogs" element={<Blog />} />
         <Route path="/spaceexploration" element={<SpaceExploration />} />
         <Route path="/howToRegister" element={<HowToRegister />} />
