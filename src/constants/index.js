@@ -718,3 +718,43 @@ export const gameDevelopment = [
     iframes: '<iframe width="300" height="180" src="https://www.youtube.com/embed/x--oStYtNYQ" title="Challenge: Visualize a Space Mission Using Virtual Reality | NASA Space Apps Challenge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
   },
 ];
+
+
+
+export const teamReviews = [
+
+  {
+    testimonial: "I teamed up with people from different backgrounds, but we all had the same interests, which are sharing experiences and ideas. It was a good experience to hear different perspectives and ideas regarding our challenge 'Ocean Garden' which we focusing on the seaweed kelp. The discussion around was fun and enjoyable. Furthermore, one of our passionate member even cooked a kelp dish to prove that it is edible and pull more attentions from public crowd. However, without discussion as a team, I found that we were working on collecting resources from internet and designing web application aimless. I hope we could meet up before the event starts so that we could lay out our strategies and have a more solid approach towards the challenge.",
+    teamname: "Help Kelp, Help Ourselves",
+  },
+  {
+    testimonial: "We were positively challenged by the SpaceApps hackathon and were very warmly supported throughout the whole event! The organizing team did an incredible job by providing food and shelter to everybody. Everyone was nice and helpful to the maximum with all kinds of technical or comfort requests. The pizzas and coffee again proved to be invaluable resources for brain activity :) Last but not least, the mentors had made an incredible impact on our project and others, too. Fermi Paradox team is grateful for this opportunity, we hope that next year there will be more attendees, more fun and more great ideas!",
+    teamname: "Fermi Paradox",
+  },
+
+  {
+    testimonial: "It was a wonderful experience, 3 days of brain storming, networking, and hacking. I would definitely want to be a part of the next one and more to come. The tutors and instructors were very helpful and worked hard too as well. Happy to be a part of it",
+    teamname: "Athermis GO!",
+  },
+  {
+    testimonial: "Great Event, run very well with lots of opportunities to gain experience and make connections. Great experience for similar events in the future. Provided food and drinks and made sure everyone was satisfied!",
+    teamname: "IdontThink",
+  },
+  {
+    testimonial: "I am glad that I got a chance to participate in Hackathlone. It was a great experience and as a team, we got to know about coordination value and team spirit.",
+    teamname: "Dolphins",
+  },
+  {
+    testimonial: "Amazing, Unique, and Unforgettable Experience. Thank You TUS",
+    teamname: "HELP KELP HELP OURSELVES",
+  },
+
+  {
+    testimonial: "Great Experience, kudos to the organizers & looking forward to next year's event.",
+    teamname: "Team Antriksh",
+  },
+  {
+    testimonial: "It was a fun and exciting experience. Looking forward to joining this event again!",
+    teamname: "Cococrunch",
+  },
+];

@@ -1,3 +1,4 @@
+/* eslint-disable no-irregular-whitespace */
 /* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
@@ -102,7 +103,7 @@ const Tus = () => {
     </MapContainer>
       </div>
     </motion.div>
-    <div className='h-[100px]' id='timeline' />
+    <div className='h-[100px]' id='winners' />
     </>
   );
 };

@@ -237,3 +237,9 @@
 	color: transparent;
   }
   
+  .glow-effect {
+	box-shadow: 0 0 10px #fff, /* white glow */
+				0 0 20px #fff,
+				0 0 30px #fff,
+				0 0 40px #fff;
+  }

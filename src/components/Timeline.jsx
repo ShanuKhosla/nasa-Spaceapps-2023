@@ -54,14 +54,14 @@ const EventCard = ({ event }) => (
       {event.points.map((point, index) => (
         <li
           key={`event-point-${index}`}
-          className="text-black text-justify tracking-tight leading-tight pl-1 tracking-tight leading-tight my-2 "
+          className="text-black text-justify  pl-1 tracking-tight leading-tight my-2 "
           >
           {point}
         </li>
       ))}
     </ul>
 
-    <a target='_blank' className='pointer btn' href={event.links}><button className='pointer bg-black px-3 py-2 text-white rounded-md text-md font-semibold font-overpass tracking-snug' style={{ cursor: 'pointer' }}>{event.button}</button></a>
+    <a target='_blank' className='pointer btn' href={event.links} rel="noreferrer"><button className='pointer bg-black px-3 py-2 text-white rounded-md text-md font-semibold font-overpass tracking-snug' style={{ cursor: 'pointer' }}>{event.button}</button></a>
 
   </VerticalTimelineElement>
 );
@@ -79,7 +79,7 @@ const Timeline = () => {
     <>
 
     <motion.div
-      className="bg-[#07173F] h-full px-8 px-[20px] sm:px-[40px] lg:px-[60px] py-6 md:py-[115px] bg-center bg-no-repeat bg-cover"
+      className="bg-[#07173F] h-full  px-[20px] sm:px-[40px] lg:px-[60px] py-6 md:py-[115px] bg-center bg-no-repeat bg-cover"
       style={{
         backgroundImage: `url(${backgroundImage})`
       }}
@@ -90,7 +90,7 @@ const Timeline = () => {
         initial={animationComplete ? "" : "hidden"}
         whileInView="show"
         onAnimationComplete={handleAnimationComplete} // Update the state when animation is complete
-        className="text-4xl text-center md:text-5xl mb-[4%] lg:text-6xl text-[#FFFFFF] font-extrabold font-firaSans tracking-wider mb-2">
+        className="text-4xl text-center md:text-5xl mb-[4%] lg:text-6xl text-[#FFFFFF] font-extrabold font-firaSans tracking-wider">
         EVENT TIMELINE
       </motion.h1>
       <motion.div className="relative right-[3px] flex flex-col">

@@ -10,6 +10,8 @@ import GlobalCollaborators from './GlobalCollaborators';
 import SpaceAgencies from './SpaceAgencies';
 import Tus from './Tus';
 import Instagram from './Instagram';
+import Winners from './Winners';
+import Testimonials from './Testimonials';
 
 const HomePage = () => {
   const [showBackToTop, setShowBackToTop] = useState(false);
@@ -52,9 +54,11 @@ const HomePage = () => {
       <SpaceAgencies />
       <GlobalCollaborators />
       <Tus />
+      <Winners />
+      <Testimonials />
       <Timeline />
       <Instagram />
-      <CTA />
+      {/* <CTA /> */}
 
       {showBackToTop && (
         <motion.img

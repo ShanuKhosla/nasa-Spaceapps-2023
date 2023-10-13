@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable react/prop-types */
 /* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from 'react';
@@ -112,19 +114,19 @@ const HeroSection = () => {
 
   return (
     <motion.div
-      className="my-[-30px] py-3 mb-10 flex items-center justify-center flex-col h-screen bg-[#000000] bg-center bg-cover bg-no-repeat"
+      className="flex items-center relative flex-col h-full bg-[#000000] bg-center bg-cover bg-no-repeat"
       style={{ backgroundImage: `url(${backgroundImage})` }}
 
     >
 
 
 
-<h1 className='text-xl mt-4  text-[#FFFFFF] font-bold font-firaSans text-center tracking-wider contrast-125'>Welcome To</h1> 
+<h1 className='text-xl mt-5 md:mt-16 text-[#FFFFFF] font-bold font-firaSans text-center tracking-wider contrast-125'>Welcome To</h1> 
 
       <h1
       className=" text-4xl  xs:text-6xl lg:text-8xl text-[#FFFFFF] font-extrabold font-firaSans text-center tracking-wider mb-2"><span className='font-black text-[#eafe07]'>HackAth</span><span className='font-thin text-[#ffffff]'>l</span><span className='font-black text-[#eafe07]'>on</span><span className='font-thin text-[#ffffff]'>e</span> <br /></h1>
 
-    <img width={200} src="./spaceapps_Logo.png" />
+    <img width={150} src="./spaceapps_Logo.png" />
 
     <h1 className='text-2xl text-center sm:text-4xl lg:text-6xl mt-3 mb-1 text-[#ffffff] leading-tight font-firaSans font-bold tracking-tight contrast-125'>The hackathon has officially concluded.</h1>
     <p className='text-center w-[70%] md:w-full text-lg md:text-3xl mt-1 mb-8 font-overpass font-bold tracking-tight text-[#eafe07] contrast-125'>Cheers to the participants! Best of luck to all, and a big thank you for joining us.</p>
@@ -136,7 +138,6 @@ const HeroSection = () => {
 
       {isOpen && <InfoHubContent isOpen={isOpen} toggleInfoHub={toggleInfoHub} />} */}
 
-         {/* <h1 className='underline text-3xl text-center sm:text-2xl mt-5 lg:text-4xl mt-3 mb-1 text-[#eafeo7] leading-tight font-firaSans font-bold tracking-tight contrast-125'>Join The Action!</h1>
         <motion.div
          variants={fadeIn('', '', 0.7, 0.3)}
           initial={animationComplete ? "" : "hidden"}
@@ -145,12 +146,18 @@ const HeroSection = () => {
           className='flex flex-col sm:flex-row items-center justify-between gap-4 my-3'
         >        
               
-        <a href="https://www.youtube.com/watch?v=W3y2qN2spO4" target='_blank'>
-        <button className="px-[30px] py-3  bg-black bg-opacity-90 md:bg-opacity-10 text-[#eafe07] text-2xl font-firaSans font-semibold rounded-full hover:bg-[#eafe07] hover:text-black transition-colors duration-500 border-[4px] cursor-pointer border-red-600 ">
-          Youtube Live Stream
+        <a href="#winners">
+        <button className="px-[30px] py-3  bg-black bg-opacity-90 md:bg-opacity-10 text-[#eafe07] text-2xl font-firaSans font-semibold rounded-full hover:border-white hover:bg-white hover:text-black transition-colors duration-500 border-[4px] cursor-pointer border-[#eafe07] ">
+          Meet The Champions
         </button>
         </a>
-        </motion.div> */}
+        
+        <a href="" target='_blank'>
+        <button className="px-[43px] py-3  bg-black bg-opacity-90 md:bg-opacity-10 text-white text-2xl font-firaSans font-semibold rounded-full hover:bg-[#eafe07] hover:border-[#eafe07] hover:text-black transition-colors duration-500 border-[4px] cursor-pointer border-white ">
+        Hackathon Diaries
+        </button>
+        </a>
+        </motion.div>
          
 
       
